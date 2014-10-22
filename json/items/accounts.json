@@ -1,0 +1,126 @@
+[
+    {
+        "headers": {
+            "category": "entity",
+            "type": "Account",
+            "action":"Create"
+        },
+        "data": {
+            "accountClass": "/Account/accountClass[invoiced]",
+            "accountFamily": "/Account/accountFamily[]/group[]",
+            "accountId": "ABC123",
+            "accountNumber": "ABC123",
+            "accountType": "",
+            "chain": "",
+            "channel": "20",
+            "currency": "USD",
+            "distributionPoint": "",
+            "name": "EXAMPLE CUSTOMER #1",
+            "orgPath": "",
+            "paymentTerms": "CCOD",
+            "riskCategory": "",
+            "salesOffice": "",
+            "storeId": "",
+            "userId": "",
+            "exposure": 0.0,
+            "limit": 0.0,
+            "creditBlock": true,
+            "overallBlock": false,
+            "accountLicenseInformation": [
+                {
+                    "licenseNumber": "TEST SAMPLES",
+                    "licenseValidFrom": "2014-02-01T05:00:00+0000",
+                    "licenseValidTo": "2015-02-28T05:00:00+0000",
+                    "licenseType": "7"
+                }
+            ],
+            "addresses": [
+                {
+                    "name": "EXAMPLE CUSTOMER #1",
+                    "city": "STORYBROOK",
+                    "postalCode": "12345",
+                    "region": "ME",
+                    "addressLine1": "1 FAIRY TALE BLVD",
+                    "country": "US",
+                    "addressType": "Work",
+                    "addressLine2": "",
+                    "addressLine3": "",
+                    "addressNote": "",
+                    "primary": true
+                }
+            ],
+            "deliveryDays": [
+                "Thu"
+            ],
+            "phones": [
+                {
+                    "phoneNumber": "2223334455",
+                    "phoneCountryCode": "1",
+                    "phoneType": "office"
+                }
+            ]
+        }
+    },
+    {
+        "headers": {
+            "category": "entity",
+            "type": "Account",
+            "action":"Update"
+        },
+        "data": {
+        	"accountClass": "/Account/accountClass[invoiced]",
+            "accountFamily": "/Account/accountFamily[]/group[]",
+            "accountId": "ABC125",
+            "accountNumber": "ABC125",
+            "accountType": "",
+            "chain": "",
+            "channel": "20",
+            "currency": "USD",
+            "distributionPoint": "",
+            "name": "EXAMPLE CUSTOMER #2",
+            "orgPath": "",
+            "paymentTerms": "CCOD",
+            "riskCategory": "",
+            "salesOffice": "",
+            "storeId": "",
+            "userId": "",
+            "exposure": 0.0,
+            "limit": 0.0,
+            "creditBlock": true,
+            "overallBlock": false,
+            "accountLicenseInformation": [
+                {
+                    "licenseNumber": "TEST SAMPLES",
+                    "licenseValidFrom": "2014-02-01T05:00:00+0000",
+                    "licenseValidTo": "2015-02-28T05:00:00+0000",
+                    "licenseType": "7"
+                }
+            ],
+            "addresses": [
+                {
+                    "name": "EXAMPLE CUSTOMER #2",
+                    "city": "STORYBROOK",
+                    "postalCode": "12345",
+                    "region": "ME",
+                    "addressLine1": "5 FAIRY TALE BLVD",
+                    "country": "US",
+                    "addressType": "Work",
+                    "addressLine2": "",
+                    "addressLine3": "",
+                    "addressNote": "",
+                    "primary": true
+                }
+            ],
+            "deliveryDays": [
+                "Thu"
+            ],
+            "phones": [
+                {
+                    "phoneNumber": "2223334456",
+                    "phoneCountryCode": "1",
+                    "phoneType": "office"
+                }
+            ]
+        }
+    }
+]
