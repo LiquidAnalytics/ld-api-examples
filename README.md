@@ -1,5 +1,2 @@
-## Liquid Decisions REST API
-
-# Getting Started
-
+# Liquid Decisions REST API Examples
 
