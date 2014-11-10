@@ -67,7 +67,7 @@ var log = function (level, message) {
 
 }
 
-var runTest = function (host, community, username, password, count,filename) {
+var runTest = function (host, community, username, password, count,filename, isSubmitCart, isGetPrice) {
     console.log("*******************************************\n");
     console.log("Press ctrl+s to pause, any button to resume.\n");
     console.log("*******************************************\n");
@@ -75,7 +75,7 @@ var runTest = function (host, community, username, password, count,filename) {
     createFile(filename);
     request.post({ url: host + '/ls/api/oauth2/token',
             form: {'grant_type': 'password',
-                "client_id": process.env.CLIENT_ID,
+                "client_id": "LiquidDecisions",
                 "client_secret": process.env.CLIENT_SECRET,
                 "username": username,
                 "password": password,
@@ -97,10 +97,10 @@ var runTest = function (host, community, username, password, count,filename) {
                 totalPollTime: 0,
                 totalTime: 0
             }
-            prepareCart(host, accessToken, username, state, count,filename);
+            log("INFO", "end test"+accessToken);
+            prepareCart(host, accessToken, username, state, count,filename, isSubmitCart, isGetPrice);
         });
 }
-
 
 var completeTest = function (state) {
     console.log(state);
@@ -123,12 +123,13 @@ var completeTest = function (state) {
 }
 
 
-var prepareCart = function (host, accessToken, username, state, count,filename) {
+var prepareCart = function (host, accessToken, username, state, count,filename, isSubmitCart, isGetPrice) {
     if (count == 0) {
         completeTest(state);
     }
     else {
         log("INFO", "Preparing the cart");
+        numberofproducts = 5;
         request.post({
                 url: host + '/ls/api/testing/randomItems',
                 headers: {
@@ -136,12 +137,14 @@ var prepareCart = function (host, accessToken, username, state, count,filename) 
                 },
                 form: {
                     "type": "Product",
-                    "count": 10
+                    "count": numberofproducts
                 }
             },
             function (error, postResponse, body) {
                 //console.log(body);
+                log("INFO", "randomItems products response");
                 var randomProducts = JSON.parse(body);
+
                 request.post({
                         url: host + '/ls/api/testing/randomItems',
                         headers: {
@@ -167,47 +170,98 @@ var prepareCart = function (host, accessToken, username, state, count,filename) 
                             cartId: cart.headers.clientId,
                             accountId: randomAccount["data"]["accountId"],
                             name: cart.headers.clientId,
-                            processStatus: "/Workflow/processStatus[Verify]",
-                            processType: "/Workflow/cartType[Order]/processType[1]",
+                            processStatus: "/Workflow/processStatus[Submit]",
+                            processType: "/Workflow/cartType[Order]/processType[ZBTO]",
                             userId: username,
                             combineForInvoice: true,
                             lineItems: []
                         }
                         var lineItemId = 0;
+
                         randomProducts.forEach(function (product, index) {
                             if (product == null) {
                                 return;
                             }
+
                             var productId = product.data.productId;
                             var productDescription = product.data.productDescription;
-                            var uom = product.data.baseUOM;
-                            lineItem = {
-                                lineItemId: lineItemId,
-                                productId: productId,
-                                uom: uom,
-                                productDescription: productDescription,
-                                requestedQuantity: 10
+                            var uom = product.data.baseUom;
+                            var requestedUnitPrice = "";
+                            if(isGetPrice=="Y"){
+                                request.post({
+                                        url: host + '/ls/api/data/query?function=GetPricesForAccountProduct&responseFormat=TableData&maxResults=10',
+                                        headers: {
+                                            'Authorization': 'Bearer ' + accessToken
+                                        },
+                                        json: [{
+                                            "accountId": randomAccount["data"]["accountId"],
+                                            "productId": productId,
+                                            "userId":"DON.LOONEY@GLAZERS.COM",
+                                            "processType":"ZBTO",
+                                            "quantity":10,
+                                            "uom":uom
+                                        }]
+                                    },
+                                    function (error, postResponse, body) {
+
+                                        var requestedUnit = body[0]["tableData"][0];
+                                        if(requestedUnit["minimumQuantityUom"]=="CS")
+                                        {
+                                            requestedUnitPrice = requestedUnit["netPrice"];
+                                        }else{
+                                            requestedUnitPrice = requestedUnit["eachPrice"];
+                                        }
+                                        lineItem = {
+                                            lineItemId: lineItemId,
+                                            productId: productId,
+                                            uom: uom,
+                                            productDescription: productDescription,
+                                            requestedQuantity: 1,
+                                            requestedUnitPrice:requestedUnitPrice
+
+                                        }
+
+                                        cart.data.lineItems.push(lineItem);
+
+                                        lineItemId = lineItemId + 1;
+
+                                        if(lineItemId==numberofproducts && isSubmitCart=="Y")
+                                            submitCart(host, accessToken, cart, username, state, count, filename, isSubmitCart, isGetPrice);
+                                    });
+                            }else{
+
+                                lineItem = {
+                                    lineItemId: lineItemId,
+                                    productId: productId,
+                                    uom: uom,
+                                    productDescription: productDescription,
+                                    requestedQuantity: 1,
+                                    requestedUnitPrice:requestedUnitPrice
+
+                                }
+
+                                cart.data.lineItems.push(lineItem);
+
+                                lineItemId = lineItemId + 1;
+                                if(lineItemId==numberofproducts && isSubmitCart=="Y")
+                                    submitCart(host, accessToken, cart, username, state, count, filename, isSubmitCart, isGetPrice);
+
                             }
-                            cart.data.lineItems.push(lineItem);
-                            lineItemId = lineItemId + 1;
+
                         });
-
-                        submitCart(host, accessToken, cart, username, state, count, filename);
-
-
                     })
             });
     }
 }
 
-var submitCart = function (host, accessToken, cart, username, state, count,filename) {
+var submitCart = function (host, accessToken, cart, username, state, count,filename, isSubmitCart, isGetPrice) {
     state.txnAttempted = state.txnAttempted + 1;
     log("INFO", "Submitting a cart " + count);
     var start = Date.now();
     var time_now = LocalTime();
     var cartNo = time_now + "," + count + ",";
     writeInFile(filename,cartNo);
-        request.post({
+    request.post({
             url: host + '/ls/api/transactions/submit',
             headers: {
                 'Authorization': 'Bearer ' + accessToken,
@@ -221,17 +275,17 @@ var submitCart = function (host, accessToken, cart, username, state, count,filen
             var submitTime = (end -start) + ",";
             writeInFile(filename,submitTime);
             var deliveryConfirmations = JSON.parse(body);
-            poll(host, accessToken, deliveryConfirmations, username, state, count, 60, start,filename);
+            poll(host, accessToken, deliveryConfirmations, username, state, count, 60, start,filename, isSubmitCart, isGetPrice);
         })
 
 
 }
 
-var poll = function (host, accessToken, deliveryConfirmations, username, state, count, pollCount, start,filename) {
+var poll = function (host, accessToken, deliveryConfirmations, username, state, count, pollCount, start,filename, isSubmitCart, isGetPrice) {
     if (pollCount == 0) {
         log("FAIL", "Polling has expired, and we have yet to get our transaction back");
         count = count - 1;
-        prepareCart(host, accessToken, username, state, count, start,filename);
+        prepareCart(host, accessToken, username, state, count, start,filename, isSubmitCart, isGetPrice);
     }
     else {
         log("INFO", "Polling for transaction " + pollCount);
@@ -239,7 +293,7 @@ var poll = function (host, accessToken, deliveryConfirmations, username, state, 
             log("FAIL", "Failed to submit a cart: " + deliveryConfirmations[0].deliveryReason);
             state.txnAttempted = state.txnFailed + 1;
             count = count - 1;
-            prepareCart(host, accessToken, username, state, count, start,filename);
+            prepareCart(host, accessToken, username, state, count, start,filename, isSubmitCart, isGetPrice);
         }
         else {
             state.polls = state.polls + 1;
@@ -258,22 +312,26 @@ var poll = function (host, accessToken, deliveryConfirmations, username, state, 
                     var pollTime = (end - pollStart) + ",";
                     writeInFile(filename,pollTime);
                     count = count - 1;
-                    var items = JSON.parse(body);
+                    var items = [];
+                    if(body!="")
+                    {
+                        items = JSON.parse(body)
+                    }
                     if (items.length == 0) {
                         pollCount = pollCount - 1;
                         sleep.sleep(1);
-                        poll(host, accessToken, deliveryConfirmations, username, state, count, pollCount,filename);
+                        poll(host, accessToken, deliveryConfirmations, username, state, count, pollCount,filename, isSubmitCart, isGetPrice);
                     }
                     else {
                         var item=items[0].item;
-                        var applicationTime = JSON.parse(item.headers.applicationTime);
+                        var applicationTime = JSON.parse(item.headers.processedAt);
                         state.totalApplicationTime = state.totalApplicationTime + applicationTime;
                         state.txnSucceeded = state.txnSucceeded + 1;
                         state.totalTime = state.totalTime + (end- start);
                         var app_total_time = applicationTime + "," + (end-start) + "\n";
                         writeInFile(filename,app_total_time);
                         console.log("----------------------------------------");
-                        prepareCart(host, accessToken, username, state, count,filename);
+                        prepareCart(host, accessToken, username, state, count,filename, isSubmitCart, isGetPrice);
                     }
 
                 })
@@ -287,10 +345,9 @@ var poll = function (host, accessToken, deliveryConfirmations, username, state, 
 
 // Pass in arguments
 var PassInCommand = function(args){
-    runTest(args[0],args[1],args[2],args[3],args[4],args[5],args[6]);
+    runTest(args[0],args[1],args[2],args[3],args[4],args[5],args[6],args[7],args[8]);
 }
 
-//eg. runTest("https://lddev.charmer-sunbelt.com", "CSG_Dev","RPETITTE", "mobileapp", 5, "record.csv");
 PassInCommand(process.argv.slice(2));
 
 
