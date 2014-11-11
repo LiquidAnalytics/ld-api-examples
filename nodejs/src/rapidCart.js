@@ -1,5 +1,4 @@
-#!/usr/bin/env node
-
+#! /usr/bin/nodejs
 /**
  * Created by liquid on 5/15/14.
  *
@@ -71,9 +70,9 @@ var runTest = function (host, community, username, password, count,filename, isS
     console.log("*******************************************\n");
     console.log("Press ctrl+s to pause, any button to resume.\n");
     console.log("*******************************************\n");
-    log("INFO", "Starting test");
+    log("INFO", "Starting test for "+username+" with host"+host);
     createFile(filename);
-    request.post({ url: host + '/ls/api/oauth2/token',
+    var req = request.post({ url: host + '/ls/api/oauth2/token',
             form: {'grant_type': 'password',
                 "client_id": "LiquidDecisions",
                 "client_secret": process.env.CLIENT_SECRET,
@@ -81,7 +80,8 @@ var runTest = function (host, community, username, password, count,filename, isS
                 "password": password,
                 "scope": "community="+community}},
         function (error, postResponse, body) {
-            var resp = JSON.parse(body);
+	log("INFO", "In token result"+body+error+postResponse);
+           var resp = JSON.parse(body);
             if (resp["error"] != null) {
                 log("ERROR", "Couldn't authenticate " + body);
                 process.exit(1);
@@ -100,6 +100,15 @@ var runTest = function (host, community, username, password, count,filename, isS
             log("INFO", "end test"+accessToken);
             prepareCart(host, accessToken, username, state, count,filename, isSubmitCart, isGetPrice);
         });
+
+/*	var data = '';
+	req.on('data', function(chunk){
+		  data += chunk;
+	});
+	 req.on('end', function(){
+        var obj = JSON.parse(data);
+        log("INFO", "In token result"+obj);
+    });	*/
 }
 
 var completeTest = function (state) {
@@ -186,7 +195,7 @@ var prepareCart = function (host, accessToken, username, state, count,filename, 
                             var productId = product.data.productId;
                             var productDescription = product.data.productDescription;
                             var uom = product.data.baseUom;
-                            var requestedUnitPrice = "";
+                            var requestedUnitPrice = 0;
                             if(isGetPrice=="Y"){
                                 request.post({
                                         url: host + '/ls/api/data/query?function=GetPricesForAccountProduct&responseFormat=TableData&maxResults=10',
@@ -203,14 +212,16 @@ var prepareCart = function (host, accessToken, username, state, count,filename, 
                                         }]
                                     },
                                     function (error, postResponse, body) {
+					if('tableData' in body[0]){
 
-                                        var requestedUnit = body[0]["tableData"][0];
-                                        if(requestedUnit["minimumQuantityUom"]=="CS")
-                                        {
-                                            requestedUnitPrice = requestedUnit["netPrice"];
-                                        }else{
-                                            requestedUnitPrice = requestedUnit["eachPrice"];
-                                        }
+ 	                                       var requestedUnit = body[0]["tableData"][0];
+        	                                if(requestedUnit["minimumQuantityUom"]=="CS")
+                	                        {
+                        	                    requestedUnitPrice = requestedUnit["netPrice"];
+                                	        }else{
+                                        	    requestedUnitPrice = requestedUnit["eachPrice"];
+                                       		 }
+					}
                                         lineItem = {
                                             lineItemId: lineItemId,
                                             productId: productId,
