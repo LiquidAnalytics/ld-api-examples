@@ -22,6 +22,17 @@ var createFile = function(filename){
     });
 }
 
+// Create a csv file to store stats for each cart
+var createPriceFile = function(filename){
+    fs.open(filename,"w",0644,function(e,fd){
+        if(e) throw e;
+        fs.write(fd,"time,deviceId,userId,productId, accountId, time to get results, num results, status\n",0,'utf8',function(e){
+            if(e) throw e;
+            fs.closeSync(fd);
+        })
+    });
+}
+
 // Write data to csv file
 var writeInFile = function(filename,data){
     fs.open(filename,"a",0644,function(e,fd){
@@ -75,6 +86,7 @@ var runTest = function (host, community, username, password, count,filename, isS
     console.log("*******************************************\n");
     log("INFO", "Starting test for - "+username+" with host"+host);
     createFile(filename);
+    createPriceFile("price_"+filename);
     globalFilename = filename;
     var req = request.post({ url: host + '/ls/api/oauth2/token',
             form: {'grant_type': 'password',
@@ -208,8 +220,9 @@ var prepareCart = function (host, accessToken, username, state, count,filename, 
                             var requestedUnitPrice = 0;
                             if(isGetPrice=="Y"){
                                 var startPriceTime = Date.now();
-                                var priceFilename = "price_"+globalFilename+".csv";
-                                //writeInFile(priceFilename,LocalTime()+","+","+username+","+productId+","+randomAccount["data"]["accountId"]+",");
+                                var localTime = LocalTime();
+                                var priceFilename = "price_"+globalFilename;
+
                                 request.post({
                                         url: host + '/ls/api/data/query?function=GetPricesForAccountProduct&responseFormat=TableData&maxResults=10',
                                         headers: {
@@ -225,9 +238,10 @@ var prepareCart = function (host, accessToken, username, state, count,filename, 
                                         }]
                                     },
                                     function (error, postResponse, body) {
-
+                                        var pricefilestring = "";
 					                    if('tableData' in body[0]){
-                                            //writeInFile(priceFilename,body[0]["tableData"].length+","+Date.now()-startPriceTime+","+body[0]["status"]);
+                                            pricefilestring =  localTime+","+ body[0]["tableData"].length+","+(Date.now()-startPriceTime)+","+body[0]["status"]+ "\n";
+
  	                                       var requestedUnit = body[0]["tableData"][0];
         	                                if(requestedUnit["minimumQuantityUom"]=="CS")
                 	                        {
@@ -236,8 +250,10 @@ var prepareCart = function (host, accessToken, username, state, count,filename, 
                                         	    requestedUnitPrice = requestedUnit["eachPrice"];
                                        		 }
 					                    }else{
-                                            //writeInFile(priceFilename,0+","+","+Date.now()-startPriceTime+","+body[0]["status"]);
+                                            pricefilestring = localTime+","+0+","+","+(Date.now()-startPriceTime)+","+body[0]["status"]+ "\n";
+
                                         }
+                                        writeInFile(priceFilename,pricefilestring);
                                         lineItem = {
                                             lineItemId: lineItemId,
                                             productId: productId,
@@ -378,7 +394,7 @@ var PassInCommand = function(args){
 }
 
 PassInCommand(process.argv.slice(2));
-//runTest("https://ldcloud-qa.liquidanalytics.com", "Glazers","DAVID.BON@GLAZERS.COM", "F0cus!2@", 3, "record.csv", "Y", "Y", 2, 3);
+
 process.stdin.resume();
 process.on('SIGINT', function() {
     var pid = process.pid;
