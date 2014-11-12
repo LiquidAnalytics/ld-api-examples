@@ -73,7 +73,7 @@ var runTest = function (host, community, username, password, count,filename, isS
     console.log("*******************************************\n");
     console.log("Press ctrl+s to pause, any button to resume.\n");
     console.log("*******************************************\n");
-    log("INFO", "Starting test for "+username+" with host"+host);
+    log("INFO", "Starting test for - "+username+" with host"+host);
     createFile(filename);
     globalFilename = filename;
     var req = request.post({ url: host + '/ls/api/oauth2/token',
@@ -84,7 +84,7 @@ var runTest = function (host, community, username, password, count,filename, isS
                 "password": password,
                 "scope": "community="+community}},
         function (error, postResponse, body) {
-	log("INFO", "In token result"+body+error+postResponse);
+	       log("INFO", "In token result"+body+error+postResponse);
            var resp = JSON.parse(body);
             if (resp["error"] != null) {
                 log("ERROR", "Couldn't authenticate " + body);
@@ -146,7 +146,6 @@ var prepareCart = function (host, accessToken, username, state, count,filename, 
         log("INFO", "Preparing the cart Initiated");
         sleep.sleep(pauseTime*(Math.random() < 0.5 ? -1.15 : 1.15));
         log("INFO", "Preparing the cart Started");
-        filename = globalFilename+count+".csv";
         writeInFile(filename,LocalTime()+",");
         numberofproducts = numOfLineItems;
         request.post({
@@ -185,9 +184,7 @@ var prepareCart = function (host, accessToken, username, state, count,filename, 
                             revisionId: uuid.v1(),
                             action: "Create"
                         }
-                        writeInFile(filename,",");
-                        writeInFile(filename,username+",");
-                        writeInFile(filename,cart.headers.clientId+",");
+                        writeInFile(filename,","+username+","+cart.headers.clientId+",");
                         cart["data"] = {
                             cartId: cart.headers.clientId,
                             accountId: randomAccount["data"]["accountId"],
@@ -358,13 +355,10 @@ var poll = function (host, accessToken, deliveryConfirmations, username, state, 
                         state.totalApplicationTime = state.totalApplicationTime + applicationTime;
                         state.txnSucceeded = state.txnSucceeded + 1;
                         state.totalTime = state.totalTime + (end- start);
-                        writeInFile(filename,pollTime);
-                        writeInFile(filename,item.headers.receiptType+",");
                         var receiptMessage = item.headers.receiptMessage.replace(/\n/g, '-');
-                        writeInFile(filename,receiptMessage+",");
-                        writeInFile(filename,item.headers.state+",");
                         var app_total_time = applicationTime + "," + (end-start) + "\n";
-                        writeInFile(filename,app_total_time);
+
+                        writeInFile(filename,pollTime+item.headers.receiptType+","+receiptMessage+","+item.headers.state+","+app_total_time);
                         console.log("----------------------------------------");
                         prepareCart(host, accessToken, username, state, count,filename, isSubmitCart, isGetPrice, lengthOfDay, numOfLineItems);
                     }
@@ -384,7 +378,7 @@ var PassInCommand = function(args){
 }
 
 PassInCommand(process.argv.slice(2));
-
+//runTest("https://ldcloud-qa.liquidanalytics.com", "Glazers","DAVID.BON@GLAZERS.COM", "F0cus!2@", 3, "record.csv", "Y", "Y", 2, 3);
 process.stdin.resume();
 process.on('SIGINT', function() {
     var pid = process.pid;
