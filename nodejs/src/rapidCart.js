@@ -15,7 +15,7 @@ var fs = require("fs");
 var createFile = function(filename){
     fs.open(filename,"w",0644,function(e,fd){
         if(e) throw e;
-        fs.write(fd,"time,cartId,timeToSubmitMs,timeToPollMs,applicationTimeMs,totalTimeMs\n",0,'utf8',function(e){
+        fs.write(fd,"time,deviceId,userId,cartId,timeToSubmitMs,timeToPollMs,receiptType,receiptMessage,processStatus,applicationTimeMs,totalTimeMs\n",0,'utf8',function(e){
             if(e) throw e;
             fs.closeSync(fd);
         })
@@ -66,12 +66,16 @@ var log = function (level, message) {
 
 }
 
-var runTest = function (host, community, username, password, count,filename, isSubmitCart, isGetPrice) {
+var pauseTime;
+var globalFilename;
+
+var runTest = function (host, community, username, password, count,filename, isSubmitCart, isGetPrice, lengthOfDay, numOfLineItems) {
     console.log("*******************************************\n");
     console.log("Press ctrl+s to pause, any button to resume.\n");
     console.log("*******************************************\n");
     log("INFO", "Starting test for "+username+" with host"+host);
     createFile(filename);
+    globalFilename = filename;
     var req = request.post({ url: host + '/ls/api/oauth2/token',
             form: {'grant_type': 'password',
                 "client_id": "LiquidDecisions",
@@ -98,7 +102,8 @@ var runTest = function (host, community, username, password, count,filename, isS
                 totalTime: 0
             }
             log("INFO", "end test"+accessToken);
-            prepareCart(host, accessToken, username, state, count,filename, isSubmitCart, isGetPrice);
+            pauseTime = (lengthOfDay/count)*60;
+            prepareCart(host, accessToken, username, state, count,filename, isSubmitCart, isGetPrice, lengthOfDay, numOfLineItems);
         });
 
 /*	var data = '';
@@ -132,13 +137,18 @@ var completeTest = function (state) {
 }
 
 
-var prepareCart = function (host, accessToken, username, state, count,filename, isSubmitCart, isGetPrice) {
+var prepareCart = function (host, accessToken, username, state, count,filename, isSubmitCart, isGetPrice, lengthOfDay, numOfLineItems) {
     if (count == 0) {
         completeTest(state);
     }
     else {
-        log("INFO", "Preparing the cart");
-        numberofproducts = 5;
+
+        log("INFO", "Preparing the cart Initiated");
+        sleep.sleep(pauseTime*(Math.random() < 0.5 ? -1.15 : 1.15));
+        log("INFO", "Preparing the cart Started");
+        filename = globalFilename+count+".csv";
+        writeInFile(filename,LocalTime()+",");
+        numberofproducts = numOfLineItems;
         request.post({
                 url: host + '/ls/api/testing/randomItems',
                 headers: {
@@ -175,6 +185,9 @@ var prepareCart = function (host, accessToken, username, state, count,filename, 
                             revisionId: uuid.v1(),
                             action: "Create"
                         }
+                        writeInFile(filename,",");
+                        writeInFile(filename,username+",");
+                        writeInFile(filename,cart.headers.clientId+",");
                         cart["data"] = {
                             cartId: cart.headers.clientId,
                             accountId: randomAccount["data"]["accountId"],
@@ -197,6 +210,9 @@ var prepareCart = function (host, accessToken, username, state, count,filename, 
                             var uom = product.data.baseUom;
                             var requestedUnitPrice = 0;
                             if(isGetPrice=="Y"){
+                                var startPriceTime = Date.now();
+                                var priceFilename = "price_"+globalFilename+".csv";
+                                //writeInFile(priceFilename,LocalTime()+","+","+username+","+productId+","+randomAccount["data"]["accountId"]+",");
                                 request.post({
                                         url: host + '/ls/api/data/query?function=GetPricesForAccountProduct&responseFormat=TableData&maxResults=10',
                                         headers: {
@@ -212,8 +228,9 @@ var prepareCart = function (host, accessToken, username, state, count,filename, 
                                         }]
                                     },
                                     function (error, postResponse, body) {
-					if('tableData' in body[0]){
 
+					                    if('tableData' in body[0]){
+                                            //writeInFile(priceFilename,body[0]["tableData"].length+","+Date.now()-startPriceTime+","+body[0]["status"]);
  	                                       var requestedUnit = body[0]["tableData"][0];
         	                                if(requestedUnit["minimumQuantityUom"]=="CS")
                 	                        {
@@ -221,7 +238,9 @@ var prepareCart = function (host, accessToken, username, state, count,filename, 
                                 	        }else{
                                         	    requestedUnitPrice = requestedUnit["eachPrice"];
                                        		 }
-					}
+					                    }else{
+                                            //writeInFile(priceFilename,0+","+","+Date.now()-startPriceTime+","+body[0]["status"]);
+                                        }
                                         lineItem = {
                                             lineItemId: lineItemId,
                                             productId: productId,
@@ -237,7 +256,7 @@ var prepareCart = function (host, accessToken, username, state, count,filename, 
                                         lineItemId = lineItemId + 1;
 
                                         if(lineItemId==numberofproducts && isSubmitCart=="Y")
-                                            submitCart(host, accessToken, cart, username, state, count, filename, isSubmitCart, isGetPrice);
+                                            submitCart(host, accessToken, cart, username, state, count, filename, isSubmitCart, isGetPrice, lengthOfDay, numOfLineItems);
                                     });
                             }else{
 
@@ -255,7 +274,7 @@ var prepareCart = function (host, accessToken, username, state, count,filename, 
 
                                 lineItemId = lineItemId + 1;
                                 if(lineItemId==numberofproducts && isSubmitCart=="Y")
-                                    submitCart(host, accessToken, cart, username, state, count, filename, isSubmitCart, isGetPrice);
+                                    submitCart(host, accessToken, cart, username, state, count, filename, isSubmitCart, isGetPrice, lengthOfDay, numOfLineItems);
 
                             }
 
@@ -265,13 +284,13 @@ var prepareCart = function (host, accessToken, username, state, count,filename, 
     }
 }
 
-var submitCart = function (host, accessToken, cart, username, state, count,filename, isSubmitCart, isGetPrice) {
+var submitCart = function (host, accessToken, cart, username, state, count,filename, isSubmitCart, isGetPrice, lengthOfDay, numOfLineItems) {
     state.txnAttempted = state.txnAttempted + 1;
     log("INFO", "Submitting a cart " + count);
     var start = Date.now();
     var time_now = LocalTime();
     var cartNo = time_now + "," + count + ",";
-    writeInFile(filename,cartNo);
+
     request.post({
             url: host + '/ls/api/transactions/submit',
             headers: {
@@ -286,17 +305,17 @@ var submitCart = function (host, accessToken, cart, username, state, count,filen
             var submitTime = (end -start) + ",";
             writeInFile(filename,submitTime);
             var deliveryConfirmations = JSON.parse(body);
-            poll(host, accessToken, deliveryConfirmations, username, state, count, 60, start,filename, isSubmitCart, isGetPrice);
+            poll(host, accessToken, deliveryConfirmations, username, state, count, 60, start,filename, isSubmitCart, isGetPrice, lengthOfDay, numOfLineItems);
         })
 
 
 }
 
-var poll = function (host, accessToken, deliveryConfirmations, username, state, count, pollCount, start,filename, isSubmitCart, isGetPrice) {
+var poll = function (host, accessToken, deliveryConfirmations, username, state, count, pollCount, start,filename, isSubmitCart, isGetPrice, lengthOfDay, numOfLineItems) {
     if (pollCount == 0) {
         log("FAIL", "Polling has expired, and we have yet to get our transaction back");
         count = count - 1;
-        prepareCart(host, accessToken, username, state, count, start,filename, isSubmitCart, isGetPrice);
+        prepareCart(host, accessToken, username, state, count, start,filename, isSubmitCart, isGetPrice, lengthOfDay, numOfLineItems);
     }
     else {
         log("INFO", "Polling for transaction " + pollCount);
@@ -304,7 +323,7 @@ var poll = function (host, accessToken, deliveryConfirmations, username, state, 
             log("FAIL", "Failed to submit a cart: " + deliveryConfirmations[0].deliveryReason);
             state.txnAttempted = state.txnFailed + 1;
             count = count - 1;
-            prepareCart(host, accessToken, username, state, count, start,filename, isSubmitCart, isGetPrice);
+            prepareCart(host, accessToken, username, state, count, start,filename, isSubmitCart, isGetPrice, lengthOfDay, numOfLineItems);
         }
         else {
             state.polls = state.polls + 1;
@@ -321,7 +340,7 @@ var poll = function (host, accessToken, deliveryConfirmations, username, state, 
                     var end = Date.now();
                     state.totalPollTime = state.totalPollTime + (end - pollStart);
                     var pollTime = (end - pollStart) + ",";
-                    writeInFile(filename,pollTime);
+
                     count = count - 1;
                     var items = [];
                     if(body!="")
@@ -331,18 +350,23 @@ var poll = function (host, accessToken, deliveryConfirmations, username, state, 
                     if (items.length == 0) {
                         pollCount = pollCount - 1;
                         sleep.sleep(1);
-                        poll(host, accessToken, deliveryConfirmations, username, state, count, pollCount,filename, isSubmitCart, isGetPrice);
+                        poll(host, accessToken, deliveryConfirmations, username, state, count, pollCount,filename, isSubmitCart, isGetPrice, lengthOfDay, numOfLineItems);
                     }
                     else {
                         var item=items[0].item;
-                        var applicationTime = JSON.parse(item.headers.processedAt);
+                        var applicationTime = JSON.parse(item.headers.applicationTime);
                         state.totalApplicationTime = state.totalApplicationTime + applicationTime;
                         state.txnSucceeded = state.txnSucceeded + 1;
                         state.totalTime = state.totalTime + (end- start);
+                        writeInFile(filename,pollTime);
+                        writeInFile(filename,item.headers.receiptType+",");
+                        var receiptMessage = item.headers.receiptMessage.replace(/\n/g, '-');
+                        writeInFile(filename,receiptMessage+",");
+                        writeInFile(filename,item.headers.state+",");
                         var app_total_time = applicationTime + "," + (end-start) + "\n";
                         writeInFile(filename,app_total_time);
                         console.log("----------------------------------------");
-                        prepareCart(host, accessToken, username, state, count,filename, isSubmitCart, isGetPrice);
+                        prepareCart(host, accessToken, username, state, count,filename, isSubmitCart, isGetPrice, lengthOfDay, numOfLineItems);
                     }
 
                 })
@@ -360,7 +384,6 @@ var PassInCommand = function(args){
 }
 
 PassInCommand(process.argv.slice(2));
-
 
 process.stdin.resume();
 process.on('SIGINT', function() {

@@ -6,17 +6,24 @@ HOST=$4
 COMMUNITY=$5
 ISSUBMITCART=$6
 ISGETPRICE=$7
+NUMDEVICES=$8
+LENGTHOFDAY=$9
+NUMBEROFDAYS=$10
+NUMBEROFLINEITEMS=$11
 OLDIFS=$IFS
-COUNT=1
+COUNT=0
 FILENAME="record"
 FILETYPE=".csv"
 IFS=,
 [ ! -f $INPUT ] && { echo "$INPUT file not found"; exit 99; }
-while read username password
-do
-	./rapidCart.js $HOST $COMMUNITY $username $password $CART_NUMBER $FILENAME$COUNT$FILETYPE $ISSUBMITCART $ISGETPRICE &
-	COUNT=$((COUNT+1))
-done < $INPUT
+
+while [ $COUNT -lt NUMDEVICES ]
+    while read username password
+    do
+        ./rapidCart.js $HOST $COMMUNITY $username $password $CART_NUMBER $FILENAME$COUNT$FILETYPE $ISSUBMITCART $ISGETPRICE $LENGTHOFDAY NUMBEROFLINEITEMS$&
+        COUNT=$((COUNT+1))
+    done < $INPUT
+done
 IFS=$OLDIFS
 wait
 REPLACE="*"
