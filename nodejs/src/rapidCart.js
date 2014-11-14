@@ -22,17 +22,6 @@ var createFile = function(filename){
     });
 }
 
-// Create a csv file to store stats for each cart
-var createPriceFile = function(filename){
-    fs.open(filename,"w",0644,function(e,fd){
-        if(e) throw e;
-        fs.write(fd,"time,deviceId,userId,productId, accountId, time to get results, num results, status\n",0,'utf8',function(e){
-            if(e) throw e;
-            fs.closeSync(fd);
-        })
-    });
-}
-
 // Write data to csv file
 var writeInFile = function(filename,data){
     fs.open(filename,"a",0644,function(e,fd){
@@ -80,13 +69,12 @@ var log = function (level, message) {
 var pauseTime;
 var globalFilename;
 
-var runTest = function (host, community, username, password, count,filename, isSubmitCart, isGetPrice, lengthOfDay, numOfLineItems) {
+var runTest = function (host, community, username, password, count,filename, isSubmitCart, isGetPrice, lengthOfDay, numOfLineItems,numDevices) {
     console.log("*******************************************\n");
     console.log("Press ctrl+s to pause, any button to resume.\n");
     console.log("*******************************************\n");
     log("INFO", "Starting test for - "+username+" with host"+host);
-    createFile(filename);
-    createPriceFile("price_"+filename);
+    //createFile(filename);
     globalFilename = filename;
     var req = request.post({ url: host + '/ls/api/oauth2/token',
             form: {'grant_type': 'password',
@@ -96,8 +84,8 @@ var runTest = function (host, community, username, password, count,filename, isS
                 "password": password,
                 "scope": "community="+community}},
         function (error, postResponse, body) {
-	       log("INFO", "In token result"+body+error+postResponse);
-           var resp = JSON.parse(body);
+            log("INFO", "In token result"+body+error+postResponse);
+            var resp = JSON.parse(body);
             if (resp["error"] != null) {
                 log("ERROR", "Couldn't authenticate " + body);
                 process.exit(1);
@@ -118,14 +106,14 @@ var runTest = function (host, community, username, password, count,filename, isS
             prepareCart(host, accessToken, username, state, count,filename, isSubmitCart, isGetPrice, lengthOfDay, numOfLineItems);
         });
 
-/*	var data = '';
-	req.on('data', function(chunk){
-		  data += chunk;
-	});
-	 req.on('end', function(){
-        var obj = JSON.parse(data);
-        log("INFO", "In token result"+obj);
-    });	*/
+    /*	var data = '';
+     req.on('data', function(chunk){
+     data += chunk;
+     });
+     req.on('end', function(){
+     var obj = JSON.parse(data);
+     log("INFO", "In token result"+obj);
+     });	*/
 }
 
 var completeTest = function (state) {
@@ -155,9 +143,9 @@ var prepareCart = function (host, accessToken, username, state, count,filename, 
     }
     else {
 
-        log("INFO", "Preparing the cart Initiated");
+        log("INFO", "Preparing the cart Initiated"+pauseTime);
         sleep.sleep(pauseTime*(Math.random() < 0.5 ? -1.15 : 1.15));
-        log("INFO", "Preparing the cart Started");
+        log("INFO", "Preparing the cart Started"+numOfLineItems);
         writeInFile(filename,LocalTime()+",");
         numberofproducts = numOfLineItems;
         request.post({
@@ -239,19 +227,17 @@ var prepareCart = function (host, accessToken, username, state, count,filename, 
                                     },
                                     function (error, postResponse, body) {
                                         var pricefilestring = "";
-					                    if('tableData' in body[0]){
-                                            pricefilestring =  localTime+","+ body[0]["tableData"].length+","+(Date.now()-startPriceTime)+","+body[0]["status"]+ "\n";
-
- 	                                       var requestedUnit = body[0]["tableData"][0];
-        	                                if(requestedUnit["minimumQuantityUom"]=="CS")
-                	                        {
-                        	                    requestedUnitPrice = requestedUnit["netPrice"];
-                                	        }else{
-                                        	    requestedUnitPrice = requestedUnit["eachPrice"];
-                                       		 }
-					                    }else{
-                                            pricefilestring = localTime+","+0+","+","+(Date.now()-startPriceTime)+","+body[0]["status"]+ "\n";
-
+                                        if('tableData' in body[0]){
+                                            pricefilestring =  localTime+","+","+username+","+productId+","+randomAccount["data"]["accountId"]+","+(Date.now()-startPriceTime)+","+ body[0]["tableData"].length+","+body[0]["status"]+ "\n";
+                                            var requestedUnit = body[0]["tableData"][0];
+                                            if(requestedUnit["minimumQuantityUom"]=="CS")
+                                            {
+                                                requestedUnitPrice = requestedUnit["netPrice"];
+                                            }else{
+                                                requestedUnitPrice = requestedUnit["eachPrice"];
+                                            }
+                                        }else{
+                                            pricefilestring = localTime+","+","+username+","+productId+","+randomAccount["data"]["accountId"]+","+(Date.now()-startPriceTime)+","+ 0+","+body[0]["status"]+ "\n";
                                         }
                                         writeInFile(priceFilename,pricefilestring);
                                         lineItem = {
@@ -390,7 +376,7 @@ var poll = function (host, accessToken, deliveryConfirmations, username, state, 
 
 // Pass in arguments
 var PassInCommand = function(args){
-    runTest(args[0],args[1],args[2],args[3],args[4],args[5],args[6],args[7],args[8],args[9],args[10]);
+    runTest(args[0],args[1],args[2],args[3],args[4],args[5],args[6],args[7],args[8],args[9],args[10],args[11]);
 }
 
 PassInCommand(process.argv.slice(2));
