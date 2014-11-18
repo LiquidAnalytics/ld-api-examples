@@ -60,7 +60,7 @@ var runTest = function (host, community, username, password) {
     request.post({ url: host + '/ls/api/oauth2/token',
             timeout: timeout,
             form: {'grant_type': 'password',
-                "client_id": process.env.CLIENT_ID,
+                "client_id": "LiquidDecisions",
                 "client_secret": process.env.CLIENT_SECRET,
                 "username": username,
                 "password": password,
@@ -235,6 +235,50 @@ var sync = function (host, accessToken, community, itemCount, count, logger) {
                 //logger.warn("> 5000", body);
             }
             if (items.length > 0) {
+                var manifestRecordList = []
+
+            items.forEach(function (item, index) {
+
+                if('schema' in item)
+                {
+                    manifestRecord = {
+                        category: item.schema.category,
+                        type: item.schema.type,
+                        id: "",
+                        revisionId: ""
+                    }
+                }else{
+                    manifestRecord = {
+                        category:  item.headers.category,
+                        type:   item.headers.type,
+                        id: item.headers.id,
+                        revisionId: item.headers.revisionId
+                    }
+                }
+                manifestRecordList.push(manifestRecord);
+            });
+                request.post({
+                        url: host + '/ls/api/sync/3.0/verifyChanges',
+                        timeout: timeout,
+                        headers: {
+                            'Authorization': 'Bearer ' + accessToken,
+                            'content-type': 'application/json'
+                        },
+                        body: JSON.stringify( manifestRecordList)
+                    },
+                    function (error, postResponse, body) {
+                        logger.info("Parsing Verify changes body");
+                        try
+                        {
+                            var state = JSON.parse(body);
+                            logger.info("Verify State"+state);
+                        }
+                        catch(parseError)
+                        {
+                            logger.error(parseError);
+
+                        }
+                    })
                 logger.info("Pretending to process items...");
                // sleep.sleep(10);
                 sync(host, accessToken, community, itemCount, count + items.length, logger);
@@ -261,6 +305,7 @@ var PassInCommand = function (args) {
 };
 
 PassInCommand(process.argv.slice(2));
+
 
 
 process.stdin.resume();
