@@ -287,13 +287,24 @@ var sync = function (host, accessToken, community, itemCount, count, logger) {
                         }
                     })
                 logger.info("Pretending to process items...");
-               // sleep.sleep(10);
+               sleep.sleep(10);
                 sync(host, accessToken, community, itemCount, count + items.length, logger);
             }
             else {
                 var end=new Date();
                 var totalTimeMins=(end.getTime()-start.getTime())/1000/60;
-                logger.info("Registration completed in "+totalTimeMins+" mins");
+
+                if(totalTimeMins<15)
+                {
+                    logger.info("Total time is "+totalTimeMins+" Re-sync started");
+                    sleep.sleep(60);
+                    sync(host, accessToken, community, itemCount, count + items.length, logger);
+
+                }else{
+                    logger.info("Registration completed in "+totalTimeMins+" mins");
+                    sleep.sleep(5);
+                    process.exit(0)
+                }
                 /**
                  * If totalTimeMins<=15 mins {
                  * 	sleep(60 seconds)
@@ -305,8 +316,7 @@ var sync = function (host, accessToken, community, itemCount, count, logger) {
                  * }
                  */
                
-                sleep.sleep(5);
-                process.exit(0)
+
             }
 
 
@@ -322,7 +332,9 @@ var PassInCommand = function (args) {
     //}
 };
 
-PassInCommand(process.argv.slice(2));
+//PassInCommand(process.argv.slice(2));
+
+runTest("https://ldcloud-dev.liquidanalytics.com", "GLAZERS","DAVID.BON@GLAZERS.COM", "Mobileapp1");
 
 process.stdin.resume();
 process.on('SIGINT', function () {
