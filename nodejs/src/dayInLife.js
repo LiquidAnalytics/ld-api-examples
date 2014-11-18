@@ -261,9 +261,6 @@ var sync = function (host, accessToken, community, itemCount, count, logger) {
                         id: item.item.headers.id,
                         revisionId: item.item.headers.revisionId
                     }
-                }else{
-                    logger.info("Items *** :" + item);
-
                 }
                 manifestRecordList.push(manifestRecord);
             });
@@ -315,8 +312,6 @@ var PassInCommand = function (args) {
 };
 
 PassInCommand(process.argv.slice(2));
-
-
 
 process.stdin.resume();
 process.on('SIGINT', function () {
