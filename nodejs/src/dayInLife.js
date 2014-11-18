@@ -247,13 +247,23 @@ var sync = function (host, accessToken, community, itemCount, count, logger) {
                         id: "",
                         revisionId: ""
                     }
-                }else{
+                }else if('headers' in item){
                     manifestRecord = {
                         category:  item.headers.category,
                         type:   item.headers.type,
                         id: item.headers.id,
                         revisionId: item.headers.revisionId
                     }
+                }else if('item' in item && 'headers' in item.item){
+                    manifestRecord = {
+                        category:  item.item.headers.category,
+                        type:   item.item.headers.type,
+                        id: item.item.headers.id,
+                        revisionId: item.item.headers.revisionId
+                    }
+                }else{
+                    logger.info("Items *** :" + item);
+
                 }
                 manifestRecordList.push(manifestRecord);
             });
@@ -264,14 +274,14 @@ var sync = function (host, accessToken, community, itemCount, count, logger) {
                             'Authorization': 'Bearer ' + accessToken,
                             'content-type': 'application/json'
                         },
-                        body: JSON.stringify( manifestRecordList)
+                        body: JSON.stringify( manifestRecordList )
                     },
                     function (error, postResponse, body) {
                         logger.info("Parsing Verify changes body");
                         try
                         {
                             var state = JSON.parse(body);
-                            logger.info("Verify State"+state);
+                            logger.info("Verify State"+body);
                         }
                         catch(parseError)
                         {
