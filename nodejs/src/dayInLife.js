@@ -293,6 +293,7 @@ var sync = function (host, accessToken, community, itemCount, count, logger) {
             else {
                 var end=new Date();
                 var totalTimeMins=(end.getTime()-start.getTime())/1000/60;
+                logger.info("Registration completed in "+totalTimeMins+" mins");
                 /**
                  * If totalTimeMins<=15 mins {
                  * 	sleep(60 seconds)
@@ -303,7 +304,7 @@ var sync = function (host, accessToken, community, itemCount, count, logger) {
                  * Do what it does today
                  * }
                  */
-                logger.info("Registration completed in "+totalTimeMins+" mins");
+               
                 sleep.sleep(5);
                 process.exit(0)
             }
