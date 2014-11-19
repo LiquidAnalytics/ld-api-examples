@@ -15,6 +15,8 @@ var log4js = require("log4js");
 
 var timeout = 120000;
 
+var end=0;
+
 
 // Convert UTC to current time zone
 var LocalTime = function () {
@@ -215,7 +217,7 @@ var sync = function (host, accessToken, community, itemCount, count, logger) {
                 "requestId": uuid.v1(),
                 "count": 5000,
                 "community": community,
-                "weight": 500000
+                "weight": 250000
             }
         },
         function (error, postResponse, body) {
@@ -234,8 +236,11 @@ var sync = function (host, accessToken, community, itemCount, count, logger) {
             if (items.length > 5000) {
                 //logger.warn("> 5000", body);
             }
+
+            var manifestRecordList = []
+
             if (items.length > 0) {
-                var manifestRecordList = []
+
 
             items.forEach(function (item, index) {
 
@@ -287,16 +292,41 @@ var sync = function (host, accessToken, community, itemCount, count, logger) {
                         }
                     })
                 logger.info("Pretending to process items...");
-               sleep.sleep(10);
+                sleep.sleep(30);
                 sync(host, accessToken, community, itemCount, count + items.length, logger);
             }
             else {
-                var end=new Date();
+               if(end==0)
+                   end=new Date();
                 var totalTimeMins=(end.getTime()-start.getTime())/1000/60;
-
-                if(totalTimeMins<15)
+                var totalTimePostCompleteMins=(new Date().getTime()-end)/1000/60;
+                if(totalTimePostCompleteMins<15)
                 {
-                    logger.info("Total time is "+totalTimeMins+" Re-sync started");
+                    logger.info("Total time from start is "+totalTimeMins+" and from end is "+totalTimePostCompleteMins+" Re-sync started");
+
+                    request.post({
+                            url: host + '/ls/api/sync/3.0/verifyChanges',
+                            timeout: timeout,
+                            headers: {
+                                'Authorization': 'Bearer ' + accessToken,
+                                'content-type': 'application/json'
+                            },
+                            body: JSON.stringify( manifestRecordList )
+                        },
+                        function (error, postResponse, body) {
+                            logger.info("Parsing Verify changes body");
+                            try
+                            {
+                                var state = JSON.parse(body);
+                                logger.info("Verify State"+body);
+                            }
+                            catch(parseError)
+                            {
+                                logger.error(parseError);
+
+                            }
+                        })
+
                     sleep.sleep(60);
                     sync(host, accessToken, community, itemCount, count + items.length, logger);
 
@@ -305,17 +335,6 @@ var sync = function (host, accessToken, community, itemCount, count, logger) {
                     sleep.sleep(5);
                     process.exit(0)
                 }
-                /**
-                 * If totalTimeMins<=15 mins {
-                 * 	sleep(60 seconds)
-                 * 	 sync(host, accessToken, community, itemCount, count + items.length, logger);
-                 * }
-                 * else
-                 * {
-                 * Do what it does today
-                 * }
-                 */
-               
 
             }
 
@@ -332,9 +351,7 @@ var PassInCommand = function (args) {
     //}
 };
 
-//PassInCommand(process.argv.slice(2));
-
-runTest("https://ldcloud-dev.liquidanalytics.com", "GLAZERS","DAVID.BON@GLAZERS.COM", "Mobileapp1");
+PassInCommand(process.argv.slice(2));
 
 process.stdin.resume();
 process.on('SIGINT', function () {
