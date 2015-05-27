@@ -6,6 +6,7 @@ COMMUNITY=$4
 
 for i in `seq 1 ${COUNT}`
 do
+    echo 'Run'
     sh ./runDayInLife.sh ${USERLIST} ${COUNT} ${HOST} ${COMMUNITY} &
     sleep 5
 done

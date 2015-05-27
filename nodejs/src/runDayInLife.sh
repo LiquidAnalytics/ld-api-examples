@@ -12,7 +12,8 @@ START=$(date +%s)
 
 while read username password
 do
-    nodejs ./dayInLife.js ${HOST} ${COMMUNITY} $username $password
+    echo 'Day run'
+    ./dayInLife.js ${HOST} ${COMMUNITY} $username $password & 
 done < $USERLIST
 
 IFS=$OLDIFS
