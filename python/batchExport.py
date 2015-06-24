@@ -11,14 +11,13 @@ parser.add_option("-i", "--clientId", dest="clientId", type="string", action="st
 parser.add_option("-s", "--clientSecret", dest="clientSecret", type="string", action="store", help="OAuth2 client_secret issued by Liquid Decisions")
 parser.add_option("-d", "--hostUrl", dest="hostUrl", type="string", action="store", help="LD Host URL")
 
-parser.add_option("-E", "--notificationEmail", dest="notificationEmail", type="string", action="store", help="The email that is to be notified of job progress")
+parser.add_option("-e", "--notificationEmail", dest="notificationEmail", type="string", action="store", help="The email that is to be notified of job progress")
 parser.add_option("-J", "--jobName", dest="jobName", type="string", action="store", help="The name to ")
-parser.add_option("-C", "--contentType", dest="contentType", type="string", action="store", help="The type of file being uploaded")
 parser.add_option("-I", "--itemType", dest="itemType", type="string", action="store", help="The item type thats being imported")
-parser.add_option("-F", "--file", dest="file", type="string",action="store",help="The location of the file being uploaded")
-parser.add_option("-T", "--template", dest="template", type="string",action="store",help="The location of the teamplate being uploaded")
-parser.add_option("-M", "--merge", dest="merge", type="string",action="store",help="Merge files")
-parser.add_option("-H", "--headers", dest="header", type="string",action="store",help="CSV file contains a header row")
+parser.add_option("-q", "--query", dest="sqlQuery", type="string",action="store",help="The SQL Query used to export the requested items")
+parser.add_option("-C", "--contentType", dest="contentType", type="string", action="store", help="The type of file being uploaded")
+parser.add_option("-t", "--template", dest="template", type="string",action="store",help="The location of the teamplate being uploaded")
+
 
 (options, args) = parser.parse_args()
 
@@ -34,17 +33,24 @@ accessInfo = json.loads(resp.text)
 accessToken = accessInfo['access_token']
 print accessToken
 
-files = {'file': (options.file, open(options.file, 'rb'), options.contentType, {'Expires': '0'}),
-         'template': (options.template, open(options.template, 'rb'), 'application/json', {'Expires': '0'})}
+template = ''
+if options.template: 
+       with open (options.template, "r") as myfile:
+              template=myfile.read()
+
+filters = 0
+#filters = {"column1":"value1","column2":"value2"}
 
 parameters = {
 		'notificationEmail': options.notificationEmail, 
 		'jobName': options.jobName,
-		'contentType':options.contentType,
 		'itemType':options.itemType,
-              'merge':options.merge,
-              'headerRow':options.header}
+		'sqlQuery':options.sqlQuery,
+              'contentType':options.contentType,
+              'filters':str(filters),
+              'template':template}
 
-resp = requests.post(options.hostUrl + '/ls/api/batch/import'.format(options.community), headers={'Authorization':'Bearer ' + accessToken}, files=files, data=parameters)
+resp = requests.post(options.hostUrl + '/ls/api/batch/export'.format(options.community), headers={'Authorization':'Bearer ' + accessToken}, data=parameters)
+
 print resp.text
 
