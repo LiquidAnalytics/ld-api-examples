@@ -1,4 +1,5 @@
-#! /usr/bin/nodejs
+#!/usr/bin/env node
+
 /**
  * Created by liquid on 5/15/14.
  *
@@ -144,7 +145,7 @@ var prepareCart = function (host, accessToken, username, state, count,filename, 
     else {
 
         log("INFO", "Preparing the cart Initiated"+pauseTime);
-        sleep.sleep(pauseTime*(Math.random() < 0.5 ? -1.15 : 1.15));
+        sleep.sleep(pauseTime);
         log("INFO", "Preparing the cart Started"+numOfLineItems);
         writeInFile(filename,LocalTime()+",");
         numberofproducts = numOfLineItems;
@@ -191,6 +192,7 @@ var prepareCart = function (host, accessToken, username, state, count,filename, 
                             name: cart.headers.clientId,
                             processStatus: "/Workflow/processStatus[Submit]",
                             processType: "/Workflow/cartType[Order]/processType[ZBTO]",
+                            cartType: "/Workflow/cartType[Order]",
                             userId: username,
                             combineForInvoice: true,
                             lineItems: []
