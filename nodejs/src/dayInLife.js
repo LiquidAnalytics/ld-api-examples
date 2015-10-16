@@ -48,7 +48,7 @@ var start=null;
 
 var runTest = function (host, community, username, password) {
     start=new Date();
-    var deviceId = "TEST-" + uuid.v1();
+    var deviceId = "TEST-" + uuid.v1().toUpperCase();
     var hardwareName=username+"'s Test harness";
     var hardwareId="TEST-"+uuid.v1();
    // log4js.clearAppenders();
