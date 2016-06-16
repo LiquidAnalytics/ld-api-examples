@@ -112,7 +112,6 @@ typedef void (^__nullable SynchronousRequestBlock)(NSError *__nullable error, id
 -(void) manifestReadyWithCount:(int)count;
 -(void) logoutWithMessage:(NSString *__nullable)authenticationMessage;
 -(void) reset;
--(void) loadServerURLs;
 -(void) loginAsUserListReceived:(NSArray *__nullable)loginAsUserList;
 -(void) loginAsUserSelected:(NSString *__nullable)loginAsUserId;
 -(void) switchLoginAsUser;

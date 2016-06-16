@@ -25,9 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.debugLabel.text = @"";
-    
-    NSUserDefaults *defs = [NSUserDefaults standardUserDefaults];
-    self.serverLabel.text = [NSString stringWithFormat:@"LD Host: %@",[defs valueForKey:@"seasideServerHost"]];
+    self.serverLabel.text = [[LDMDataManager sharedInstance] retrieveServerURL];
     
     if([LSCSyncController sharedInstance].loginToken){
         self.loginButton.enabled = NO;
@@ -94,6 +92,7 @@
 
 - (void) registered
 {
+    self.loginButton.enabled = NO;
     
     //you are now registered, some basic code to show all contact IDs
     //please see documentation / other tutorials for proper / advanced ways to retrieve items
