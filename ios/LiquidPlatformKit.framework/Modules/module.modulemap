@@ -1,0 +1,10 @@
+framework module LiquidPlatformKit {
+  umbrella header "LiquidPlatformKit.h"
+
+  export *
+  module * { export * }
+}
+
+module LiquidPlatformKit.Swift {
+    header "LiquidPlatformKit-Swift.h"
+}
