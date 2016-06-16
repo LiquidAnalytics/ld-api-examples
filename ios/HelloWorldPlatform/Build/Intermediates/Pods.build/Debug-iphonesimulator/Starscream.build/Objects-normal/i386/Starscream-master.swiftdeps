@@ -1,6 +1,0 @@
-version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
-options: "61c720b87d0510b7236d2d3e34ce07ef"
-build_time: [519357584, 600247000]
-inputs:
-  "/Users/carsonli/LiquidDev/ld-api-examples/ios/HelloWorldPlatform/Pods/Starscream/SSLSecurity.swift": [519351419, 0]
-  "/Users/carsonli/LiquidDev/ld-api-examples/ios/HelloWorldPlatform/Pods/Starscream/WebSocket.swift": [519351419, 0]

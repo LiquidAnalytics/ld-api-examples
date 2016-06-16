@@ -1,6 +1,0 @@
-framework module yajl {
-  umbrella header "yajl-umbrella.h"
-
-  export *
-  module * { export * }
-}
