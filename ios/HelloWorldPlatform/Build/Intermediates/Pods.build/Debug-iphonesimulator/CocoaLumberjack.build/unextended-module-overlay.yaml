@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/carsonli/LiquidDev/ld-api-examples/ios/HelloWorldPlatform/Build/Products/Debug-iphonesimulator/CocoaLumberjack.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/carsonli/LiquidDev/ld-api-examples/ios/HelloWorldPlatform/Build/Intermediates/Pods.build/Debug-iphonesimulator/CocoaLumberjack.build/unextended-module.modulemap',
+    }]
+  }]
+}
