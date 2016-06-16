@@ -1,0 +1,8 @@
+#ios related
+ios/HelloWorldPlatform/Build/*
+DerivedData/
+xcuserdata/
+
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
