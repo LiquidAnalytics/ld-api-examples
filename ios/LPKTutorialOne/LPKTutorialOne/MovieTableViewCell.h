@@ -10,4 +10,8 @@
 
 @interface MovieTableViewCell : UITableViewCell
 
+@property (weak) IBOutlet UILabel* nameLabel;
+@property (weak) IBOutlet UILabel* descriptionLabel;
+@property (weak) IBOutlet UILabel* ratingLabel;
+
 @end

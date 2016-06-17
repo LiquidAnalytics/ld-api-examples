@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		373232D71D14804B002D7385 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 373232D61D14804B002D7385 /* EventKit.framework */; };
+		373232D91D148051002D7385 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 373232D81D148051002D7385 /* MobileCoreServices.framework */; };
+		373232DB1D148055002D7385 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 373232DA1D148055002D7385 /* QuartzCore.framework */; };
+		373232DD1D14805A002D7385 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 373232DC1D14805A002D7385 /* CoreGraphics.framework */; };
+		373232DF1D14805F002D7385 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 373232DE1D14805F002D7385 /* UIKit.framework */; };
+		373232E11D148067002D7385 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 373232E01D148067002D7385 /* Foundation.framework */; };
+		373232E51D14875C002D7385 /* LiquidPlatformKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 373232E21D148717002D7385 /* LiquidPlatformKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		373232E91D149217002D7385 /* MovieDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 373232E81D149217002D7385 /* MovieDetailViewController.m */; };
+		375A16331D145EC200498949 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A16321D145EC200498949 /* main.m */; };
+		375A16361D145EC200498949 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A16351D145EC200498949 /* AppDelegate.m */; };
+		375A16391D145EC200498949 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A16381D145EC200498949 /* ViewController.m */; };
+		375A163C1D145EC200498949 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375A163A1D145EC200498949 /* Main.storyboard */; };
+		375A163E1D145EC200498949 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 375A163D1D145EC200498949 /* Assets.xcassets */; };
+		375A16411D145EC200498949 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375A163F1D145EC200498949 /* LaunchScreen.storyboard */; };
+		37A5A2631D1479420088DE40 /* MovieTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A5A2621D1479420088DE40 /* MovieTableViewCell.m */; };
+		37A5A2661D14796E0088DE40 /* MovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A5A2651D14796E0088DE40 /* MovieViewController.m */; };
+		37E6A65A1D1463690066E095 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 37E6A6591D1463690066E095 /* Settings.bundle */; };
+		3D742D7F3DFE96E9F715212B /* Pods_LPKTutorialOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A484821874B5A6E28CFDAEE /* Pods_LPKTutorialOne.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		373232E61D14875C002D7385 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				373232E51D14875C002D7385 /* LiquidPlatformKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		190DFA1CFA1DE8BDAE9EA4B4 /* Pods-LPKTutorialOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LPKTutorialOne.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LPKTutorialOne/Pods-LPKTutorialOne.debug.xcconfig"; sourceTree = "<group>"; };
+		373232D61D14804B002D7385 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		373232D81D148051002D7385 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		373232DA1D148055002D7385 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		373232DC1D14805A002D7385 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		373232DE1D14805F002D7385 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		373232E01D148067002D7385 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		373232E21D148717002D7385 /* LiquidPlatformKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LiquidPlatformKit.framework; sourceTree = "<group>"; };
+		373232E71D149217002D7385 /* MovieDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieDetailViewController.h; sourceTree = "<group>"; };
+		373232E81D149217002D7385 /* MovieDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieDetailViewController.m; sourceTree = "<group>"; };
+		375A162E1D145EC200498949 /* LPKTutorialOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LPKTutorialOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		375A16321D145EC200498949 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		375A16341D145EC200498949 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		375A16351D145EC200498949 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		375A16371D145EC200498949 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		375A16381D145EC200498949 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		375A163B1D145EC200498949 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		375A163D1D145EC200498949 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		375A16401D145EC200498949 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		375A16421D145EC200498949 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37A5A2611D1479420088DE40 /* MovieTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieTableViewCell.h; sourceTree = "<group>"; };
+		37A5A2621D1479420088DE40 /* MovieTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieTableViewCell.m; sourceTree = "<group>"; };
+		37A5A2641D14796E0088DE40 /* MovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieViewController.h; sourceTree = "<group>"; };
+		37A5A2651D14796E0088DE40 /* MovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieViewController.m; sourceTree = "<group>"; };
+		37E6A6591D1463690066E095 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = LPKTutorialOne/Settings.bundle; sourceTree = "<group>"; };
+		3A484821874B5A6E28CFDAEE /* Pods_LPKTutorialOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LPKTutorialOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2CB91C26A73CEF991F62EB5 /* Pods-LPKTutorialOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LPKTutorialOne.release.xcconfig"; path = "Pods/Target Support Files/Pods-LPKTutorialOne/Pods-LPKTutorialOne.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		375A162B1D145EC200498949 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				373232E11D148067002D7385 /* Foundation.framework in Frameworks */,
+				373232DF1D14805F002D7385 /* UIKit.framework in Frameworks */,
+				373232DD1D14805A002D7385 /* CoreGraphics.framework in Frameworks */,
+				373232DB1D148055002D7385 /* QuartzCore.framework in Frameworks */,
+				373232D91D148051002D7385 /* MobileCoreServices.framework in Frameworks */,
+				373232D71D14804B002D7385 /* EventKit.framework in Frameworks */,
+				3D742D7F3DFE96E9F715212B /* Pods_LPKTutorialOne.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05B03ED10EAEFD553EB5E122 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				190DFA1CFA1DE8BDAE9EA4B4 /* Pods-LPKTutorialOne.debug.xcconfig */,
+				F2CB91C26A73CEF991F62EB5 /* Pods-LPKTutorialOne.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		375A16251D145EC200498949 = {
+			isa = PBXGroup;
+			children = (
+				373232E21D148717002D7385 /* LiquidPlatformKit.framework */,
+				37E6A6591D1463690066E095 /* Settings.bundle */,
+				375A16301D145EC200498949 /* LPKTutorialOne */,
+				375A162F1D145EC200498949 /* Products */,
+				05B03ED10EAEFD553EB5E122 /* Pods */,
+				4CCDE1AF2DC54CD9042BF71F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		375A162F1D145EC200498949 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				375A162E1D145EC200498949 /* LPKTutorialOne.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		375A16301D145EC200498949 /* LPKTutorialOne */ = {
+			isa = PBXGroup;
+			children = (
+				375A16341D145EC200498949 /* AppDelegate.h */,
+				375A16351D145EC200498949 /* AppDelegate.m */,
+				375A16371D145EC200498949 /* ViewController.h */,
+				375A16381D145EC200498949 /* ViewController.m */,
+				37A5A2641D14796E0088DE40 /* MovieViewController.h */,
+				37A5A2651D14796E0088DE40 /* MovieViewController.m */,
+				373232E71D149217002D7385 /* MovieDetailViewController.h */,
+				373232E81D149217002D7385 /* MovieDetailViewController.m */,
+				37A5A2611D1479420088DE40 /* MovieTableViewCell.h */,
+				37A5A2621D1479420088DE40 /* MovieTableViewCell.m */,
+				375A163A1D145EC200498949 /* Main.storyboard */,
+				375A163D1D145EC200498949 /* Assets.xcassets */,
+				375A163F1D145EC200498949 /* LaunchScreen.storyboard */,
+				375A16421D145EC200498949 /* Info.plist */,
+				375A16311D145EC200498949 /* Supporting Files */,
+			);
+			path = LPKTutorialOne;
+			sourceTree = "<group>";
+		};
+		375A16311D145EC200498949 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				375A16321D145EC200498949 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4CCDE1AF2DC54CD9042BF71F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				373232E01D148067002D7385 /* Foundation.framework */,
+				373232DE1D14805F002D7385 /* UIKit.framework */,
+				373232DC1D14805A002D7385 /* CoreGraphics.framework */,
+				373232DA1D148055002D7385 /* QuartzCore.framework */,
+				373232D81D148051002D7385 /* MobileCoreServices.framework */,
+				373232D61D14804B002D7385 /* EventKit.framework */,
+				3A484821874B5A6E28CFDAEE /* Pods_LPKTutorialOne.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		375A162D1D145EC200498949 /* LPKTutorialOne */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 375A16451D145EC200498949 /* Build configuration list for PBXNativeTarget "LPKTutorialOne" */;
+			buildPhases = (
+				C2A5D060AF20351AA135A502 /* Check Pods Manifest.lock */,
+				375A162A1D145EC200498949 /* Sources */,
+				375A162B1D145EC200498949 /* Frameworks */,
+				375A162C1D145EC200498949 /* Resources */,
+				8A4262F570DA8592BEAE304D /* Embed Pods Frameworks */,
+				6786A1DCC4195397C2283CE0 /* Copy Pods Resources */,
+				373232E61D14875C002D7385 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LPKTutorialOne;
+			productName = LPKTutorialOne;
+			productReference = 375A162E1D145EC200498949 /* LPKTutorialOne.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		375A16261D145EC200498949 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Liquid Analytics";
+				TargetAttributes = {
+					375A162D1D145EC200498949 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 375A16291D145EC200498949 /* Build configuration list for PBXProject "LPKTutorialOne" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 375A16251D145EC200498949;
+			productRefGroup = 375A162F1D145EC200498949 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				375A162D1D145EC200498949 /* LPKTutorialOne */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		375A162C1D145EC200498949 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37E6A65A1D1463690066E095 /* Settings.bundle in Resources */,
+				375A16411D145EC200498949 /* LaunchScreen.storyboard in Resources */,
+				375A163E1D145EC200498949 /* Assets.xcassets in Resources */,
+				375A163C1D145EC200498949 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6786A1DCC4195397C2283CE0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LPKTutorialOne/Pods-LPKTutorialOne-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A4262F570DA8592BEAE304D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LPKTutorialOne/Pods-LPKTutorialOne-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2A5D060AF20351AA135A502 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		375A162A1D145EC200498949 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				373232E91D149217002D7385 /* MovieDetailViewController.m in Sources */,
+				375A16391D145EC200498949 /* ViewController.m in Sources */,
+				37A5A2661D14796E0088DE40 /* MovieViewController.m in Sources */,
+				375A16361D145EC200498949 /* AppDelegate.m in Sources */,
+				37A5A2631D1479420088DE40 /* MovieTableViewCell.m in Sources */,
+				375A16331D145EC200498949 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		375A163A1D145EC200498949 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				375A163B1D145EC200498949 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		375A163F1D145EC200498949 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				375A16401D145EC200498949 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		375A16431D145EC200498949 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		375A16441D145EC200498949 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		375A16461D145EC200498949 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 190DFA1CFA1DE8BDAE9EA4B4 /* Pods-LPKTutorialOne.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = LPKTutorialOne/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liquidanalytics.LPKTutorialOne;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		375A16471D145EC200498949 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2CB91C26A73CEF991F62EB5 /* Pods-LPKTutorialOne.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = LPKTutorialOne/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liquidanalytics.LPKTutorialOne;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		375A16291D145EC200498949 /* Build configuration list for PBXProject "LPKTutorialOne" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				375A16431D145EC200498949 /* Debug */,
+				375A16441D145EC200498949 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		375A16451D145EC200498949 /* Build configuration list for PBXNativeTarget "LPKTutorialOne" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				375A16461D145EC200498949 /* Debug */,
+				375A16471D145EC200498949 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 375A16261D145EC200498949 /* Project object */;
+}

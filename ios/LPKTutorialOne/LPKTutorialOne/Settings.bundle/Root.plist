@@ -56,6 +56,34 @@
 			<key>MaximumValueImage</key>
 			<string></string>
 		</dict>
+        <dict>
+            <key>AutocapitalizationType</key>
+            <string>None</string>
+            <key>AutocorrectionType</key>
+            <string>No</string>
+            <key>Type</key>
+            <string>PSTextFieldSpecifier</string>
+            <key>DefaultValue</key>
+            <string>https://ldcloud-dev.liquidanalytics.com</string>
+            <key>Title</key>
+            <string>Hostname</string>
+            <key>KeyboardType</key>
+            <string>URL</string>
+            <key>Key</key>
+            <string>seasideServerHost</string>
+        </dict>
+        <dict>
+            <key>Type</key>
+            <string>PSTextFieldSpecifier</string>
+            <key>Title</key>
+            <string>Port</string>
+            <key>DefaultValue</key>
+            <string>443</string>
+            <key>KeyboardType</key>
+            <string>NumbersAndPunctuation</string>
+            <key>Key</key>
+            <string>seasideServerPort</string>
+        </dict>
 	</array>
 </dict>
 </plist>

@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <LiquidPlatformKit/LDMItem.h>
 
 @interface MovieDetailViewController : UIViewController
+
+@property (strong) LDMItem *movie;
+@property (strong) LDMItem *myRating;
 
 @end

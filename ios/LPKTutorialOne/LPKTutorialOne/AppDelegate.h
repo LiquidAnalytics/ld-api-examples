@@ -1,5 +1,5 @@
 //
-//  MovieViewController.h
+//  AppDelegate.h
 //  LPKTutorialOne
 //
 //  Created by CARSON LI on 2016-06-17.
@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MovieViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
+
+@property (strong, nonatomic) UIWindow *window;
+
 
 @end
+

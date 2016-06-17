@@ -7,8 +7,16 @@
 //
 
 #import "MovieDetailViewController.h"
+#import <LiquidPlatformKit/LDMDataManager.h>
+#import <LiquidPlatformKit/LDMDataManager+Client.h>
+#import <LiquidPlatformKit/LDMDataManager+UserExtensions.h>
+#import <LiquidPlatformKit/LDMItem.h>
 
 @interface MovieDetailViewController ()
+
+@property (weak) IBOutlet UITextField *nameField;
+@property (weak) IBOutlet UITextView *descriptionTextView;
+@property (weak) IBOutlet UITextField *ratingTextField;
 
 @end
 
@@ -16,22 +24,54 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.nameField.text = [self.movie valueForKey:@"name"];
+    self.descriptionTextView.text = [self.movie valueForKey:@"description"];
+ 
+    if (self.myRating)
+        self.ratingTextField.text = [NSString stringWithFormat:@"%@",[self.myRating valueForKey:@"value"]];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(IBAction)saveButtonPressed:(id)sender
+{
+    [self.movie setValue:self.nameField.text forKey:@"name"];
+    [self.movie setValue:self.descriptionTextView.text forKey:@"description"];
+    
+    if (self.ratingTextField.text.length != 0)
+    {
+        if (self.myRating)
+        {
+            [self.myRating setValue:self.ratingTextField.text forKey:@"value"];
+            [[LDMDataManager sharedInstance] transactCreateOrUpdateWithItem:self.myRating withCompletionHandler:nil];
+        }
+        else
+        {
+            LDMItem *newRating = [[LDMDataManager sharedInstance] itemInstanceForTypeName:@"Rating"];
+            LDMItem *user = [[LDMDataManager sharedInstance] getUser];
+            [newRating setValue:[LDMItem generateId] forKey:@"ratingId"];
+            [newRating setValue:[user valueForKey:@"userId"] forKey:@"userId"];
+            [newRating setValue:[self.movie valueForKey:@"movieId"] forKey:@"movieId"];
+            [newRating setValue:self.ratingTextField.text forKey:@"value"];
+            [[LDMDataManager sharedInstance] transactCreateOrUpdateWithItem:newRating withCompletionHandler:nil];
+        }
+    }
+    
+    [[LDMDataManager sharedInstance] transactCreateOrUpdateWithItem:self.movie withCompletionHandler:^(BOOL success) {
+        [self.navigationController popViewControllerAnimated:YES];
+    }];
 }
-*/
+
+-(IBAction)deleteButtonPressed:(id)sender
+{
+    NSArray *items = self.myRating == nil ? @[self.movie] : @[self.movie, self.myRating];
+    [[LDMDataManager sharedInstance] transactDeleteWithItems:items withCompletionHandler:^(BOOL success) {
+        [self.navigationController popViewControllerAnimated:YES];
+    }];
+}
 
 @end

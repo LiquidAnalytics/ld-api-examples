@@ -1,5 +1,5 @@
 //
-//  MovieViewController.h
+//  ViewController.h
 //  LPKTutorialOne
 //
 //  Created by CARSON LI on 2016-06-17.
@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <LiquidPlatformKit/LSCSyncController.h>
 
-@interface MovieViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface ViewController : UIViewController <LSCSeasideApplicationDelegate>
+
 
 @end
+
