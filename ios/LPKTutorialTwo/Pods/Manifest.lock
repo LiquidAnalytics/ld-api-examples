@@ -1,0 +1,107 @@
+PODS:
+  - 1PasswordExtension (1.6)
+  - ASIHTTPRequest (1.8.1):
+    - ASIHTTPRequest/ASIWebPageRequest (= 1.8.1)
+    - ASIHTTPRequest/CloudFiles (= 1.8.1)
+    - ASIHTTPRequest/Core (= 1.8.1)
+    - ASIHTTPRequest/S3 (= 1.8.1)
+  - ASIHTTPRequest/ASIWebPageRequest (1.8.1):
+    - ASIHTTPRequest/Core
+  - ASIHTTPRequest/CloudFiles (1.8.1):
+    - ASIHTTPRequest/Core
+  - ASIHTTPRequest/Core (1.8.1):
+    - Reachability
+  - ASIHTTPRequest/S3 (1.8.1):
+    - ASIHTTPRequest/Core
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - CocoaLumberjack (2.3.0):
+    - CocoaLumberjack/Default (= 2.3.0)
+    - CocoaLumberjack/Extensions (= 2.3.0)
+  - CocoaLumberjack/Core (2.3.0)
+  - CocoaLumberjack/Default (2.3.0):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.3.0):
+    - CocoaLumberjack/Default
+  - CorePlot (1.6)
+  - DraggableCollectionView (0.1)
+  - DTCoreText (1.6.9):
+    - DTFoundation/Core (~> 1.6.0)
+    - DTFoundation/DTHTMLParser (~> 1.6.0)
+    - DTFoundation/UIKit (~> 1.6.0)
+  - DTFoundation/Core (1.6.3)
+  - DTFoundation/DTHTMLParser (1.6.3):
+    - DTFoundation/Core
+  - DTFoundation/UIKit (1.6.3):
+    - DTFoundation/Core
+  - FMDB (2.4):
+    - FMDB/standard (= 2.4)
+  - FMDB/common (2.4)
+  - FMDB/standard (2.4):
+    - FMDB/common
+  - MTLocation (0.9)
+  - PEGKit (0.4.2)
+  - PLCrashReporter (1.2-rc4)
+  - RBBAnimation (0.3.0)
+  - Reachability (3.1.1)
+  - SDCAutoLayout (2.0)
+  - SSPullToRefresh (1.2.0)
+  - Starscream (1.0.2)
+  - yajl (1.0.12)
+  - yajl-objc (0.2.27):
+    - yajl (~> 1.0.11)
+
+DEPENDENCIES:
+  - 1PasswordExtension (= 1.6)
+  - ASIHTTPRequest (= 1.8.1)
+  - BlocksKit (= 2.2.5)
+  - CocoaLumberjack (= 2.3.0)
+  - CorePlot (= 1.6)
+  - DraggableCollectionView (= 0.1)
+  - DTCoreText (= 1.6.9)
+  - FMDB (= 2.4)
+  - MTLocation (= 0.9)
+  - PEGKit
+  - PLCrashReporter (= 1.2-rc4)
+  - RBBAnimation (= 0.3.0)
+  - Reachability (= 3.1.1)
+  - SDCAutoLayout (= 2.0)
+  - SSPullToRefresh (= 1.2.0)
+  - Starscream (= 1.0.2)
+  - yajl-objc
+
+SPEC CHECKSUMS:
+  1PasswordExtension: 846c1497815c8b5dcf2828bc843d21d04f07138f
+  ASIHTTPRequest: bf4f9b8be3526d40865d045bb664e0bab246fb81
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  CocoaLumberjack: 97fab7ee5f507fe54445cca7ea80f926729cfd15
+  CorePlot: 820901f6c147f2d84549ffa1f0902869f980d74d
+  DraggableCollectionView: 532307b72e1a6e6a32289ed5f5c8ac20bdad06ff
+  DTCoreText: bc2050ef42d7d2fca8e7190b2e6a6e5be19eb5c0
+  DTFoundation: ed464197055591116ba84902085e8fe89a5c4492
+  FMDB: d274d9ff773415735022ac57bfba9f6002f9fed8
+  MTLocation: d441a68bf8392b28ec1c8278a177371c4f6ab863
+  PEGKit: 9563952b2f19f5f0c979ecf635c8410369bfe3e9
+  PLCrashReporter: f58456bd67fb047716298edbb1f8bbb6521873de
+  RBBAnimation: cb6cb419f511434ce932f7d0fabf369612fafb4e
+  Reachability: dd9aa4fb6667b9f787690a74f53cb7634ce99893
+  SDCAutoLayout: 47994f083476796616e4a6b39cad14a69df630b4
+  SSPullToRefresh: d32c6af9cfcfbc737265cd9ff8848c29c1aa5b5d
+  Starscream: 40e2c4c1c770d811f24116b8b7dbeb4542c56767
+  yajl: e435f86f7429fe047dff3314608fb775defd8e09
+  yajl-objc: fe4ce4868434a4661fb446ba4400162ab48310cd
+
+COCOAPODS: 0.39.0
