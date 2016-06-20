@@ -122,23 +122,23 @@
     if ([segue.identifier isEqualToString:@"showMovieDetailSegue"])
     {
         
-        MovieDetailViewController* destionationVC = [segue destinationViewController];
+        MovieDetailViewController* destinationVC = [segue destinationViewController];
         UITableViewCell* cell = (UITableViewCell*) sender;
         NSIndexPath *indexPath = [self.movieTableView indexPathForCell:cell];
         LDMItem *movie = self.movies[indexPath.row];
         LDMItem *rating = self.ratings[[movie valueForKey:@"movieId"]];
         
         if (rating)
-            destionationVC.myRating = rating;
+            destinationVC.myRating = rating;
         
-        destionationVC.movie = movie;
+        destinationVC.movie = movie;
     }
     else if ([segue.identifier isEqualToString:@"createMovieSegue"])
     {
-        MovieDetailViewController* destionationVC = [segue destinationViewController];
+        MovieDetailViewController* destinationVC = [segue destinationViewController];
         LDMItem *newMovie = [[LDMDataManager sharedInstance] itemInstanceForTypeName:@"Movie"];
         [newMovie setValue:[LDMItem generateId] forKey:@"movieId"];
-        destionationVC.movie = newMovie;
+        destinationVC.movie = newMovie;
     }
 }
 

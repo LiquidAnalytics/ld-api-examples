@@ -159,16 +159,16 @@
 {
     if ([segue.identifier isEqualToString:@"showMovieDetailSegue"])
     {
-        MovieDetailViewController* destionationVC = [segue destinationViewController];
-        destionationVC.myRating = self.selectedRating;
-        destionationVC.movie = self.selectedMovie;
+        MovieDetailViewController* destinationVC = [segue destinationViewController];
+        destinationVC.myRating = self.selectedRating;
+        destinationVC.movie = self.selectedMovie;
     }
     else if ([segue.identifier isEqualToString:@"createMovieSegue"])
     {
-        MovieDetailViewController* destionationVC = [segue destinationViewController];
+        MovieDetailViewController* destinationVC = [segue destinationViewController];
         LDMItem *newMovie = [[LDMDataManager sharedInstance] itemInstanceForTypeName:@"Movie"];
         [newMovie setValue:[LDMItem generateId] forKey:@"movieId"];
-        destionationVC.movie = newMovie;
+        destinationVC.movie = newMovie;
     }
 }
 
