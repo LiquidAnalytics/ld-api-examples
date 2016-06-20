@@ -81,7 +81,7 @@
     }
     
     [[LSCSyncController sharedInstance] requestSyncWithCompletionHandler:^(BOOL syncSucceeded) {
-        NSLog(@"Sync was succesful: %s", syncSucceeded ? "YES":"NO");
+        NSLog(@"Sync was successful: %s", syncSucceeded ? "YES":"NO");
     }];
 }
 
