@@ -7,8 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import <LiquidPlatformKit/LSCSyncController.h>
-#import <LiquidPlatformKit/LDMDataManager.h>
 #import <LiquidPlatformKit/LDCLogging.h>
 #import <LiquidPlatformKit/LDCDBSeasideLogWriter.h>
 
