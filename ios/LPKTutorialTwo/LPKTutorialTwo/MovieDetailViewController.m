@@ -79,11 +79,6 @@
     
 }
 
--(IBAction)changeCategory:(id)sender
-{
-    
-}
-
 -(IBAction)saveButtonPressed:(id)sender
 {
     [self.movie setValue:self.nameField.text forKey:@"name"];
