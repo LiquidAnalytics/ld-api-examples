@@ -19,8 +19,6 @@
 #import <LiquidPlatformKit/LDMQueryFilter.h>
 #import <LiquidPlatformKit/LDMQueryFilterClause.h>
 #import <LiquidPlatformKit/LDMFilter.h>
-#import <LiquidPlatformKit/LDCInfoViewController.h>
-#import <LiquidPlatformKit/LDKInfoDelegateDatasource.h>
 #import <LiquidPlatformKit/LRPopoverManager.h>
 
 @interface MovieViewController ()
@@ -29,15 +27,11 @@
 @property (weak) IBOutlet UITextField *passwordField;
 @property (weak) IBOutlet UILabel *infoLabel;
 @property (weak) IBOutlet UISearchBar *searchBar;
-@property (weak) IBOutlet UIButton *infoButton;
 
 @property (strong) LDMSearchResults *movies;
 @property (strong) LDMItem *selectedMovie;
 @property (strong) LDMItem *selectedRating;
 @property (strong) NSString *searchTerm;
-
-@property (strong, nonatomic) LDCInfoViewController *infoViewController;
-@property (strong, nonatomic) LDKInfoDelegateDatasource *infoViewDelegateDatasource;
 
 @end
 
@@ -192,32 +186,6 @@
     dispatch_async(dispatch_get_main_queue(), ^{
         [self.movieTableView reloadData];
     });
-}
-
--(IBAction)infoButtonPressed:(id)sender
-{
-    LRPopoverManager *popoverManager = [LRPopoverManager sharedManager];
-    
-    if (popoverManager.currentPopoverController.popoverVisible)
-    {
-        [popoverManager.currentPopoverController dismissPopoverAnimated:YES];
-        return;
-    }
-    
-    if (!self.infoViewController)
-    {
-        NSString* const frameworkBundleID  = @"com.liquidanalytics.com.LiquidPlatformKit";
-        NSBundle* bundle = [NSBundle bundleWithIdentifier:frameworkBundleID];
-        self.infoViewController = [[LDCInfoViewController alloc] initWithNibName:@"LDCInfoViewController" bundle:bundle];
-        self.infoViewDelegateDatasource = [[LDKInfoDelegateDatasource alloc] init];
-        self.infoViewController.datasource = self.infoViewDelegateDatasource;
-        self.infoViewController.delegate = self.infoViewDelegateDatasource;
-        self.infoViewDelegateDatasource.disabledPopoverItemOptions = DisableNone;
-    }
-    
-    UIPopoverController *popoverController = [[UIPopoverController alloc] initWithContentViewController:self.infoViewController];
-    [popoverController presentPopoverFromRect:self.infoButton.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
-    [popoverManager setCurrentPopoverController:popoverController];
 }
 
 

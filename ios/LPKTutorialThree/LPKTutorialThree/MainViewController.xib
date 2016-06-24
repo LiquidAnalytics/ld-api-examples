@@ -13,6 +13,7 @@
                 <outlet property="itemMultiSelectSwitch" destination="hqQ-0a-Av5" id="alI-h7-qgk"/>
                 <outlet property="itemSelectDemoButton" destination="Ovu-Lh-itj" id="8IM-BB-q4e"/>
                 <outlet property="menuButton" destination="5UY-zf-BOf" id="Qhl-aL-Sxh"/>
+                <outlet property="notificationDemoButton" destination="QEL-wa-5Ij" id="XEs-oc-qfP"/>
                 <outlet property="scanDemoButton" destination="5dM-On-e2r" id="WQY-Qj-Acr"/>
                 <outlet property="sigDemoButton" destination="wBv-zI-r9d" id="4gH-Va-vJR"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -141,6 +142,20 @@
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Demo of LPK Scannning Capabilities, brings up device camera and attempts to scan supported barcodes" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bx2-X5-P0f">
                     <rect key="frame" x="198" y="606" width="807" height="51"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QEL-wa-5Ij">
+                    <rect key="frame" x="33" y="677" width="178" height="30"/>
+                    <state key="normal" title="NSNotification Extensions"/>
+                    <connections>
+                        <action selector="notificationDemoButtonPressed:" destination="-1" eventType="touchUpInside" id="1kj-te-eTf"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iMd-Ch-6Tf">
+                    <rect key="frame" x="248" y="677" width="752" height="51"/>
+                    <string key="text">See how you can see NotificationCenter to work with items.  You can add observers to one item, or an item type. This demo will use the item selector to pick an item. Afterwards edit the item in MC and watch the callback.</string>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>

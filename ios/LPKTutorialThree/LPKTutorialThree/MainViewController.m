@@ -36,6 +36,7 @@
 @property (weak) IBOutlet UIButton *emailDemoButton;
 @property (weak) IBOutlet UIButton *webPreviewButton;
 @property (weak) IBOutlet UIButton *functionResultsDemoButton;
+@property (weak) IBOutlet UIButton *notificationDemoButton;
 @property (weak) IBOutlet UIButton *scanDemoButton;
 
 @property (weak) IBOutlet UIButton *menuButton;
@@ -54,6 +55,9 @@
 
 @property (strong) LDMSearchResults *searchResults;
 @property (strong) LDMFunction *functionItem;
+@property (strong) LDMItem *itemToObserve;
+
+@property id itemObserver;
 
 @end
 
@@ -183,7 +187,6 @@
         }];
         
     }];
-    
 }
 
 
@@ -221,6 +224,44 @@
         self.captureViewController.modalPresentationStyle = UIModalPresentationFormSheet;
     }
     [self presentViewController:self.captureViewController animated:YES completion:nil];
+}
+
+
+-(IBAction)notificationDemoButtonPressed:(id)sender
+{
+    if (self.itemSelectWrapper == nil){
+        self.itemSelectViewController = [[LDKItemSelectViewController alloc] initWithItemsOfType:@"Movie" withQueryFilter:nil online:NO];
+        self.itemSelectWrapper = [[UINavigationController alloc]
+                                  initWithRootViewController:self.itemSelectViewController];
+        [self.itemSelectWrapper setModalPresentationStyle:UIModalPresentationPageSheet];
+    }
+    
+    __weak MainViewController *this = self;
+    self.itemSelectViewController.multiSelectEnabled = NO;
+    
+    //after you select an item, go to MC and change it, the items will be handled in the observer callback
+    
+    [self.itemSelectViewController setDidSelectItem:^(LDKItemSelectViewController * _Nonnull vc, LDMItem * _Nullable result) {
+        [this.itemSelectWrapper dismissViewControllerAnimated:YES completion:nil];
+        this.itemToObserve = result;
+        [this setupObserver];
+    }];
+    
+    [self presentViewController:self.itemSelectWrapper animated:YES completion:nil];
+
+}
+
+- (void) setupObserver
+{
+    self.itemObserver = [[NSNotificationCenter defaultCenter] addObserverForItem:self.itemToObserve usingBlock:^(LDMItem * _Nullable aItem) {
+        if (aItem)
+        {
+            [self.itemToObserve copyHeaderAndDataFromItem:aItem];
+            NSLog(@"item is updated!: %@", self.itemToObserve);
+        }
+        else
+            NSLog(@"item has been deleted!");
+    }];
 }
 
 - (void)captureViewControllerDidCancel:(LDKCaptureViewController *)viewController
