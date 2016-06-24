@@ -52,6 +52,30 @@
 		<data>
 		4AtVCscZQc8xg4RnE+76gJ7wYdc=
 		</data>
+		<key>Connection-None.png</key>
+		<data>
+		Q5xApaKL3zYkHBDsVP9ALdolmu0=
+		</data>
+		<key>Connection-None@2x.png</key>
+		<data>
+		n+F8+dfUhxvWTssBtBNMwzlr5OA=
+		</data>
+		<key>Connection-Strong.png</key>
+		<data>
+		JQAESxojLWXHrcR+OiEPhz1gTyg=
+		</data>
+		<key>Connection-Strong@2x.png</key>
+		<data>
+		8rBrBZukMm3OFAU/qhWxIP1rV1M=
+		</data>
+		<key>Connection-Weak.png</key>
+		<data>
+		A7f8bz2s8L2TfQRCxho2zvJFqcs=
+		</data>
+		<key>Connection-Weak@2x.png</key>
+		<data>
+		9LH8/Rmdb9KfyVx8EiWlZYB9Lac=
+		</data>
 		<key>DecisionsLogo-Registration.png</key>
 		<data>
 		kZFu3n3hyR7h5NIw4O2tIdfnLgA=
@@ -135,6 +159,10 @@
 		<key>Globe-light-Green.png</key>
 		<data>
 		sI1HvESTC1Pq4H5ff7CZE97FTvE=
+		</data>
+		<key>HamburgerMenu-48x48@2x.png</key>
+		<data>
+		vuizYAuOurpTosdOqrwGeJOmlqg=
 		</data>
 		<key>Headers/CustomBadge.h</key>
 		<data>
@@ -1630,7 +1658,7 @@
 		</data>
 		<key>LDKMenuBarViewController.nib</key>
 		<data>
-		pH8fmUI9FMaJLmP/Um10aeBNKxM=
+		0owpMusW3eXNfmxyV4KJs1n/I4E=
 		</data>
 		<key>LDKMessageSenderPopoverViewController.nib</key>
 		<data>
@@ -1740,6 +1768,26 @@
 		<data>
 		YSVTQeq6WKwYcH+qj8iAU0P1ZcY=
 		</data>
+		<key>NavArrow-Left-Disabled-48x48@2x.png</key>
+		<data>
+		/oj4q8EiuGUngTT8RdWCzH2xxsE=
+		</data>
+		<key>NavArrow-Left-Enabled-48x48@2x.png</key>
+		<data>
+		I4hbxIJCNSuOMD8nHTDO1uADjpU=
+		</data>
+		<key>NavArrow-Right-Disabled-48x48@2x.png</key>
+		<data>
+		I/IGguogAX1VQ4h3rTm3b8a0bkI=
+		</data>
+		<key>NavArrow-Right-Enabled-48x48@2x.png</key>
+		<data>
+		ZgKD8q9u4OjHfCo0C7Vt0LIyLkE=
+		</data>
+		<key>Navigate-48x48@2x.png</key>
+		<data>
+		EYPCX6VfSuvE5yzkB6B02wSyvzw=
+		</data>
 		<key>Page-Green.png</key>
 		<data>
 		nAnjWVoXt0c20lz/x3N5ce4eHV0=
@@ -1755,6 +1803,10 @@
 		<key>Pods.release.xcconfig</key>
 		<data>
 		dSoPTAxKUR/nXot4OoY+wtIoQkw=
+		</data>
+		<key>Search-48x48@2x.png</key>
+		<data>
+		CG6PdYeaQlJyRkjnfkorHVQEouc=
 		</data>
 		<key>UISearchBarBackground.png</key>
 		<data>
@@ -2279,6 +2331,72 @@
 			9pdafnz3qHNa0xiVKDeyIf9HghRXmVT9LWgKmodPsps=
 			</data>
 		</dict>
+		<key>Connection-None.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q5xApaKL3zYkHBDsVP9ALdolmu0=
+			</data>
+			<key>hash2</key>
+			<data>
+			4ao1pUYWDZPv1tvxXjcpTxMkkFQWmOuDdG+PzIUcifI=
+			</data>
+		</dict>
+		<key>Connection-None@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			n+F8+dfUhxvWTssBtBNMwzlr5OA=
+			</data>
+			<key>hash2</key>
+			<data>
+			hKFIPHjp4v7XL4lzhbIgy09UCaoF5WnsFvnLVFAxzHw=
+			</data>
+		</dict>
+		<key>Connection-Strong.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JQAESxojLWXHrcR+OiEPhz1gTyg=
+			</data>
+			<key>hash2</key>
+			<data>
+			LbWi9MODDNj4XCHx2k3E+ZfyCAqGFsJUXk0Gy8bqirk=
+			</data>
+		</dict>
+		<key>Connection-Strong@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8rBrBZukMm3OFAU/qhWxIP1rV1M=
+			</data>
+			<key>hash2</key>
+			<data>
+			5qjqiAtInc1trsU5wI/p+0dOaIrAt7/06cWOlvERLdI=
+			</data>
+		</dict>
+		<key>Connection-Weak.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			A7f8bz2s8L2TfQRCxho2zvJFqcs=
+			</data>
+			<key>hash2</key>
+			<data>
+			l48PHWRjWMhYTn8CwR9MlCjJdHYX0A1IV+nx8BgO/H0=
+			</data>
+		</dict>
+		<key>Connection-Weak@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9LH8/Rmdb9KfyVx8EiWlZYB9Lac=
+			</data>
+			<key>hash2</key>
+			<data>
+			60BjUCWEzOx77Ad6/rcUp+lEMGKHUYQdzdAuOJ2w9Eg=
+			</data>
+		</dict>
 		<key>DecisionsLogo-Registration.png</key>
 		<dict>
 			<key>hash</key>
@@ -2508,6 +2626,17 @@
 			<key>hash2</key>
 			<data>
 			dmNxDtvK/05wq7TKIH1qrGtm0wtWA5LkSyWpjz9RJVw=
+			</data>
+		</dict>
+		<key>HamburgerMenu-48x48@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vuizYAuOurpTosdOqrwGeJOmlqg=
+			</data>
+			<key>hash2</key>
+			<data>
+			4o3vvTZx30qjjmtDiPjU/Q42GSwxC2S1Avb2dT2V/+g=
 			</data>
 		</dict>
 		<key>Headers/CustomBadge.h</key>
@@ -6617,11 +6746,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pH8fmUI9FMaJLmP/Um10aeBNKxM=
+			0owpMusW3eXNfmxyV4KJs1n/I4E=
 			</data>
 			<key>hash2</key>
 			<data>
-			NnprAZdhjiac28+a5kpZ7jXzgI7W+h4wZO+kOD3S0GI=
+			fC3DC+/WemSN9kravnH7k2PZfZximy5t04UtOqG7vZI=
 			</data>
 		</dict>
 		<key>LDKMessageSenderPopoverViewController.nib</key>
@@ -6921,6 +7050,61 @@
 			VqOzNvK0Fr9iwnhM+p2zYx/T5eexvQ2HfmFcuY010FI=
 			</data>
 		</dict>
+		<key>NavArrow-Left-Disabled-48x48@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/oj4q8EiuGUngTT8RdWCzH2xxsE=
+			</data>
+			<key>hash2</key>
+			<data>
+			KLIPH1iwDUsF3IC1lTjHbCrFn3fcsHnA6SgCrTgWjQU=
+			</data>
+		</dict>
+		<key>NavArrow-Left-Enabled-48x48@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			I4hbxIJCNSuOMD8nHTDO1uADjpU=
+			</data>
+			<key>hash2</key>
+			<data>
+			dcp8mfOpNKlOM3KWHrM+XCw3a3Z8Ysn1NxFSV0BRe+c=
+			</data>
+		</dict>
+		<key>NavArrow-Right-Disabled-48x48@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			I/IGguogAX1VQ4h3rTm3b8a0bkI=
+			</data>
+			<key>hash2</key>
+			<data>
+			Jh1s7UPGdqrgVO2oKTuYZxHTRLaIjWcca8Cl/S3vPbg=
+			</data>
+		</dict>
+		<key>NavArrow-Right-Enabled-48x48@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZgKD8q9u4OjHfCo0C7Vt0LIyLkE=
+			</data>
+			<key>hash2</key>
+			<data>
+			x8ENHZotT4R9z422TJHOsj0rMSlYMb38iIuSB74l958=
+			</data>
+		</dict>
+		<key>Navigate-48x48@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EYPCX6VfSuvE5yzkB6B02wSyvzw=
+			</data>
+			<key>hash2</key>
+			<data>
+			XA6gdMXUJS6ed9vlnjy1huFY/5Os80of6u6hjDe1nN4=
+			</data>
+		</dict>
 		<key>Page-Green.png</key>
 		<dict>
 			<key>hash</key>
@@ -6963,6 +7147,17 @@
 			<key>hash2</key>
 			<data>
 			5CFh1FeqGY2h13oRJobjXs27n/feP2pKqVGJQrXJQo4=
+			</data>
+		</dict>
+		<key>Search-48x48@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CG6PdYeaQlJyRkjnfkorHVQEouc=
+			</data>
+			<key>hash2</key>
+			<data>
+			2GLWYo595LIHnVR4vRIj+4Avt0h7wpZG8zpSy074698=
 			</data>
 		</dict>
 		<key>UISearchBarBackground.png</key>
