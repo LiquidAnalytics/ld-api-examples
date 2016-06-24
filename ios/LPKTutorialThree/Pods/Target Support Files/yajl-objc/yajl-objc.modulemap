@@ -1,0 +1,6 @@
+framework module yajl_objc {
+  umbrella header "yajl-objc-umbrella.h"
+
+  export *
+  module * { export * }
+}
