@@ -1538,7 +1538,7 @@
 		</data>
 		<key>LDCLoginCommunitySelectionViewController.nib</key>
 		<data>
-		ajZEZ35YZrQD7+TwIJGqRWBaAys=
+		kO7oBZ0fprSM/4axpSXfxhEafNk=
 		</data>
 		<key>LDCLoginCustomCommunityCell.nib</key>
 		<data>
@@ -1658,7 +1658,7 @@
 		</data>
 		<key>LDKMenuBarViewController.nib</key>
 		<data>
-		0owpMusW3eXNfmxyV4KJs1n/I4E=
+		dHrUSLYdLgn5YonMXi3X1dWLttc=
 		</data>
 		<key>LDKMessageSenderPopoverViewController.nib</key>
 		<data>
@@ -6416,11 +6416,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ajZEZ35YZrQD7+TwIJGqRWBaAys=
+			kO7oBZ0fprSM/4axpSXfxhEafNk=
 			</data>
 			<key>hash2</key>
 			<data>
-			u5cU1XFTs++YgUtbAbe4tM4brp+xX2lEkoC9vr7oiIY=
+			ZV1lB2LdRB87tMk3qgl1MaZP7wT5oRzYHlgVqY6Y068=
 			</data>
 		</dict>
 		<key>LDCLoginCustomCommunityCell.nib</key>
@@ -6746,11 +6746,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0owpMusW3eXNfmxyV4KJs1n/I4E=
+			dHrUSLYdLgn5YonMXi3X1dWLttc=
 			</data>
 			<key>hash2</key>
 			<data>
-			fC3DC+/WemSN9kravnH7k2PZfZximy5t04UtOqG7vZI=
+			4pRUv5ONX+3m8aPSd7TowrEU9QnqDCXgmuZ77kdjx1k=
 			</data>
 		</dict>
 		<key>LDKMessageSenderPopoverViewController.nib</key>
