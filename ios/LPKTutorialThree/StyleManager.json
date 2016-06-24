@@ -1,0 +1,200 @@
+{
+	"type" : "styleManager",
+    
+    /*
+     Default Fonts and Colors
+     */
+    
+	"defaultFontName" : "HelveticaNeue-Light",
+	"defaultFontSize" : "17",
+	"defaultColor" : "0x2e61bb",
+    
+    "defaultBoldFontName" : "HelveticaNeue-Bold",
+    "defaultBoldFontSize" : "17",
+    
+    /*
+     Global Fonts and Colors
+     (Used by Apperance API)
+     */
+    
+    "defaultModalHeaderColor": "0x4d6166",
+    "defaultTableViewSeparatorColor": "0xdddce0",
+    
+    "appleTintColor": "0x007AFF",
+    
+    "globalSearchBarTintColor" : "#58595B",
+    "globalButtonBarTintColor" : "#3399FF",
+    
+    "labelFont" : "defaultFont",
+	"labelFontSize" : "17",
+	"labelFontColor" : "0x00",
+    
+	"buttonFont" : "HelveticaNeue-Bold",
+	"buttonFontSize" : "15",
+	"buttonFontColor" : "0x00",
+    
+    "navigationBarFont" : "defaultFont",
+	"navigationBarFontSize" : "20",
+	"navigationBarFontColor" : "0x00",
+    
+	"segmentedControlFont" : "defaultFont",
+	"segmentedControlFontSize" : "15",
+	"segmentedControlFontColor" : "0x00",
+   
+    
+    /* -- Standard Styling -- */
+    /* Colors */
+    "LDKStandardColorRed" : "0xff2a3a",
+    "LDKStandardColorOrange" : "0xc7c7cc",
+    "LDKStandardColorBlack" : "0x000000",
+    "LDKStandardColorWhite" : "0xFFFFFF",
+    "LDKStandardColorDarkGray" : "0x898c90",
+    "LDKStandardColorLightGray" : "0xc7c7cc",
+    "LDKStandardColorGreen" : "0x0bd318",
+    "LDKStandardColorLightGreen" : "0xe0f8d8",
+    "LDKStandardColorBlue" : "0x007aff",
+    "LDKStandardColorLightBlue" : "0xd1eefc",
+    /* Fonts */
+    "LDKStandardFontLight" : "HelveticaNeue-Light",
+    "LDKStandardFontLightSize" : "17",
+    "LDKStandardFontHeavy" : "HelveticaNeue-Bold",
+    "LDKStandardFontHeavySize" : "17",
+    "LDKStandardFontCondensedBold" : "HelveticaNeue-CondensedBold",
+    "LDKStandardFontCondensedBoldSize" : "17",
+    "LDKStandardHeaderFontLight" : "HelveticaNeue-Light",
+    "LDKStandardHeaderFontLightSize" : "26",
+    "LDKStandardSubHeaderFontLight" : "HelveticaNeue-Light",
+    "LDKStandardSubHeaderFontLightSize" : "18",
+    "LDKStandardKeypadFont" : "HelveticaNeue-Light",
+    "LDKStandardKeypadFontSize" : "29",
+    "LDKStandardHeaderFontLightSmall" : "HelveticaNeue-Light",
+    "LDKStandardHeaderFontLightSmallSize" : "20",
+    
+    /* -- Standard Styling -- */
+    "TableViewSectionHeaderBackgroundColor": "0x4497f9",
+    
+    "LoginCommunityViewVerifyEmailFont" : "HelveticaNeue-BoldItalic",
+    "LoginCommunityViewVerifyEmailFontSize" : "24",
+    "LoginCommunityViewVerifyEmailFontColor": "0x50AA05",
+    
+    "LoginCommunityViewNameLabelFont" : "defaultFont",
+    "LoginCommunityViewNameLabelFontSize" : "32",
+    "LoginCommunityViewNameLabelFontColor": "0x414141",
+    
+    "LoginCommunityViewEmailTextColor": "0x035d1d",
+    "LoginCommunityViewBackgroundColor": "0xa6c7b0",
+    
+    "LoginCommunityCellHeaderFont": "defaultFont",
+    "LoginCommunityCellHeaderFontSize": "20",
+    "LoginCommunityCellHeaderFontColor": "0x414141",
+    
+    "LoginCommunityCellCommunityNameFont": "HelveticaNeue-Bold",
+    "LoginCommunityCellCommunityNameFontSize": "14",
+    "LoginCommunityCellCommunityNameFontColor": "0x1697DF",
+    
+    "LoginWelcomeViewPasswordMatchFont" : "HelveticaNeue-Bold",
+    "LoginWelcomeViewPasswordMatchFontSize" : "13",
+    "LoginWelcomeViewPasswordMismatchColor": "0xD71C24",
+    "LoginWelcomeViewPasswordMatchColor": "0x50AA05",
+    
+    "LoginViewTitleFont" : "HelveticaNeue-Bold",
+    "LoginViewTitleFontSize" : "17",
+    "LoginViewTitleFontColor" : "0xFFFFFF",
+    "LoginViewToolbarTintColor" : "0x666666",
+    
+    "LoginViewBackButtonFont" : "HelveticaNeue",
+    "LoginViewBackButtonFontSize" : "17",
+    "LoginViewBackButtonFontColor" : "0xFFFFFF",
+    
+    "LoginViewButtonFont" : "HelveticaNeue-Bold",
+    "LoginViewButtonFontSize" : "18",
+    "LoginViewButtonFontColor" : "0xFFFFFF",
+    
+    "LoginViewTitleButtonFont" : "HelveticaNeue-Bold",
+    "LoginViewTitleButtonFontSize" : "15",
+    "LoginViewTitleButtonFontColor" : "0xFFFFFF",
+    
+    "LoginViewLabelFont" : "defaultFont",
+    "LoginViewLabelFontSize" : "17",
+    "LoginViewLabelFontColor" : "0x000000",
+    
+    "LoginViewArrowFont" : "HelveticaNeue-Italic",
+    "LoginViewArrowFontSize" : "17",
+    "LoginViewArrowFontColor" : "0x6E6E6E",
+    
+    "LoginViewLargeLabelFont" : "HelveticaNeue-Italic",
+    "LoginViewLargeLabelFontSize" : "30",
+    "LoginViewLargeLabelFontColor" : "0x414141",
+    
+    "PasswordHelpFont" : "HelveticaNeue-Light",
+	"PasswordHelpFontSize" : "17",
+	"PasswordHelpFontColor" : "0x6D6D6D",
+    
+    "LoginForgotPasswordFont" : "HelveticaNeue-Light",
+	"LoginForgotPasswordFontSize" : "17",
+	"LoginForgotPasswordFontColor" : "0x6B6E72",
+    
+    
+    "InfoViewLabelFont" : "HelveticaNeue-Bold",
+    "InfoViewLabelFontSize" : "15",
+    
+        /*
+     Device Manifest Fonts and Colors
+     */
+    
+    "ManifestViewEntryFont": "HelveticaNeue-Light",
+	"ManifestViewEntryFontSize" : "15",
+    "ManifestViewEntryFontColor" : "#000000",
+    
+    /*
+     Watermark View
+     */
+    
+    
+    "LDKKeyValueKeyFont": "SourceSansPro-Regular",
+    "LDKKeyValueKeyFontSize": "14",
+    "LDKKeyValueKeyFontColor" : "#777777",
+    
+    "LDKKeyValueKeyEditableFont": "SourceSansPro-Regular",
+    "LDKKeyValueKeyEditableFontSize": "14",
+    "LDKKeyValueKeyEditableFontColor" : "#007AFF",
+    
+    "LDKKeyValueValueFont": "SourceSansPro-Semibold",
+    "LDKKeyValueValueFontSize": "14",
+    "LDKKeyValueValueFontColor" : "#222222",
+    
+    "LDKKeyValueValueEditableFont": "SourceSansPro-Semibold",
+    "LDKKeyValueValueEditableFontSize": "14",
+    "LDKKeyValueValueEditableFontColor" : "#007AFF",
+      
+    "LDKFilterViewBackgroundColor": "#f6f6f6",
+    "LDKFilterViewTextColor": "#777777",
+    
+    /*
+     Login As
+     */
+    "LDKLoginAsAvatarLabelYellow":"#F8E71C",
+    "LDKLoginAsAvatarLabelLightGreen":"#B8E986",
+    "LDKLoginAsAvatarLabelCyan":"#50E3C2",
+    "LDKLoginAsAvatarLabelDarkBlue":"#76AEEF",
+    "LDKLoginAsAvatarLabelDarkOrange":"#F5A623",
+    "LDKLoginAsAvatarLabelDarkRed":"#DF756B",
+    
+    "LDKLoginAsAvatarLabelTextFont":"HelveticaNeue",
+    "LDKLoginAsAvatarLabelTextFontSize":"35",
+    
+    "LDKLoginAsButtonTextFont":"HelveticaNeue",
+    "LDKLoginAsButtonTextFontSize":"19",
+    "LDKLoginAsButtonBackgroundMeColor":"#4A90E2",
+    "LDKLoginAsButtonBackgroundOtherColor":"#F5A623",
+    
+    "LDKLoginAsRowTextColor":"#4A4A4A",
+    "LDKLoginAsRowTextFont":"HelveticaNeue",
+    "LDKLoginAsRowTextFontSize":"19",
+    "LDKLoginAsRowHighlightColor":"#ECF5FE",
+    "LDKLoginAsRowBorderColor":"#D2D2D2",
+    
+    "LDKLoginAsRowSubTextFont":"HelveticaNeue",
+    "LDKLoginAsRowSubTextFontSize":"13",
+    "LDKLoginAsRowSubTextColor":"#D2D2D2"
+}

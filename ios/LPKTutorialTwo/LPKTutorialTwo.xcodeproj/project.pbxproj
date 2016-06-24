@@ -12,24 +12,24 @@
 		373594531D184007000FAFFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 373594511D184007000FAFFB /* Main.storyboard */; };
 		373594551D184007000FAFFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 373594541D184007000FAFFB /* Assets.xcassets */; };
 		373594581D184007000FAFFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 373594561D184007000FAFFB /* LaunchScreen.storyboard */; };
-		375632C31D1842F60016A1A5 /* LiquidPlatformKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 375632C11D1842EF0016A1A5 /* LiquidPlatformKit.framework */; };
-		375632C41D1842F60016A1A5 /* LiquidPlatformKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 375632C11D1842EF0016A1A5 /* LiquidPlatformKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		375632C81D1843B20016A1A5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 375632C71D1843B20016A1A5 /* ViewController.m */; };
 		375632CB1D1847350016A1A5 /* MovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 375632CA1D1847350016A1A5 /* MovieViewController.m */; };
 		375632CE1D18479A0016A1A5 /* MovieTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 375632CD1D18479A0016A1A5 /* MovieTableViewCell.m */; };
 		375632D11D184A030016A1A5 /* MovieDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 375632D01D184A030016A1A5 /* MovieDetailViewController.m */; };
 		375632D31D184C720016A1A5 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 375632D21D184C720016A1A5 /* Settings.bundle */; };
+		37EA73A51D1C9249009CFAC5 /* LiquidPlatformKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37EA73A31D1C9241009CFAC5 /* LiquidPlatformKit.framework */; };
+		37EA73A61D1C9249009CFAC5 /* LiquidPlatformKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37EA73A31D1C9241009CFAC5 /* LiquidPlatformKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		788BC9D045E7C1D8548EFBB9 /* Pods_LPKTutorialTwo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1723E4AD0A795D855DA4093 /* Pods_LPKTutorialTwo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		375632C51D1842F60016A1A5 /* Embed Frameworks */ = {
+		372B32821D1C789B00FD4106 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				375632C41D1842F60016A1A5 /* LiquidPlatformKit.framework in Embed Frameworks */,
+				37EA73A61D1C9249009CFAC5 /* LiquidPlatformKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,7 +46,6 @@
 		373594541D184007000FAFFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		373594571D184007000FAFFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		373594591D184007000FAFFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		375632C11D1842EF0016A1A5 /* LiquidPlatformKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LiquidPlatformKit.framework; sourceTree = "<group>"; };
 		375632C61D1843B20016A1A5 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		375632C71D1843B20016A1A5 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		375632C91D1847350016A1A5 /* MovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieViewController.h; sourceTree = "<group>"; };
@@ -56,6 +55,7 @@
 		375632CF1D184A030016A1A5 /* MovieDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieDetailViewController.h; sourceTree = "<group>"; };
 		375632D01D184A030016A1A5 /* MovieDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieDetailViewController.m; sourceTree = "<group>"; };
 		375632D21D184C720016A1A5 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		37EA73A31D1C9241009CFAC5 /* LiquidPlatformKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LiquidPlatformKit.framework; sourceTree = "<group>"; };
 		B1723E4AD0A795D855DA4093 /* Pods_LPKTutorialTwo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LPKTutorialTwo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E735D9F78DBDA0A797F6BA3A /* Pods-LPKTutorialTwo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LPKTutorialTwo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LPKTutorialTwo/Pods-LPKTutorialTwo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,7 +66,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				788BC9D045E7C1D8548EFBB9 /* Pods_LPKTutorialTwo.framework in Frameworks */,
-				375632C31D1842F60016A1A5 /* LiquidPlatformKit.framework in Frameworks */,
+				37EA73A51D1C9249009CFAC5 /* LiquidPlatformKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,8 +84,8 @@
 		373594391D184007000FAFFB = {
 			isa = PBXGroup;
 			children = (
+				37EA73A31D1C9241009CFAC5 /* LiquidPlatformKit.framework */,
 				375632D21D184C720016A1A5 /* Settings.bundle */,
-				375632C11D1842EF0016A1A5 /* LiquidPlatformKit.framework */,
 				373594441D184007000FAFFB /* LPKTutorialTwo */,
 				DDC5D86ECF3DFADB2D9BE4F7 /* Pods */,
 				1212469F33038A6FE70BEAD0 /* Frameworks */,
@@ -154,7 +154,7 @@
 				373594401D184007000FAFFB /* Resources */,
 				FAFBAD5FEE4F0995B1187CA7 /* Embed Pods Frameworks */,
 				874630B0A6F491B7523BAF71 /* Copy Pods Resources */,
-				375632C51D1842F60016A1A5 /* Embed Frameworks */,
+				372B32821D1C789B00FD4106 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

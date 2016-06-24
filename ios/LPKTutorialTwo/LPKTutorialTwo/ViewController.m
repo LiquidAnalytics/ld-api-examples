@@ -32,6 +32,7 @@
     
     //load the DB in the background, typically there is a loading screen that goes here
     //so we don't block the main thread
+    
     [[LDMDataManager sharedInstance] executeAsynch:^{
         [[LDMDataManager sharedInstance] openDatabaseWithName:@"MovieCollection"];
         [[LSCSyncController sharedInstance] startWithDelegate:self];

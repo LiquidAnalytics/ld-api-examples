@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QUW-al-Wyi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QUW-al-Wyi">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -153,11 +153,19 @@
                                     <outlet property="delegate" destination="HB5-B1-gE4" id="bU2-xk-NF6"/>
                                 </connections>
                             </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2zl-aM-RGQ">
+                                <rect key="frame" x="534" y="79" width="30" height="30"/>
+                                <state key="normal" title="Info"/>
+                                <connections>
+                                    <action selector="infoButtonPressed:" destination="HB5-B1-gE4" eventType="touchUpInside" id="t08-d2-vie"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
+                        <outlet property="infoButton" destination="2zl-aM-RGQ" id="ogt-TS-OqR"/>
                         <outlet property="movieTableView" destination="q9r-aS-Yy5" id="6v6-Ut-o0o"/>
                         <outlet property="searchBar" destination="chI-8G-Xn2" id="saC-9k-AwD"/>
                         <segue destination="IVs-Kh-0iH" kind="show" identifier="showMovieDetailSegue" id="tjT-YG-Cma"/>

@@ -65,6 +65,7 @@
 + (NSString *__nonnull)urlencodeString:(NSString *__nullable)input;
 
 - (NSString*__nonnull) retrieveServerURL;
+- (NSBundle*__nonnull) LPKBundle;
 - (NSString*__nonnull) constructURLStringWithParams:(NSDictionary*__nullable) params;
 
 - (void)logDBErrors:(FMDatabase*__nonnull)db;
