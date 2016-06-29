@@ -40,6 +40,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"LPKTutorialTwo";
 }
 
 - (void)didReceiveMemoryWarning

@@ -66,7 +66,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.itemMultiSelectSwitch.on = NO;
-    // Do any additional setup after loading the view from its nib.
+    self.title = @"LPKTutorialThree";
 }
 
 - (void)didReceiveMemoryWarning {
