@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
             <connections>
                 <outlet property="emailDemoButton" destination="JpX-uq-cMP" id="rj2-D5-yT0"/>
+                <outlet property="emailTextField" destination="HYu-8s-Dgy" id="g1d-h9-HDJ"/>
                 <outlet property="enumSelectDemoButton" destination="AHu-Hd-zbR" id="Mf0-u3-MAX"/>
                 <outlet property="functionResultsDemoButton" destination="BQm-va-BwY" id="dda-DI-cPK"/>
                 <outlet property="itemMultiSelectSwitch" destination="hqQ-0a-Av5" id="alI-h7-qgk"/>
