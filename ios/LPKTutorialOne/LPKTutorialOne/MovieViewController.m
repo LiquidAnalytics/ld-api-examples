@@ -18,8 +18,6 @@
 @interface MovieViewController ()
 
 @property (weak) IBOutlet UITableView *movieTableView;
-@property (weak) IBOutlet UITextField *passwordField;
-@property (weak) IBOutlet UILabel *infoLabel;
 @property (strong) NSArray *movies;
 @property (strong) NSDictionary *ratings;
 
@@ -67,21 +65,6 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             [this refreshUI];
         });
-    }];
-}
-
--(IBAction)syncButtonPressed:(id)sender
-{
-    NSLog(@"Sync requested");
-    
-    if(![LSCSyncController sharedInstance].serverReachable)
-    {
-        NSLog(@"Server was not reachable. Will not sync.");
-        return;
-    }
-    
-    [[LSCSyncController sharedInstance] requestSyncWithCompletionHandler:^(BOOL syncSucceeded) {
-        NSLog(@"Sync was successful: %s", syncSucceeded ? "YES":"NO");
     }];
 }
 

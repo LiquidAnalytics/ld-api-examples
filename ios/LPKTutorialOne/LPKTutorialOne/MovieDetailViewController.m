@@ -69,7 +69,6 @@
     
     if (self.myRating)
         self.ratingTextField.text = [NSString stringWithFormat:@"%@",[self.myRating valueForKey:@"value"]];
-    
 
 }
 
