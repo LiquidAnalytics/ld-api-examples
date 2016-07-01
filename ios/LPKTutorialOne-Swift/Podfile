@@ -1,0 +1,22 @@
+platform :ios, "8.0"
+use_frameworks!
+
+target 'LPKTutorialOne-Swift' do
+	pod 'Reachability', "=3.1.1"
+	pod 'ASIHTTPRequest', "=1.8.1"
+	pod 'FMDB', '=2.4'
+	pod 'MTLocation', '=0.9'
+	pod 'BlocksKit', '=2.2.5'
+	pod 'SSPullToRefresh', '=1.2.0'
+	pod 'DTCoreText', '=1.6.9'
+	pod 'CorePlot', '=1.6'
+	pod 'DraggableCollectionView', '=0.1'
+	pod 'RBBAnimation', '0.3.0'
+	pod 'SDCAutoLayout', '2.0'
+	pod 'PLCrashReporter', '=1.2-rc4'
+	pod 'yajl-objc'
+	pod 'PEGKit'
+	pod 'CocoaLumberjack', '2.3.0'
+	pod 'Starscream', '1.0.2'
+	pod '1PasswordExtension', '1.6'
+end

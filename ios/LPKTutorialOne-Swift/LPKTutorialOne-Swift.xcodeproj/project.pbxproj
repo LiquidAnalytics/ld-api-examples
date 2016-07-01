@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3723072D1D25B8CB00D10AA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3723072C1D25B8CB00D10AA4 /* AppDelegate.swift */; };
+		3723072F1D25B8CB00D10AA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3723072E1D25B8CB00D10AA4 /* ViewController.swift */; };
+		372307321D25B8CB00D10AA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 372307301D25B8CB00D10AA4 /* Main.storyboard */; };
+		372307341D25B8CB00D10AA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 372307331D25B8CB00D10AA4 /* Assets.xcassets */; };
+		372307371D25B8CB00D10AA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 372307351D25B8CB00D10AA4 /* LaunchScreen.storyboard */; };
+		37A5D6A41D26BAEE00B85DB0 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A5D6A31D26BAEE00B85DB0 /* MovieTableViewCell.swift */; };
+		37A5D6A61D26D31F00B85DB0 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A5D6A51D26D31F00B85DB0 /* MovieDetailViewController.swift */; };
+		37C26A391D25B9B5007C67B7 /* LiquidPlatformKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C26A371D25B9AB007C67B7 /* LiquidPlatformKit.framework */; };
+		37C26A3A1D25B9B5007C67B7 /* LiquidPlatformKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37C26A371D25B9AB007C67B7 /* LiquidPlatformKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		37E1C6001D25C3B20096A8B5 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E1C5FF1D25C3B20096A8B5 /* MovieViewController.swift */; };
+		37E1C6021D25C6D20096A8B5 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 37E1C6011D25C6D20096A8B5 /* Settings.bundle */; };
+		B1A87BECDAA24849305364C4 /* Pods_LPKTutorialOne_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 128FAFA3796C5141BBF45043 /* Pods_LPKTutorialOne_Swift.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		37C26A3B1D25B9B5007C67B7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				37C26A3A1D25B9B5007C67B7 /* LiquidPlatformKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		128FAFA3796C5141BBF45043 /* Pods_LPKTutorialOne_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LPKTutorialOne_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		157FDF3B53A0A92C9799C497 /* Pods-LPKTutorialOne-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LPKTutorialOne-Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-LPKTutorialOne-Swift/Pods-LPKTutorialOne-Swift.release.xcconfig"; sourceTree = "<group>"; };
+		372307291D25B8CB00D10AA4 /* LPKTutorialOne-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LPKTutorialOne-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3723072C1D25B8CB00D10AA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3723072E1D25B8CB00D10AA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		372307311D25B8CB00D10AA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		372307331D25B8CB00D10AA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		372307361D25B8CB00D10AA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		372307381D25B8CB00D10AA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37A5D6A31D26BAEE00B85DB0 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		37A5D6A51D26D31F00B85DB0 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieDetailViewController.swift; path = ../MovieDetailViewController.swift; sourceTree = "<group>"; };
+		37C26A371D25B9AB007C67B7 /* LiquidPlatformKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LiquidPlatformKit.framework; sourceTree = "<group>"; };
+		37E1C5FF1D25C3B20096A8B5 /* MovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		37E1C6011D25C6D20096A8B5 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		F44E6E3783FF13C39684DF52 /* Pods-LPKTutorialOne-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LPKTutorialOne-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LPKTutorialOne-Swift/Pods-LPKTutorialOne-Swift.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		372307261D25B8CB00D10AA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1A87BECDAA24849305364C4 /* Pods_LPKTutorialOne_Swift.framework in Frameworks */,
+				37C26A391D25B9B5007C67B7 /* LiquidPlatformKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20A4B00846784762975C1F78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				128FAFA3796C5141BBF45043 /* Pods_LPKTutorialOne_Swift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		372307201D25B8CB00D10AA4 = {
+			isa = PBXGroup;
+			children = (
+				37C26A371D25B9AB007C67B7 /* LiquidPlatformKit.framework */,
+				3723072B1D25B8CB00D10AA4 /* LPKTutorialOne-Swift */,
+				3723072A1D25B8CB00D10AA4 /* Products */,
+				507C3CDD04F967B9DA94541B /* Pods */,
+				20A4B00846784762975C1F78 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3723072A1D25B8CB00D10AA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				372307291D25B8CB00D10AA4 /* LPKTutorialOne-Swift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3723072B1D25B8CB00D10AA4 /* LPKTutorialOne-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				3723072C1D25B8CB00D10AA4 /* AppDelegate.swift */,
+				3723072E1D25B8CB00D10AA4 /* ViewController.swift */,
+				37E1C5FF1D25C3B20096A8B5 /* MovieViewController.swift */,
+				37A5D6A51D26D31F00B85DB0 /* MovieDetailViewController.swift */,
+				37A5D6A31D26BAEE00B85DB0 /* MovieTableViewCell.swift */,
+				372307301D25B8CB00D10AA4 /* Main.storyboard */,
+				372307331D25B8CB00D10AA4 /* Assets.xcassets */,
+				372307351D25B8CB00D10AA4 /* LaunchScreen.storyboard */,
+				372307381D25B8CB00D10AA4 /* Info.plist */,
+				37E1C6011D25C6D20096A8B5 /* Settings.bundle */,
+			);
+			path = "LPKTutorialOne-Swift";
+			sourceTree = "<group>";
+		};
+		507C3CDD04F967B9DA94541B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F44E6E3783FF13C39684DF52 /* Pods-LPKTutorialOne-Swift.debug.xcconfig */,
+				157FDF3B53A0A92C9799C497 /* Pods-LPKTutorialOne-Swift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		372307281D25B8CB00D10AA4 /* LPKTutorialOne-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3723073B1D25B8CB00D10AA4 /* Build configuration list for PBXNativeTarget "LPKTutorialOne-Swift" */;
+			buildPhases = (
+				4D25C3C8A0AC011F8970FA53 /* Check Pods Manifest.lock */,
+				372307251D25B8CB00D10AA4 /* Sources */,
+				372307261D25B8CB00D10AA4 /* Frameworks */,
+				372307271D25B8CB00D10AA4 /* Resources */,
+				4B10B6CF26495CE5ECC84A6A /* Embed Pods Frameworks */,
+				0C9F39E99C0AFE39160EABAC /* Copy Pods Resources */,
+				37C26A3B1D25B9B5007C67B7 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LPKTutorialOne-Swift";
+			productName = "LPKTutorialOne-Swift";
+			productReference = 372307291D25B8CB00D10AA4 /* LPKTutorialOne-Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		372307211D25B8CB00D10AA4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Liquid Analytics";
+				TargetAttributes = {
+					372307281D25B8CB00D10AA4 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 372307241D25B8CB00D10AA4 /* Build configuration list for PBXProject "LPKTutorialOne-Swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 372307201D25B8CB00D10AA4;
+			productRefGroup = 3723072A1D25B8CB00D10AA4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				372307281D25B8CB00D10AA4 /* LPKTutorialOne-Swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		372307271D25B8CB00D10AA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37E1C6021D25C6D20096A8B5 /* Settings.bundle in Resources */,
+				372307371D25B8CB00D10AA4 /* LaunchScreen.storyboard in Resources */,
+				372307341D25B8CB00D10AA4 /* Assets.xcassets in Resources */,
+				372307321D25B8CB00D10AA4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C9F39E99C0AFE39160EABAC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LPKTutorialOne-Swift/Pods-LPKTutorialOne-Swift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B10B6CF26495CE5ECC84A6A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LPKTutorialOne-Swift/Pods-LPKTutorialOne-Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D25C3C8A0AC011F8970FA53 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		372307251D25B8CB00D10AA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3723072F1D25B8CB00D10AA4 /* ViewController.swift in Sources */,
+				37A5D6A61D26D31F00B85DB0 /* MovieDetailViewController.swift in Sources */,
+				3723072D1D25B8CB00D10AA4 /* AppDelegate.swift in Sources */,
+				37A5D6A41D26BAEE00B85DB0 /* MovieTableViewCell.swift in Sources */,
+				37E1C6001D25C3B20096A8B5 /* MovieViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		372307301D25B8CB00D10AA4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				372307311D25B8CB00D10AA4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		372307351D25B8CB00D10AA4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				372307361D25B8CB00D10AA4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		372307391D25B8CB00D10AA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		3723073A1D25B8CB00D10AA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3723073C1D25B8CB00D10AA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F44E6E3783FF13C39684DF52 /* Pods-LPKTutorialOne-Swift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "LPKTutorialOne-Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.liquidanalytics.LPKTutorialOne-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3723073D1D25B8CB00D10AA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 157FDF3B53A0A92C9799C497 /* Pods-LPKTutorialOne-Swift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "LPKTutorialOne-Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.liquidanalytics.LPKTutorialOne-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		372307241D25B8CB00D10AA4 /* Build configuration list for PBXProject "LPKTutorialOne-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				372307391D25B8CB00D10AA4 /* Debug */,
+				3723073A1D25B8CB00D10AA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3723073B1D25B8CB00D10AA4 /* Build configuration list for PBXNativeTarget "LPKTutorialOne-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3723073C1D25B8CB00D10AA4 /* Debug */,
+				3723073D1D25B8CB00D10AA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 372307211D25B8CB00D10AA4 /* Project object */;
+}
