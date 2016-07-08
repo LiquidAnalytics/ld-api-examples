@@ -1,0 +1,13 @@
+<h1>{{title}}</h1>
+<div>
+    {{#if movies}}
+        {{#each movies}}
+            <div>
+                <h4>{{data.name}}</h4>
+                <p>{{data.description}}</p>
+            </div>
+        {{/each}}
+    {{/if}}
+
+    <a href="/">Back home</a>
+</div>

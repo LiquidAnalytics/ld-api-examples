@@ -1,0 +1,14 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="bin/www" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" path-to-js-file="bin/www" working-dir="$PROJECT_DIR$">
+    <envs>
+      <env name="SITE_URL" value="http://localhost:3000" />
+      <env name="LS_URL" value="https://ldcloud-dev.liquidanalytics.com" />
+      <env name="DEBUG" value="LiquidNodeJSDemo:*" />
+      <env name="LDS_OAUTH_URL" value="https://oauth2-dev.liquidanalytics.com" />
+      <env name="CLIENT_ID" value="LiquidDecisions" />
+      <env name="SCOPE" value="community=MovieCollection" />
+    </envs>
+    <browser url="http://localhost:3000/" />
+    <method />
+  </configuration>
+</component>
