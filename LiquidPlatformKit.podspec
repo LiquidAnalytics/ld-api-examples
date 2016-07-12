@@ -8,5 +8,5 @@ Pod::Spec.new do |s|
   s.source = { :git => 'https://github.com/LiquidAnalytics/ld-api-examples.git', :tag => s.version }
 
   s.ios.deployment_target = '8.0'
-  s.source_files = 'LPK.zip'
+  s.source_files = '/ios/LiquidPlatformKit.framework'
 end
