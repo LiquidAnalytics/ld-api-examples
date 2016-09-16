@@ -44,8 +44,8 @@
 -(IBAction)loginButtonPressed:(id)sender
 {
     //fill these values in
-    __block NSString *username = @"";
-    __block NSString *password = @"";
+    __block NSString *username = @"carson.li@liquidanalytics.com";
+    __block NSString *password = @"Bams1024";
     [[LDMDataManager sharedInstance] executeAsynch:^{
         self.authCallback(username, password);
     }];

@@ -37,6 +37,7 @@
 - (NSArray *)filtersForCurrentIndex;
 - (void)setFilters:(NSArray *)filters ForIndex:(NSInteger)newIndex;
 - (void)setFiltersForCurrentIndex:(NSArray *)filters;
+- (void)updateRightInset:(float)aRightInset;
 - (void)clearFiltersForIndex:(NSInteger)newIndex;
 - (void)clearFiltersForCurrentIndex;
 - (LDMQueryFilter*)searchQueryFilterForItemType:(NSString *)itemType;

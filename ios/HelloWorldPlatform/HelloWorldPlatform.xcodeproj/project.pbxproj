@@ -8,9 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		375632C71D11D0CC000088B3 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 375632C61D11D0CC000088B3 /* Settings.bundle */; };
-		3757F9C21D1270FC00374E00 /* LiquidPlatformKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3757F9C11D1270FC00374E00 /* LiquidPlatformKit.framework */; };
-		3757F9C31D12710200374E00 /* LiquidPlatformKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3757F9C11D1270FC00374E00 /* LiquidPlatformKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		378342021D122822007EE322 /* LiquidPlatformKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378342001D12281E007EE322 /* LiquidPlatformKit.framework */; };
+		37B341451D8C787C00284112 /* LiquidPlatformKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B341431D8C785D00284112 /* LiquidPlatformKit.framework */; };
+		37B341461D8C787C00284112 /* LiquidPlatformKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37B341431D8C785D00284112 /* LiquidPlatformKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		37F421821CD9167800928523 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F421811CD9167800928523 /* main.m */; };
 		37F421851CD9167800928523 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F421841CD9167800928523 /* AppDelegate.m */; };
 		37F421881CD9167800928523 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F421871CD9167800928523 /* ViewController.m */; };
@@ -35,7 +34,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3757F9C31D12710200374E00 /* LiquidPlatformKit.framework in Embed Frameworks */,
+				37B341461D8C787C00284112 /* LiquidPlatformKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,8 +44,7 @@
 /* Begin PBXFileReference section */
 		354E086B6FCEB9C4D8FE4E2B /* Pods-HelloWorldPlatform.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorldPlatform.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloWorldPlatform/Pods-HelloWorldPlatform.release.xcconfig"; sourceTree = "<group>"; };
 		375632C61D11D0CC000088B3 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		3757F9C11D1270FC00374E00 /* LiquidPlatformKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LiquidPlatformKit.framework; sourceTree = "<group>"; };
-		378342001D12281E007EE322 /* LiquidPlatformKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LiquidPlatformKit.framework; path = "/Users/carsonli/LiquidDev/ld-api-examples/ios/HelloWorldPlatform/LiquidPlatformKit.framework"; sourceTree = "<absolute>"; };
+		37B341431D8C785D00284112 /* LiquidPlatformKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LiquidPlatformKit.framework; sourceTree = "<group>"; };
 		37F4217D1CD9167800928523 /* HelloWorldPlatform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorldPlatform.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37F421811CD9167800928523 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		37F421831CD9167800928523 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -79,10 +77,9 @@
 				37F421A91CD920A800928523 /* AudioToolbox.framework in Frameworks */,
 				37F421A71CD9209D00928523 /* MobileCoreServices.framework in Frameworks */,
 				37F421A51CD9208300928523 /* AssetsLibrary.framework in Frameworks */,
-				3757F9C21D1270FC00374E00 /* LiquidPlatformKit.framework in Frameworks */,
-				378342021D122822007EE322 /* LiquidPlatformKit.framework in Frameworks */,
 				37F421A31CD9207D00928523 /* QuartzCore.framework in Frameworks */,
 				37F421A11CD9207700928523 /* CoreGraphics.framework in Frameworks */,
+				37B341451D8C787C00284112 /* LiquidPlatformKit.framework in Frameworks */,
 				37F4219F1CD9207200928523 /* UIKit.framework in Frameworks */,
 				37F4219D1CD9206C00928523 /* Foundation.framework in Frameworks */,
 				EFDD208D5062C69AE7CDBDDF /* Pods_HelloWorldPlatform.framework in Frameworks */,
@@ -104,7 +101,7 @@
 		37F421741CD9167800928523 = {
 			isa = PBXGroup;
 			children = (
-				3757F9C11D1270FC00374E00 /* LiquidPlatformKit.framework */,
+				37B341431D8C785D00284112 /* LiquidPlatformKit.framework */,
 				37F4217F1CD9167800928523 /* HelloWorldPlatform */,
 				37F4217E1CD9167800928523 /* Products */,
 				A1222AEDECD643E23A65CACB /* Frameworks */,
@@ -199,6 +196,7 @@
 					37F4217C1CD9167800928523 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = A325R6EP53;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -440,6 +438,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.liquidanalytics.HelloWorldPlatform;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
@@ -470,6 +469,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.liquidanalytics.HelloWorldPlatform;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;

@@ -160,7 +160,7 @@
 - (void)itemOfType:(NSString* __nonnull)typeName withId:(NSString* __nonnull)objectId completionHandler:(void (^ __nonnull)(LDMItem * __nullable))block;
 - (void)allItemsOfType:(NSString * __nonnull)typeName withQueryFilter:(LDMQueryFilter * __nullable)queryFilter completionHandler:(void (^ __nonnull)(LDMSearchResults * __nullable results))block;
 - (void)allItemsOfType:(NSString * __nonnull)typeName withQueryFilter:(LDMQueryFilter * __nullable)queryFilter faultBlocks:(BOOL)faultBlocks completionHandler:(void (^ __nonnull)(LDMSearchResults * __nullable results))block;
-- (void)allItemsOfType:(NSString *__nullable)typeName withQueryFilter:(LDMQueryFilter *__nullable)queryFilter sortBy:(NSArray*__nullable)sortBy faultBlocks:(BOOL)faultBlocks completionHandler:(void (^)(LDMSearchResults * __nullable results))block;
+- (void)allItemsOfType:(NSString *__nullable)typeName withQueryFilter:(LDMQueryFilter *__nullable)queryFilter sortBy:(NSArray*__nullable)sortBy faultBlocks:(BOOL)faultBlocks completionHandler:(void (^ __nonnull)(LDMSearchResults * __nullable results))block;
 
 // Relationship methods
 - (LDMSearchResults*__nullable)itemsWithRelationNamed:(NSString *__nonnull)relationshipName toItem:(LDMItem *__nonnull)item;

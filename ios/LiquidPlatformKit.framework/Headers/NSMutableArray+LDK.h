@@ -12,6 +12,11 @@
 
 @interface NSMutableArray (LDK)
 
+- (void)removeItem:(LDMItem *)item;
+- (void)removeItemsInArray:(NSArray *)items;
+- (BOOL)containsItem:(LDMItem *)item;
+- (BOOL)containsItem:(LDMItem *)item matchField:(NSString *)matchField;
+- (LDMItem *)findItem:(LDMItem *)item matchField:(NSString *)matchField;
 - (void)removeObjectsOfClass:(Class)class;
 - (void)removeDimensionWithPath:(NSString *)path;
 - (LDMDimension *)dimensionForPath:(NSString *)path;
