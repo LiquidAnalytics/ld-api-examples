@@ -17,7 +17,7 @@
 
 @interface LDMSearchResultsDynamic : LDMSearchResults <LDMSearchResultsProtocol, NSCacheDelegate>
 
-@property NSString *selectCore;
+@property (strong)  NSString *selectCore;
 
 - (id)initWithSelectCore:(NSString *)selectCore tableAlias:(NSString *)alias containsWhere:(BOOL)containsWhere segmentedBy:(NSArray *)segmentKeys orderedBy:(NSString *)orderCol type:(NSString *)type faultBlocks:(BOOL)faultBlocks dataManager:(LDMDataManager *)manager withItemWhere: (NSString *) itemWhere withQueryFilter:(LDMQueryFilter *)queryFilter;
 

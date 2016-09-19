@@ -16,23 +16,23 @@ public class SSLCert {
     var key: SecKeyRef?
     
     /**
-    Designated init for certificates
-    
-    - parameter data: is the binary data of the certificate
-    
-    - returns: a representation security object to be used with
-    */
+     Designated init for certificates
+     
+     - parameter data: is the binary data of the certificate
+     
+     - returns: a representation security object to be used with
+     */
     public init(data: NSData) {
         self.certData = data
     }
     
     /**
-    Designated init for public keys
-    
-    - parameter key: is the public key to be used
-    
-    - returns: a representation security object to be used with
-    */
+     Designated init for public keys
+     
+     - parameter key: is the public key to be used
+     
+     - returns: a representation security object to be used with
+     */
     public init(key: SecKeyRef) {
         self.key = key
     }
@@ -47,12 +47,12 @@ public class SSLSecurity {
     var usePublicKeys = false //use public keys or certificate validation?
     
     /**
-    Use certs from main app bundle
-    
-    - parameter usePublicKeys: is to specific if the publicKeys or certificates should be used for SSL pinning validation
-    
-    - returns: a representation security object to be used with
-    */
+     Use certs from main app bundle
+     
+     - parameter usePublicKeys: is to specific if the publicKeys or certificates should be used for SSL pinning validation
+     
+     - returns: a representation security object to be used with
+     */
     public convenience init(usePublicKeys: Bool = false) {
         let paths = NSBundle.mainBundle().pathsForResourcesOfType("cer", inDirectory: ".")
         var collect = Array<SSLCert>()
@@ -65,13 +65,13 @@ public class SSLSecurity {
     }
     
     /**
-    Designated init
-    
-    - parameter keys: is the certificates or public keys to use
-    - parameter usePublicKeys: is to specific if the publicKeys or certificates should be used for SSL pinning validation
-    
-    - returns: a representation security object to be used with
-    */
+     Designated init
+     
+     - parameter keys: is the certificates or public keys to use
+     - parameter usePublicKeys: is to specific if the publicKeys or certificates should be used for SSL pinning validation
+     
+     - returns: a representation security object to be used with
+     */
     public init(certs: [SSLCert], usePublicKeys: Bool) {
         self.usePublicKeys = usePublicKeys
         
@@ -102,13 +102,13 @@ public class SSLSecurity {
     }
     
     /**
-    Valid the trust and domain name.
-    
-    - parameter trust: is the serverTrust to validate
-    - parameter domain: is the CN domain to validate
-    
-    - returns: if the key was successfully validated
-    */
+     Valid the trust and domain name.
+     
+     - parameter trust: is the serverTrust to validate
+     - parameter domain: is the CN domain to validate
+     
+     - returns: if the key was successfully validated
+     */
     public func isValid(trust: SecTrustRef, domain: String?) -> Bool {
         
         var tries = 0
@@ -144,10 +144,10 @@ public class SSLSecurity {
                 collect.append(SecCertificateCreateWithData(nil,cert)!)
             }
             SecTrustSetAnchorCertificates(trust,collect)
-            var result: SecTrustResultType = 0
+            var result = SecTrustResultType.Invalid;
             SecTrustEvaluate(trust,&result)
-            let r = Int(result)
-            if r == kSecTrustResultUnspecified || r == kSecTrustResultProceed {
+            let r = result;
+            if r == SecTrustResultType.Unspecified || r == SecTrustResultType.Proceed {
                 var trustedCount = 0
                 for serverCert in serverCerts {
                     for cert in certs {
@@ -166,12 +166,12 @@ public class SSLSecurity {
     }
     
     /**
-    Get the public key from a certificate data
-    
-    - parameter data: is the certificate to pull the public key from
-    
-    - returns: a public key
-    */
+     Get the public key from a certificate data
+     
+     - parameter data: is the certificate to pull the public key from
+     
+     - returns: a public key
+     */
     func extractPublicKey(data: NSData) -> SecKeyRef? {
         let possibleCert = SecCertificateCreateWithData(nil,data)
         if let cert = possibleCert {
@@ -181,17 +181,17 @@ public class SSLSecurity {
     }
     
     /**
-    Get the public key from a certificate
-    
-    - parameter data: is the certificate to pull the public key from
-    
-    - returns: a public key
-    */
+     Get the public key from a certificate
+     
+     - parameter data: is the certificate to pull the public key from
+     
+     - returns: a public key
+     */
     func extractPublicKeyFromCert(cert: SecCertificate, policy: SecPolicy) -> SecKeyRef? {
         var possibleTrust: SecTrust?
         SecTrustCreateWithCertificates(cert, policy, &possibleTrust)
         if let trust = possibleTrust {
-            var result: SecTrustResultType = 0
+            var result = SecTrustResultType.Invalid;
             SecTrustEvaluate(trust, &result)
             return SecTrustCopyPublicKey(trust)
         }
@@ -199,12 +199,12 @@ public class SSLSecurity {
     }
     
     /**
-    Get the certificate chain for the trust
-    
-    - parameter trust: is the trust to lookup the certificate chain for
-    
-    - returns: the certificate chain for the trust
-    */
+     Get the certificate chain for the trust
+     
+     - parameter trust: is the trust to lookup the certificate chain for
+     
+     - returns: the certificate chain for the trust
+     */
     func certificateChainForTrust(trust: SecTrustRef) -> Array<NSData> {
         var collect = Array<NSData>()
         for var i = 0; i < SecTrustGetCertificateCount(trust); i++ {
@@ -215,12 +215,12 @@ public class SSLSecurity {
     }
     
     /**
-    Get the public key chain for the trust
-    
-    - parameter trust: is the trust to lookup the certificate chain and extract the public keys
-    
-    - returns: the public keys from the certifcate chain for the trust
-    */
+     Get the public key chain for the trust
+     
+     - parameter trust: is the trust to lookup the certificate chain and extract the public keys
+     
+     - returns: the public keys from the certifcate chain for the trust
+     */
     func publicKeyChainForTrust(trust: SecTrustRef) -> Array<SecKeyRef> {
         var collect = Array<SecKeyRef>()
         let policy = SecPolicyCreateBasicX509()

@@ -26,8 +26,8 @@
 @property (strong, nonatomic) LDMQueryFilter *filter;
 @property (strong, nonatomic) LDMQueryFilter *search;
 @property (weak, nonatomic) LDKAccordionViewController *accordionViewController;
-@property NSString *parentGridRelation;
-@property NSString *parentGridFunctionId;
+@property (strong) NSString *parentGridRelation;
+@property (strong) NSString *parentGridFunctionId;
 @property (assign, nonatomic) BOOL performLocalQueries;
 @property (nonatomic, copy) UIViewController *(^legacyEditViewController)(NSString *editDefName, LDMItem *aItem);
 @property (nonatomic, copy) void (^didChangeHeightNeeded)();

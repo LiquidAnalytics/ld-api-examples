@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
 
-@class LDMItem, LDMItemPath, LDMDimension, LDMSchemaField, ISO8601DateFormatter;
+@class LDMItem, LDMItemPath, LDMDimension, LDMSchemaField, ISO8601DateFormatter, LDMEnumeration;
 
 @interface LDMFunctionManager : NSObject
 
@@ -208,6 +208,14 @@
  * @return The date in string format
  */
 - (NSString *)toShortDate:(id)dateObj;
+
+
+/*!
+ * @brief Formats input date into MMMM dd format, for local time zone
+ * @param dateObj The date to be parsed, NSDate or NSString, which can also be in java milliseconds
+ * @return The date in string format
+ */
+- (NSString *)toShortDateWithoutYear:(id)dateObj;
 
 /*!
  * @brief Formats input date into MM/dd/yy hh:mm a format, for local time zone

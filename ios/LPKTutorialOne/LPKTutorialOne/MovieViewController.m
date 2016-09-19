@@ -57,7 +57,9 @@
         
         for (LDMItem *rating in myRatings)
         {
-            ratingDict[[rating valueForKey:@"movieId"]] = rating;
+            NSString *movieId = [rating valueForKey:@"movieId"];
+            if (movieId.length != 0)
+                ratingDict[movieId] = rating;
         }
         this.ratings = [NSDictionary dictionaryWithDictionary:ratingDict];
         

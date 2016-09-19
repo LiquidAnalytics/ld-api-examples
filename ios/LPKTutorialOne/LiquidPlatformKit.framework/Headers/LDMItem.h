@@ -34,7 +34,7 @@ typedef NS_ENUM(NSUInteger, LDMItemSource)
 
 - (nonnull instancetype)initWithDict:(NSDictionary *__nullable)dict;
 + (NSString * __nonnull)generateId;
-- (nonnull id)initWithItemSchema:(LDMItemSchema*__nonnull)itemSchema;
+- (nonnull id)initWithItemSchema:(LDMItemSchema*__nullable)itemSchema;
 - (nonnull id)initWithItemSchema:(LDMItemSchema*__nonnull)anItemSchema addDynamicMethods:(BOOL)addDynamic;
 - (nonnull id)initWithType:(NSString*__nonnull)itemType withDataDict:(NSDictionary*__nullable)dataDictionary withHeaderDict:(NSDictionary*__nullable)headerDictionary;
 
