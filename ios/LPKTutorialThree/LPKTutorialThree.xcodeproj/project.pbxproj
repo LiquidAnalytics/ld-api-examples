@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		373B43E21D90816100861884 /* LiquidPlatformKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 373B43E01D90815100861884 /* LiquidPlatformKit.framework */; };
+		373B43E31D90816100861884 /* LiquidPlatformKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 373B43E01D90815100861884 /* LiquidPlatformKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		379952061D1D6F1200ADCB78 /* app_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 379952051D1D6F1200ADCB78 /* app_bg.jpg */; };
 		3799520A1D1D70D600ADCB78 /* app_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 379952091D1D70D600ADCB78 /* app_logo.png */; };
 		3799520E1D1D8E6E00ADCB78 /* FunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3799520C1D1D8E6E00ADCB78 /* FunctionViewController.m */; };
 		3799520F1D1D8E6E00ADCB78 /* FunctionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3799520D1D1D8E6E00ADCB78 /* FunctionViewController.xib */; };
 		379952161D1D947B00ADCB78 /* GenericTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 379952141D1D947B00ADCB78 /* GenericTableViewCell.m */; };
 		379952171D1D947B00ADCB78 /* GenericTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 379952151D1D947B00ADCB78 /* GenericTableViewCell.xib */; };
-		37C69A071D1CA4BF003E4CD8 /* LiquidPlatformKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C69A051D1CA4B8003E4CD8 /* LiquidPlatformKit.framework */; };
-		37C69A081D1CA4BF003E4CD8 /* LiquidPlatformKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37C69A051D1CA4B8003E4CD8 /* LiquidPlatformKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		37C69A0A1D1CA8FA003E4CD8 /* StyleManager.json in Resources */ = {isa = PBXBuildFile; fileRef = 37C69A091D1CA8FA003E4CD8 /* StyleManager.json */; };
 		37C69A0E1D1CA988003E4CD8 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C69A0C1D1CA988003E4CD8 /* MainViewController.m */; };
 		37C69A0F1D1CA988003E4CD8 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37C69A0D1D1CA988003E4CD8 /* MainViewController.xib */; };
@@ -35,7 +35,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				37C69A081D1CA4BF003E4CD8 /* LiquidPlatformKit.framework in Embed Frameworks */,
+				373B43E31D90816100861884 /* LiquidPlatformKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,6 +43,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		373B43E01D90815100861884 /* LiquidPlatformKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LiquidPlatformKit.framework; sourceTree = "<group>"; };
 		379952051D1D6F1200ADCB78 /* app_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = app_bg.jpg; sourceTree = "<group>"; };
 		379952091D1D70D600ADCB78 /* app_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_logo.png; sourceTree = "<group>"; };
 		3799520B1D1D8E6E00ADCB78 /* FunctionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunctionViewController.h; sourceTree = "<group>"; };
@@ -51,7 +52,6 @@
 		379952131D1D947B00ADCB78 /* GenericTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericTableViewCell.h; sourceTree = "<group>"; };
 		379952141D1D947B00ADCB78 /* GenericTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenericTableViewCell.m; sourceTree = "<group>"; };
 		379952151D1D947B00ADCB78 /* GenericTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GenericTableViewCell.xib; sourceTree = "<group>"; };
-		37C69A051D1CA4B8003E4CD8 /* LiquidPlatformKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LiquidPlatformKit.framework; sourceTree = "<group>"; };
 		37C69A091D1CA8FA003E4CD8 /* StyleManager.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = StyleManager.json; sourceTree = "<group>"; };
 		37C69A0B1D1CA988003E4CD8 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		37C69A0C1D1CA988003E4CD8 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
@@ -77,8 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				373B43E21D90816100861884 /* LiquidPlatformKit.framework in Frameworks */,
 				D95E139FCC396DF2C1B2C7CE /* Pods_LPKTutorialThree.framework in Frameworks */,
-				37C69A071D1CA4BF003E4CD8 /* LiquidPlatformKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,8 +88,8 @@
 		37EA73F91D1C9B2C009CFAC5 = {
 			isa = PBXGroup;
 			children = (
+				373B43E01D90815100861884 /* LiquidPlatformKit.framework */,
 				37C69A091D1CA8FA003E4CD8 /* StyleManager.json */,
-				37C69A051D1CA4B8003E4CD8 /* LiquidPlatformKit.framework */,
 				37C7052B1D1CA15900E01F5F /* Settings.bundle */,
 				379952051D1D6F1200ADCB78 /* app_bg.jpg */,
 				379952091D1D70D600ADCB78 /* app_logo.png */,
