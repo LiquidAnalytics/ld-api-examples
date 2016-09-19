@@ -17,8 +17,8 @@
 		375632CE1D18479A0016A1A5 /* MovieTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 375632CD1D18479A0016A1A5 /* MovieTableViewCell.m */; };
 		375632D11D184A030016A1A5 /* MovieDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 375632D01D184A030016A1A5 /* MovieDetailViewController.m */; };
 		375632D31D184C720016A1A5 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 375632D21D184C720016A1A5 /* Settings.bundle */; };
-		37EA73A51D1C9249009CFAC5 /* LiquidPlatformKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37EA73A31D1C9241009CFAC5 /* LiquidPlatformKit.framework */; };
-		37EA73A61D1C9249009CFAC5 /* LiquidPlatformKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37EA73A31D1C9241009CFAC5 /* LiquidPlatformKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3776ECF81D9069BF0022286B /* LiquidPlatformKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3776ECF61D90692E0022286B /* LiquidPlatformKit.framework */; };
+		3776ECF91D9069BF0022286B /* LiquidPlatformKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3776ECF61D90692E0022286B /* LiquidPlatformKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		788BC9D045E7C1D8548EFBB9 /* Pods_LPKTutorialTwo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1723E4AD0A795D855DA4093 /* Pods_LPKTutorialTwo.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,7 +29,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				37EA73A61D1C9249009CFAC5 /* LiquidPlatformKit.framework in Embed Frameworks */,
+				3776ECF91D9069BF0022286B /* LiquidPlatformKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,7 +55,7 @@
 		375632CF1D184A030016A1A5 /* MovieDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieDetailViewController.h; sourceTree = "<group>"; };
 		375632D01D184A030016A1A5 /* MovieDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieDetailViewController.m; sourceTree = "<group>"; };
 		375632D21D184C720016A1A5 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		37EA73A31D1C9241009CFAC5 /* LiquidPlatformKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LiquidPlatformKit.framework; sourceTree = "<group>"; };
+		3776ECF61D90692E0022286B /* LiquidPlatformKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LiquidPlatformKit.framework; sourceTree = "<group>"; };
 		B1723E4AD0A795D855DA4093 /* Pods_LPKTutorialTwo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LPKTutorialTwo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E735D9F78DBDA0A797F6BA3A /* Pods-LPKTutorialTwo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LPKTutorialTwo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LPKTutorialTwo/Pods-LPKTutorialTwo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,7 +66,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				788BC9D045E7C1D8548EFBB9 /* Pods_LPKTutorialTwo.framework in Frameworks */,
-				37EA73A51D1C9249009CFAC5 /* LiquidPlatformKit.framework in Frameworks */,
+				3776ECF81D9069BF0022286B /* LiquidPlatformKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +84,7 @@
 		373594391D184007000FAFFB = {
 			isa = PBXGroup;
 			children = (
-				37EA73A31D1C9241009CFAC5 /* LiquidPlatformKit.framework */,
+				3776ECF61D90692E0022286B /* LiquidPlatformKit.framework */,
 				375632D21D184C720016A1A5 /* Settings.bundle */,
 				373594441D184007000FAFFB /* LPKTutorialTwo */,
 				DDC5D86ECF3DFADB2D9BE4F7 /* Pods */,
@@ -176,6 +176,7 @@
 				TargetAttributes = {
 					373594411D184007000FAFFB = {
 						CreatedOnToolsVersion = 7.3;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -385,6 +386,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -402,6 +404,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",

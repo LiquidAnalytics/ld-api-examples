@@ -10,8 +10,8 @@
 
 @interface LDKRelatedContext : LDMItem
 
-@property NSString *itemType;
-@property NSString *itemId;
-@property NSString *relationshipPath;
+@property (strong) NSString *itemType;
+@property (strong) NSString *itemId;
+@property (strong) NSString *relationshipPath;
 
 @end

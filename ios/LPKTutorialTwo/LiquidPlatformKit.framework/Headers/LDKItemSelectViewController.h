@@ -28,6 +28,7 @@
 @property (weak, nullable) id<LDKItemSelectViewControllerDelegate> delegate;
 @property (weak, nullable) id configurationData;
 @property (strong, nonatomic, nullable) NSMutableArray *selectedItems;
+@property (strong, nonatomic, nullable) NSMutableArray *selectedItemIds;
 @property (strong, nonatomic, nullable) LDMQueryFilter *queryFilter;
 @property (strong, nonatomic, nullable) LDMQueryFilter *searchQueryFilter;
 
