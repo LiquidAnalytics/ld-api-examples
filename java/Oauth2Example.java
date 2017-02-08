@@ -1,5 +1,3 @@
-package com.liquidanalytics.lpk;
-
 import java.io.IOException;
 import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.HttpException;
