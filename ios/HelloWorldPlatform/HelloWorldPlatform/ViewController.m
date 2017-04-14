@@ -2,13 +2,12 @@
 //  ViewController.m
 //  HelloWorldPlatform
 //
-//  Created by CARSON LI on 2016-05-03.
-//  Copyright © 2016 Liquid Analytics. All rights reserved.
+//  Created by CARSON LI on 2017-04-14.
+//  Copyright © 2017 Liquid Analytics. All rights reserved.
 //
 
 #import "ViewController.h"
-#import <LiquidPlatformKit/LDMDataManager.h>
-#import <LiquidPlatformKit/LDMItem.h>
+#import <LiquidPlatformKit/LiquidPlatformKit.h>
 
 @interface ViewController ()
 
@@ -44,8 +43,8 @@
 -(IBAction)loginButtonPressed:(id)sender
 {
     //fill these values in
-    __block NSString *username = @"carson.li@liquidanalytics.com";
-    __block NSString *password = @"Bams1024";
+    __block NSString *username = @"";
+    __block NSString *password = @"";
     [[LDMDataManager sharedInstance] executeAsynch:^{
         self.authCallback(username, password);
     }];

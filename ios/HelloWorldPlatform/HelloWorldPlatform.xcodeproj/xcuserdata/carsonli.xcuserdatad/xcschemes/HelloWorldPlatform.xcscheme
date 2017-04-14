@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0730"
+   LastUpgradeVersion = "0830"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "37F4217C1CD9167800928523"
+               BlueprintIdentifier = "3796D2031EA148C000CFCAE4"
                BuildableName = "HelloWorldPlatform.app"
                BlueprintName = "HelloWorldPlatform"
                ReferencedContainer = "container:HelloWorldPlatform.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "37F4217C1CD9167800928523"
+            BlueprintIdentifier = "3796D2031EA148C000CFCAE4"
             BuildableName = "HelloWorldPlatform.app"
             BlueprintName = "HelloWorldPlatform"
             ReferencedContainer = "container:HelloWorldPlatform.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "37F4217C1CD9167800928523"
+            BlueprintIdentifier = "3796D2031EA148C000CFCAE4"
             BuildableName = "HelloWorldPlatform.app"
             BlueprintName = "HelloWorldPlatform"
             ReferencedContainer = "container:HelloWorldPlatform.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "37F4217C1CD9167800928523"
+            BlueprintIdentifier = "3796D2031EA148C000CFCAE4"
             BuildableName = "HelloWorldPlatform.app"
             BlueprintName = "HelloWorldPlatform"
             ReferencedContainer = "container:HelloWorldPlatform.xcodeproj">

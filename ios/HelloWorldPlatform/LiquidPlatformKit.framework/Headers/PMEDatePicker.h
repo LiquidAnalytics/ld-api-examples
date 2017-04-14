@@ -27,5 +27,6 @@
 @property (nonatomic, weak) IBOutlet id<PMEDatePickerDelegate> dateDelegate;
 
 - (void)setDate:(NSDate*)date animated:(BOOL)animated;
+- (NSDate*) retrieveDate;
 
 @end

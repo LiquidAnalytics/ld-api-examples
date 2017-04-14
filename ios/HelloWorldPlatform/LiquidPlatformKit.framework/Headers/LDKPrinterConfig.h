@@ -13,30 +13,30 @@
 
 @interface LDKPrinterConfig : LDMItem
 
-@property (strong) NSString *printerConfigId;
-@property (strong) NSString *embeddedLogo;
-@property (strong) NSString *disclaimer;
-@property (strong) NSString *receiptTitle;
-@property (strong) NSString *barcodeData;
-@property (strong) LDMEnumeration *barcodeType;
-@property (strong) NSString *footerOne;
-@property (strong) NSString *footerTwo;
-@property (strong) NSString *footerThree;
-@property (strong) NSString *footerFour;
-@property (strong) NSString *lineItemField;
-@property (strong) NSString *lineItemTitle;
-@property (strong) NSString *lineItemSubtitle;
-@property (strong) NSString *summaryLabel;
-@property (strong) NSString *summaryStatement;
-@property (strong) NSString *lineItemValueOne;
-@property (strong) NSString *lineItemValueTwo;
-@property (strong) NSString *lineItemDiscountDescription;
-@property (strong) NSString *lineItemValueThree;
-@property (strong) NSString *lineItemComment;
-@property (strong) NSString *signedByStatement;
-@property (strong) NSArray *salesInfoFields;
-@property (strong) NSArray *customerInfoFields;
-@property (strong) NSArray *summaryFields;
-@property (strong) NSArray *extraInfoFields;
+@property NSString *printerConfigId;
+@property NSString *embeddedLogo;
+@property NSString *disclaimer;
+@property NSString *receiptTitle;
+@property NSString *barcodeData;
+@property LDMEnumeration *barcodeType;
+@property NSString *footerOne;
+@property NSString *footerTwo;
+@property NSString *footerThree;
+@property NSString *footerFour;
+@property NSString *lineItemField;
+@property NSString *lineItemTitle;
+@property NSString *lineItemSubtitle;
+@property NSString *summaryLabel;
+@property NSString *summaryStatement;
+@property NSString *lineItemValueOne;
+@property NSString *lineItemValueTwo;
+@property NSString *lineItemDiscountDescription;
+@property NSString *lineItemValueThree;
+@property NSString *lineItemComment;
+@property NSString *signedByStatement;
+@property NSArray *salesInfoFields;
+@property NSArray *customerInfoFields;
+@property NSArray *summaryFields;
+@property NSArray *extraInfoFields;
 
 @end

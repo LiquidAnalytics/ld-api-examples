@@ -2,8 +2,8 @@
 //  AppDelegate.h
 //  HelloWorldPlatform
 //
-//  Created by CARSON LI on 2016-05-03.
-//  Copyright © 2016 Liquid Analytics. All rights reserved.
+//  Created by CARSON LI on 2017-04-14.
+//  Copyright © 2017 Liquid Analytics. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
