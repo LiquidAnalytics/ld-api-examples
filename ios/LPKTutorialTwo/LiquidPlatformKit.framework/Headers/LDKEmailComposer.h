@@ -21,6 +21,7 @@
 @property (strong) NSString *attachmentMimeType;
 @property BOOL enableHTML;
 
+@property (nonatomic, copy) void (^emailFinishHandler)();
 @property (strong) MFMailComposeViewController *composeMailViewController;
 @property (weak) UIViewController *parentViewController;
 

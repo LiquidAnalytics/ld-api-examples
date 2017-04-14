@@ -13,9 +13,9 @@
 @interface LDLMediaCache : NSObject
 
 /*!
- * @discussion The singleton instance for the class. Only use this when working with LDLMediaCache
- * @return The global instance of LDLMediaCache
- */
+* @discussion The singleton instance for the class. Only use this when working with LDLMediaCache
+* @return The global instance of LDLMediaCache
+*/
 + (LDLMediaCache *)sharedInstance;
 
 /*!
@@ -33,8 +33,10 @@
  * @param block success code block with a string of the local image location
  * @param failutreBlock failure code block that is called with error as parameter
  */
++ (BOOL)deleteAllThumnails;
 
 - (void)retrieveMediaForMediaAbstract:(LDCMediaAbstract*)mediaAbstract completionHandler:(void (^)(NSString* path))block failureBlock:(void (^)(NSError* error))failureBlock;
+- (void)retrieveSearchResultsForItemType:(NSString *)itemType query:(NSString *)query userId:(NSString *)userId filters:(NSDictionary *)references completionHandler:(void (^)(NSArray *mediaIds))completionHandler;
 
 /*!
  * @discussion Downloads the media for a given media ID and returns the result in an async block
@@ -42,6 +44,7 @@
  * @param block success code block with a string of the local image location
  * @param failutreBlock failure code block that is called with error as parameter
  */
+- (void)retrieveMediaThumbnailForMediaAbstract:(LDCMediaAbstract *)mediaAbstract completionHandler:(void (^)(UIImage* image))block failureBlock:(void (^)(NSError* error))failureBlock;
 - (void)retrieveMediaForMediaAbstractId:(NSString *)mediaId completionHandler:(void (^)(UIImage* image))block failureBlock:(void (^)(NSError* error))failureBlock;
 
 /*!
@@ -58,20 +61,27 @@
  * @return TRUE if the thumbnail is cached, FALSE otherwise
  */
 - (BOOL)isMediaThumbnailCached:(NSString*)mediaId;
+- (BOOL)isMediaCachedForMediaAbstract:(LDCMediaAbstract*)mediaAbstract;
 
 /*!
  * @discussion Simple check to see if the media for a mediaId is already cached
  * @param mediaId The media id PK used to find the media abstract item
  * @return TRUE if the media is cached, FALSE otherwise
  */
-- (BOOL)isMediaCached:(NSString*)mediaId;
+- (BOOL)isMediaCachedForMediaId:(NSString*)mediaId;
 
 /*!
  * @discussion Given a media abstract item, returns the local path of the downloaded file
  * @param mediaAbstract The media abstract item in question
  * @return A string that represents the local path of the downloaded file
  */
+- (NSString*)fullPathForDbFileName:(NSString*)dbFileName;
 - (NSString*)dataFileNameForMediaAbstract:(LDCMediaAbstract*)mediaAbstract;
+- (NSString*)requestURLStringForMediaAbstract:(NSString *)mediaId thumbnail:(BOOL)thumbnail withLink:(NSString*)link;
+- (void) removeWithFileName:(NSString*)fileName deleteRelated:(BOOL)related;
+- (void) removeMediaAbstract:(LDCMediaAbstract*)mediaAbstract;
+- (void)start;
+- (void)clear;
 
 /*!
  * @discussion Gives the URL of the media abstract item hosted on the Liquid Server (sharing purposes)
@@ -91,5 +101,6 @@
  * @return TRUE if the thummbnails delete successfully, FALSE otherwise
  */
 - (BOOL)deleteAllThumnails;
+
 
 @end
