@@ -99,7 +99,6 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-LPKTutorialThree/Reachability.framework"
   install_framework "Pods-LPKTutorialThree/SDCAutoLayout.framework"
   install_framework "Pods-LPKTutorialThree/SSPullToRefresh.framework"
-  install_framework "Pods-LPKTutorialThree/Starscream.framework"
   install_framework "Pods-LPKTutorialThree/yajl.framework"
   install_framework "Pods-LPKTutorialThree/yajl_objc.framework"
 fi
@@ -119,7 +118,6 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-LPKTutorialThree/Reachability.framework"
   install_framework "Pods-LPKTutorialThree/SDCAutoLayout.framework"
   install_framework "Pods-LPKTutorialThree/SSPullToRefresh.framework"
-  install_framework "Pods-LPKTutorialThree/Starscream.framework"
   install_framework "Pods-LPKTutorialThree/yajl.framework"
   install_framework "Pods-LPKTutorialThree/yajl_objc.framework"
 fi

@@ -20,7 +20,6 @@
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *description;
 @property (nonatomic, strong) NSArray *tags;
-@property (nonatomic, strong) LDMDimension *syncActions;
 @property (nonatomic, strong) NSString *createdBy;
 @property (nonatomic, strong) NSDate *createdAt;
 @property (nonatomic, strong) NSString *updatedBy;

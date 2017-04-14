@@ -16,6 +16,7 @@ extern NSString *const LRUIPopoverControllerDidDismissNotification;
 }
 @property (nonatomic, retain) UIPopoverController *currentPopoverController;
 @property (nonatomic, assign) BOOL permitCurrentPopoverControllerToDismiss;
+@property (weak) UIViewController *currentiPhoneVC;
 
 + (id)sharedManager;
 

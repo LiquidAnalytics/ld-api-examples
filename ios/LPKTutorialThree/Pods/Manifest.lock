@@ -28,13 +28,13 @@ PODS:
   - BlocksKit/UIKit (2.2.5):
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
-  - CocoaLumberjack (2.3.0):
-    - CocoaLumberjack/Default (= 2.3.0)
-    - CocoaLumberjack/Extensions (= 2.3.0)
-  - CocoaLumberjack/Core (2.3.0)
-  - CocoaLumberjack/Default (2.3.0):
+  - CocoaLumberjack (2.1.0-beta):
+    - CocoaLumberjack/Default (= 2.1.0-beta)
+    - CocoaLumberjack/Extensions (= 2.1.0-beta)
+  - CocoaLumberjack/Core (2.1.0-beta)
+  - CocoaLumberjack/Default (2.1.0-beta):
     - CocoaLumberjack/Core
-  - CocoaLumberjack/Extensions (2.3.0):
+  - CocoaLumberjack/Extensions (2.1.0-beta):
     - CocoaLumberjack/Default
   - CorePlot (1.6)
   - DraggableCollectionView (0.1)
@@ -59,7 +59,6 @@ PODS:
   - Reachability (3.1.1)
   - SDCAutoLayout (2.0)
   - SSPullToRefresh (1.2.0)
-  - Starscream (1.0.2)
   - yajl (1.0.12)
   - yajl-objc (0.2.27):
     - yajl (~> 1.0.11)
@@ -68,7 +67,7 @@ DEPENDENCIES:
   - 1PasswordExtension (= 1.6)
   - ASIHTTPRequest (= 1.8.1)
   - BlocksKit (= 2.2.5)
-  - CocoaLumberjack (= 2.3.0)
+  - CocoaLumberjack (= 2.1.0-beta)
   - CorePlot (= 1.6)
   - DraggableCollectionView (= 0.1)
   - DTCoreText (= 1.6.9)
@@ -80,14 +79,13 @@ DEPENDENCIES:
   - Reachability (= 3.1.1)
   - SDCAutoLayout (= 2.0)
   - SSPullToRefresh (= 1.2.0)
-  - Starscream (= 1.0.2)
   - yajl-objc
 
 SPEC CHECKSUMS:
   1PasswordExtension: 846c1497815c8b5dcf2828bc843d21d04f07138f
   ASIHTTPRequest: bf4f9b8be3526d40865d045bb664e0bab246fb81
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
-  CocoaLumberjack: 97fab7ee5f507fe54445cca7ea80f926729cfd15
+  CocoaLumberjack: 89ff78bbc0723eec8f761f1274993e0699facab8
   CorePlot: 820901f6c147f2d84549ffa1f0902869f980d74d
   DraggableCollectionView: 532307b72e1a6e6a32289ed5f5c8ac20bdad06ff
   DTCoreText: bc2050ef42d7d2fca8e7190b2e6a6e5be19eb5c0
@@ -100,7 +98,6 @@ SPEC CHECKSUMS:
   Reachability: dd9aa4fb6667b9f787690a74f53cb7634ce99893
   SDCAutoLayout: 47994f083476796616e4a6b39cad14a69df630b4
   SSPullToRefresh: d32c6af9cfcfbc737265cd9ff8848c29c1aa5b5d
-  Starscream: 40e2c4c1c770d811f24116b8b7dbeb4542c56767
   yajl: e435f86f7429fe047dff3314608fb775defd8e09
   yajl-objc: fe4ce4868434a4661fb446ba4400162ab48310cd
 

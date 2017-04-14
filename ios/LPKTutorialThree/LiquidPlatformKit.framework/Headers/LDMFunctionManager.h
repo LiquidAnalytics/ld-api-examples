@@ -14,6 +14,7 @@
 
 @interface LDMFunctionManager : NSObject
 
+@property (strong) NSDateFormatter *longDateFormatter;
 @property (strong) NSDateFormatter *shortDateFormatter;
 @property (strong) NSDateFormatter *dateFormatter;
 @property (strong) NSNumberFormatter *numberFormatter;
@@ -283,6 +284,8 @@
  */
 - (BOOL) isDateForToday:(id)input;
 
+- (NSString *)isoLocalDate;
+
 /*!
  * @discussion Simple way to retrieve the number of seconds from
                "now" to beginning of 1970
@@ -397,7 +400,7 @@
 /* Dimension Helper Functions_ */
 
 /* Misc / Legacy (Do not Delete)*/
-
+- (NSString*) convertToUPCA:(NSString*)barcodeUPCE;
 - (id)parse:(id)argument;
 - (LDMDimension *)parentDimension:(LDMDimension *)dimension;
 - (NSNumber *)numberFromId:(id)numberObj;

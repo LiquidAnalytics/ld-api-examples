@@ -53,5 +53,6 @@ typedef NS_ENUM(NSUInteger, LDKViewSide)
 
 - (void)setFrameOrigin:(CGPoint)origin;
 - (void)setFrameSize:(CGSize)size;
+- (UIViewController *) firstAvailableUIViewController;
 
 @end
