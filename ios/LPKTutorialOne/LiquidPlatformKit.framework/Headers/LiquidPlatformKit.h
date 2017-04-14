@@ -288,6 +288,6 @@ FOUNDATION_EXPORT const unsigned char LiquidPlatformKitVersionString[];
 #import <LiquidPlatformKit/NSString+MD5Addition.h>
 #import <LiquidPlatformKit/NSString+RegExpExtensions.h>
 #import <LiquidPlatformKit/LDKCalendarViewController.h>
-
+#import <LiquidPlatformKit/LDKPrinterManagerViewController.h>
 
 #endif /* LiquidPlatformKit_h */

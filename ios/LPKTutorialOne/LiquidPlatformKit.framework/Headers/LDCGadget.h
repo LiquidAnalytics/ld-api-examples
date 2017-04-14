@@ -26,20 +26,15 @@ typedef NS_OPTIONS(NSUInteger, GadgetOption)
     GadgetOptionLongTap = 1 << 0,
     GadgetOptionFromInsight = 1 << 1,
     GadgetOptionDoNotChangeActive = 1 << 2
-    
-//  rename as you go!!
-//    GadgetOptionTwo = 1 << 1,
-//    GadgetOptionThree = 1 << 2
 };
 
 - (id __nonnull)initWithController:(LDCGadgetController * __nonnull)controller andName:(NSString * __nonnull)name;
-
 - (void)setup;
 - (void)gadgetDidLoad;
 - (void)registerAction:(LDCGadgetAction * __nonnull)action ForType:(NSString * __nonnull)type withName:(NSString * __nonnull)name;
 - (LDCGadgetAction * __nullable)actionNamed:(NSString * __nonnull)name;
 - (NSArray * __nonnull)actionsForType:(NSString * __nonnull)type;
-//- (void)setAsActiveGadgetFromActionName:(NSString *)actionName;
 - (void)reset;
 - (void)show;
+
 @end

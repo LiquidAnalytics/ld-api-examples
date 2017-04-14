@@ -11,6 +11,7 @@
 @interface LDKItemReporting : LDMItem
 
 @property NSString *itemType;
+@property NSString *action;
 @property NSString *reportType;
 @property NSArray *reportFields;
 @property NSArray *criteriaFields;

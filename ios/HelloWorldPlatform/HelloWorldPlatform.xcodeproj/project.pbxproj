@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		375010C41EA17AC40011793A /* LiquidPlatformKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 375010C21EA17ABE0011793A /* LiquidPlatformKit.framework */; };
+		375010C51EA17AC40011793A /* LiquidPlatformKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 375010C21EA17ABE0011793A /* LiquidPlatformKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3796D2091EA148C000CFCAE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3796D2081EA148C000CFCAE4 /* main.m */; };
 		3796D20C1EA148C000CFCAE4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3796D20B1EA148C000CFCAE4 /* AppDelegate.m */; };
 		3796D20F1EA148C000CFCAE4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3796D20E1EA148C000CFCAE4 /* ViewController.m */; };
@@ -14,8 +16,6 @@
 		3796D2141EA148C000CFCAE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3796D2131EA148C000CFCAE4 /* Assets.xcassets */; };
 		3796D2171EA148C000CFCAE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3796D2151EA148C000CFCAE4 /* LaunchScreen.storyboard */; };
 		3796D2241EA149EC00CFCAE4 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3796D2231EA149EC00CFCAE4 /* Settings.bundle */; };
-		3796D2261EA14B5A00CFCAE4 /* LiquidPlatformKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3796D2251EA14B5A00CFCAE4 /* LiquidPlatformKit.framework */; };
-		3796D2281EA14B6E00CFCAE4 /* LiquidPlatformKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3796D2251EA14B5A00CFCAE4 /* LiquidPlatformKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3A92368DDFCCBC7CC0D0EF7D /* Pods_HelloWorldPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B92997871246B97E6F442C8 /* Pods_HelloWorldPlatform.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +26,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3796D2281EA14B6E00CFCAE4 /* LiquidPlatformKit.framework in Embed Frameworks */,
+				375010C51EA17AC40011793A /* LiquidPlatformKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -35,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		0B92997871246B97E6F442C8 /* Pods_HelloWorldPlatform.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloWorldPlatform.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		375010C21EA17ABE0011793A /* LiquidPlatformKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LiquidPlatformKit.framework; sourceTree = "<group>"; };
 		3796D2041EA148C000CFCAE4 /* HelloWorldPlatform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorldPlatform.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3796D2081EA148C000CFCAE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3796D20A1EA148C000CFCAE4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -46,7 +47,6 @@
 		3796D2161EA148C000CFCAE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3796D2181EA148C000CFCAE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3796D2231EA149EC00CFCAE4 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		3796D2251EA14B5A00CFCAE4 /* LiquidPlatformKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LiquidPlatformKit.framework; sourceTree = "<group>"; };
 		5BAA951457DD7CDCCA484575 /* Pods-HelloWorldPlatform.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorldPlatform.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloWorldPlatform/Pods-HelloWorldPlatform.debug.xcconfig"; sourceTree = "<group>"; };
 		AFE64F7267376D3B587962D1 /* Pods-HelloWorldPlatform.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorldPlatform.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloWorldPlatform/Pods-HelloWorldPlatform.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3796D2261EA14B5A00CFCAE4 /* LiquidPlatformKit.framework in Frameworks */,
+				375010C41EA17AC40011793A /* LiquidPlatformKit.framework in Frameworks */,
 				3A92368DDFCCBC7CC0D0EF7D /* Pods_HelloWorldPlatform.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,7 +67,7 @@
 		3796D1FB1EA148C000CFCAE4 = {
 			isa = PBXGroup;
 			children = (
-				3796D2251EA14B5A00CFCAE4 /* LiquidPlatformKit.framework */,
+				375010C21EA17ABE0011793A /* LiquidPlatformKit.framework */,
 				3796D2231EA149EC00CFCAE4 /* Settings.bundle */,
 				3796D2061EA148C000CFCAE4 /* HelloWorldPlatform */,
 				3796D2051EA148C000CFCAE4 /* Products */,
@@ -388,6 +388,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liquidanalytics.HelloWorldPlatform;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -409,6 +410,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liquidanalytics.HelloWorldPlatform;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

@@ -1,0 +1,6 @@
+framework module Pods_LPKTutorialOne {
+  umbrella header "Pods-LPKTutorialOne-umbrella.h"
+
+  export *
+  module * { export * }
+}

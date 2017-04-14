@@ -14,6 +14,8 @@
 		373232DF1D14805F002D7385 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 373232DE1D14805F002D7385 /* UIKit.framework */; };
 		373232E11D148067002D7385 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 373232E01D148067002D7385 /* Foundation.framework */; };
 		373232E91D149217002D7385 /* MovieDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 373232E81D149217002D7385 /* MovieDetailViewController.m */; };
+		375010C81EA17C880011793A /* LiquidPlatformKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 375010C61EA17C7D0011793A /* LiquidPlatformKit.framework */; };
+		375010C91EA17C880011793A /* LiquidPlatformKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 375010C61EA17C7D0011793A /* LiquidPlatformKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		375A16331D145EC200498949 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A16321D145EC200498949 /* main.m */; };
 		375A16361D145EC200498949 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A16351D145EC200498949 /* AppDelegate.m */; };
 		375A16391D145EC200498949 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A16381D145EC200498949 /* ViewController.m */; };
@@ -22,9 +24,6 @@
 		375A16411D145EC200498949 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375A163F1D145EC200498949 /* LaunchScreen.storyboard */; };
 		37A5A2631D1479420088DE40 /* MovieTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A5A2621D1479420088DE40 /* MovieTableViewCell.m */; };
 		37A5A2661D14796E0088DE40 /* MovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A5A2651D14796E0088DE40 /* MovieViewController.m */; };
-		37CA124C1D9046D600BBAD28 /* LiquidPlatformKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37CA124B1D9046D600BBAD28 /* LiquidPlatformKit.framework */; };
-		37CA124D1D9046E200BBAD28 /* LiquidPlatformKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37CA124B1D9046D600BBAD28 /* LiquidPlatformKit.framework */; };
-		37CA124E1D9046E200BBAD28 /* LiquidPlatformKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37CA124B1D9046D600BBAD28 /* LiquidPlatformKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		37E6A65A1D1463690066E095 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 37E6A6591D1463690066E095 /* Settings.bundle */; };
 		3D742D7F3DFE96E9F715212B /* Pods_LPKTutorialOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A484821874B5A6E28CFDAEE /* Pods_LPKTutorialOne.framework */; };
 /* End PBXBuildFile section */
@@ -36,7 +35,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				37CA124E1D9046E200BBAD28 /* LiquidPlatformKit.framework in Embed Frameworks */,
+				375010C91EA17C880011793A /* LiquidPlatformKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,6 +52,7 @@
 		373232E01D148067002D7385 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		373232E71D149217002D7385 /* MovieDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieDetailViewController.h; sourceTree = "<group>"; };
 		373232E81D149217002D7385 /* MovieDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieDetailViewController.m; sourceTree = "<group>"; };
+		375010C61EA17C7D0011793A /* LiquidPlatformKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LiquidPlatformKit.framework; sourceTree = "<group>"; };
 		375A162E1D145EC200498949 /* LPKTutorialOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LPKTutorialOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		375A16321D145EC200498949 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		375A16341D145EC200498949 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -67,7 +67,6 @@
 		37A5A2621D1479420088DE40 /* MovieTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieTableViewCell.m; sourceTree = "<group>"; };
 		37A5A2641D14796E0088DE40 /* MovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieViewController.h; sourceTree = "<group>"; };
 		37A5A2651D14796E0088DE40 /* MovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieViewController.m; sourceTree = "<group>"; };
-		37CA124B1D9046D600BBAD28 /* LiquidPlatformKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LiquidPlatformKit.framework; sourceTree = "<group>"; };
 		37E6A6591D1463690066E095 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = LPKTutorialOne/Settings.bundle; sourceTree = "<group>"; };
 		3A484821874B5A6E28CFDAEE /* Pods_LPKTutorialOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LPKTutorialOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2CB91C26A73CEF991F62EB5 /* Pods-LPKTutorialOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LPKTutorialOne.release.xcconfig"; path = "Pods/Target Support Files/Pods-LPKTutorialOne/Pods-LPKTutorialOne.release.xcconfig"; sourceTree = "<group>"; };
@@ -80,10 +79,9 @@
 			files = (
 				373232E11D148067002D7385 /* Foundation.framework in Frameworks */,
 				373232DF1D14805F002D7385 /* UIKit.framework in Frameworks */,
-				37CA124D1D9046E200BBAD28 /* LiquidPlatformKit.framework in Frameworks */,
 				373232DD1D14805A002D7385 /* CoreGraphics.framework in Frameworks */,
 				373232DB1D148055002D7385 /* QuartzCore.framework in Frameworks */,
-				37CA124C1D9046D600BBAD28 /* LiquidPlatformKit.framework in Frameworks */,
+				375010C81EA17C880011793A /* LiquidPlatformKit.framework in Frameworks */,
 				373232D91D148051002D7385 /* MobileCoreServices.framework in Frameworks */,
 				373232D71D14804B002D7385 /* EventKit.framework in Frameworks */,
 				3D742D7F3DFE96E9F715212B /* Pods_LPKTutorialOne.framework in Frameworks */,
@@ -105,7 +103,7 @@
 		375A16251D145EC200498949 = {
 			isa = PBXGroup;
 			children = (
-				37CA124B1D9046D600BBAD28 /* LiquidPlatformKit.framework */,
+				375010C61EA17C7D0011793A /* LiquidPlatformKit.framework */,
 				37E6A6591D1463690066E095 /* Settings.bundle */,
 				375A16301D145EC200498949 /* LPKTutorialOne */,
 				375A162F1D145EC200498949 /* Products */,
@@ -409,6 +407,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 190DFA1CFA1DE8BDAE9EA4B4 /* Pods-LPKTutorialOne.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				DEVELOPMENT_TEAM = "";
@@ -428,6 +427,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F2CB91C26A73CEF991F62EB5 /* Pods-LPKTutorialOne.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				DEVELOPMENT_TEAM = "";

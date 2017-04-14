@@ -1,0 +1,2253 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/ASIHTTPRequest.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "ASIAuthenticationDialog.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/ASIHTTPRequest/Classes/ASIAuthenticationDialog.h"
+        },
+        {
+          'type': 'file',
+          'name': "ASICacheDelegate.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/ASIHTTPRequest/Classes/ASICacheDelegate.h"
+        },
+        {
+          'type': 'file',
+          'name': "ASICloudFilesCDNRequest.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/ASIHTTPRequest/Classes/CloudFiles/ASICloudFilesCDNRequest.h"
+        },
+        {
+          'type': 'file',
+          'name': "ASICloudFilesContainer.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/ASIHTTPRequest/Classes/CloudFiles/ASICloudFilesContainer.h"
+        },
+        {
+          'type': 'file',
+          'name': "ASICloudFilesContainerRequest.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/ASIHTTPRequest/Classes/CloudFiles/ASICloudFilesContainerRequest.h"
+        },
+        {
+          'type': 'file',
+          'name': "ASICloudFilesContainerXMLParserDelegate.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/ASIHTTPRequest/Classes/CloudFiles/ASICloudFilesContainerXMLParserDelegate.h"
+        },
+        {
+          'type': 'file',
+          'name': "ASICloudFilesObject.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/ASIHTTPRequest/Classes/CloudFiles/ASICloudFilesObject.h"
+        },
+        {
+          'type': 'file',
+          'name': "ASICloudFilesObjectRequest.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/ASIHTTPRequest/Classes/CloudFiles/ASICloudFilesObjectRequest.h"
+        },
+        {
+          'type': 'file',
+          'name': "ASICloudFilesRequest.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/ASIHTTPRequest/Classes/CloudFiles/ASICloudFilesRequest.h"
+        },
+        {
+          'type': 'file',
+          'name': "ASIDataCompressor.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/ASIHTTPRequest/Classes/ASIDataCompressor.h"
+        },
+        {
+          'type': 'file',
+          'name': "ASIDataDecompressor.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/ASIHTTPRequest/Classes/ASIDataDecompressor.h"
+        },
+        {
+          'type': 'file',
+          'name': "ASIDownloadCache.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/ASIHTTPRequest/Classes/ASIDownloadCache.h"
+        },
+        {
+          'type': 'file',
+          'name': "ASIFormDataRequest.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/ASIHTTPRequest/Classes/ASIFormDataRequest.h"
+        },
+        {
+          'type': 'file',
+          'name': "ASIHTTPRequest-Swift.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/ASIHTTPRequest.framework/Headers/ASIHTTPRequest-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "ASIHTTPRequest-umbrella.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/Target Support Files/ASIHTTPRequest/ASIHTTPRequest-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "ASIHTTPRequest.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/ASIHTTPRequest/Classes/ASIHTTPRequest.h"
+        },
+        {
+          'type': 'file',
+          'name': "ASIHTTPRequestConfig.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/ASIHTTPRequest/Classes/ASIHTTPRequestConfig.h"
+        },
+        {
+          'type': 'file',
+          'name': "ASIHTTPRequestDelegate.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/ASIHTTPRequest/Classes/ASIHTTPRequestDelegate.h"
+        },
+        {
+          'type': 'file',
+          'name': "ASIInputStream.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/ASIHTTPRequest/Classes/ASIInputStream.h"
+        },
+        {
+          'type': 'file',
+          'name': "ASINSXMLParserCompat.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/ASIHTTPRequest/Classes/S3/ASINSXMLParserCompat.h"
+        },
+        {
+          'type': 'file',
+          'name': "ASINetworkQueue.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/ASIHTTPRequest/Classes/ASINetworkQueue.h"
+        },
+        {
+          'type': 'file',
+          'name': "ASIProgressDelegate.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/ASIHTTPRequest/Classes/ASIProgressDelegate.h"
+        },
+        {
+          'type': 'file',
+          'name': "ASIS3Bucket.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/ASIHTTPRequest/Classes/S3/ASIS3Bucket.h"
+        },
+        {
+          'type': 'file',
+          'name': "ASIS3BucketObject.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/ASIHTTPRequest/Classes/S3/ASIS3BucketObject.h"
+        },
+        {
+          'type': 'file',
+          'name': "ASIS3BucketRequest.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/ASIHTTPRequest/Classes/S3/ASIS3BucketRequest.h"
+        },
+        {
+          'type': 'file',
+          'name': "ASIS3ObjectRequest.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/ASIHTTPRequest/Classes/S3/ASIS3ObjectRequest.h"
+        },
+        {
+          'type': 'file',
+          'name': "ASIS3Request.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/ASIHTTPRequest/Classes/S3/ASIS3Request.h"
+        },
+        {
+          'type': 'file',
+          'name': "ASIS3ServiceRequest.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/ASIHTTPRequest/Classes/S3/ASIS3ServiceRequest.h"
+        },
+        {
+          'type': 'file',
+          'name': "ASIWebPageRequest.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/ASIHTTPRequest/Classes/ASIWebPageRequest/ASIWebPageRequest.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/ASIHTTPRequest.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphonesimulator/ASIHTTPRequest.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/BlocksKit.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "A2BlockInvocation.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/BlocksKit/BlocksKit/DynamicDelegate/A2BlockInvocation.h"
+        },
+        {
+          'type': 'file',
+          'name': "A2DynamicDelegate.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/BlocksKit/BlocksKit/DynamicDelegate/A2DynamicDelegate.h"
+        },
+        {
+          'type': 'file',
+          'name': "BKMacros.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/BlocksKit/BlocksKit/Core/BKMacros.h"
+        },
+        {
+          'type': 'file',
+          'name': "BlocksKit+MessageUI.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/BlocksKit/BlocksKit/BlocksKit+MessageUI.h"
+        },
+        {
+          'type': 'file',
+          'name': "BlocksKit+UIKit.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/BlocksKit/BlocksKit/BlocksKit+UIKit.h"
+        },
+        {
+          'type': 'file',
+          'name': "BlocksKit-Swift.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/BlocksKit.framework/Headers/BlocksKit-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "BlocksKit-umbrella.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/Target Support Files/BlocksKit/BlocksKit-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "BlocksKit.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/BlocksKit/BlocksKit/BlocksKit.h"
+        },
+        {
+          'type': 'file',
+          'name': "MFMailComposeViewController+BlocksKit.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/BlocksKit/BlocksKit/MessageUI/MFMailComposeViewController+BlocksKit.h"
+        },
+        {
+          'type': 'file',
+          'name': "MFMessageComposeViewController+BlocksKit.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/BlocksKit/BlocksKit/MessageUI/MFMessageComposeViewController+BlocksKit.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSArray+BlocksKit.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/BlocksKit/BlocksKit/Core/NSArray+BlocksKit.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSCache+BlocksKit.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/BlocksKit/BlocksKit/DynamicDelegate/Foundation/NSCache+BlocksKit.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSDictionary+BlocksKit.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/BlocksKit/BlocksKit/Core/NSDictionary+BlocksKit.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSIndexSet+BlocksKit.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/BlocksKit/BlocksKit/Core/NSIndexSet+BlocksKit.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSInvocation+BlocksKit.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/BlocksKit/BlocksKit/Core/NSInvocation+BlocksKit.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSMutableArray+BlocksKit.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/BlocksKit/BlocksKit/Core/NSMutableArray+BlocksKit.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSMutableDictionary+BlocksKit.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/BlocksKit/BlocksKit/Core/NSMutableDictionary+BlocksKit.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSMutableIndexSet+BlocksKit.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/BlocksKit/BlocksKit/Core/NSMutableIndexSet+BlocksKit.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSMutableOrderedSet+BlocksKit.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/BlocksKit/BlocksKit/Core/NSMutableOrderedSet+BlocksKit.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSMutableSet+BlocksKit.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/BlocksKit/BlocksKit/Core/NSMutableSet+BlocksKit.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSObject+A2BlockDelegate.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/BlocksKit/BlocksKit/DynamicDelegate/NSObject+A2BlockDelegate.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSObject+A2DynamicDelegate.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/BlocksKit/BlocksKit/DynamicDelegate/NSObject+A2DynamicDelegate.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSObject+BKAssociatedObjects.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/BlocksKit/BlocksKit/Core/NSObject+BKAssociatedObjects.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSObject+BKBlockExecution.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/BlocksKit/BlocksKit/Core/NSObject+BKBlockExecution.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSObject+BKBlockObservation.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/BlocksKit/BlocksKit/Core/NSObject+BKBlockObservation.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSOrderedSet+BlocksKit.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/BlocksKit/BlocksKit/Core/NSOrderedSet+BlocksKit.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSSet+BlocksKit.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/BlocksKit/BlocksKit/Core/NSSet+BlocksKit.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSTimer+BlocksKit.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/BlocksKit/BlocksKit/Core/NSTimer+BlocksKit.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSURLConnection+BlocksKit.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/BlocksKit/BlocksKit/DynamicDelegate/Foundation/NSURLConnection+BlocksKit.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIActionSheet+BlocksKit.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/BlocksKit/BlocksKit/UIKit/UIActionSheet+BlocksKit.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIAlertView+BlocksKit.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/BlocksKit/BlocksKit/UIKit/UIAlertView+BlocksKit.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIBarButtonItem+BlocksKit.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/BlocksKit/BlocksKit/UIKit/UIBarButtonItem+BlocksKit.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIControl+BlocksKit.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/BlocksKit/BlocksKit/UIKit/UIControl+BlocksKit.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIGestureRecognizer+BlocksKit.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/BlocksKit/BlocksKit/UIKit/UIGestureRecognizer+BlocksKit.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIImagePickerController+BlocksKit.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/BlocksKit/BlocksKit/UIKit/UIImagePickerController+BlocksKit.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIPopoverController+BlocksKit.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/BlocksKit/BlocksKit/UIKit/UIPopoverController+BlocksKit.h"
+        },
+        {
+          'type': 'file',
+          'name': "UITextField+BlocksKit.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/BlocksKit/BlocksKit/UIKit/UITextField+BlocksKit.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIView+BlocksKit.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/BlocksKit/BlocksKit/UIKit/UIView+BlocksKit.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIWebView+BlocksKit.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/BlocksKit/BlocksKit/UIKit/UIWebView+BlocksKit.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/BlocksKit.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphonesimulator/BlocksKit.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/CocoaLumberjack.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "CocoaLumberjack-Swift.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/CocoaLumberjack.framework/Headers/CocoaLumberjack-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "CocoaLumberjack.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CocoaLumberjack/Classes/CocoaLumberjack.h"
+        },
+        {
+          'type': 'file',
+          'name': "DDASLLogCapture.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CocoaLumberjack/Classes/DDASLLogCapture.h"
+        },
+        {
+          'type': 'file',
+          'name': "DDASLLogger.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CocoaLumberjack/Classes/DDASLLogger.h"
+        },
+        {
+          'type': 'file',
+          'name': "DDAbstractDatabaseLogger.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CocoaLumberjack/Classes/DDAbstractDatabaseLogger.h"
+        },
+        {
+          'type': 'file',
+          'name': "DDAssertMacros.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CocoaLumberjack/Classes/DDAssertMacros.h"
+        },
+        {
+          'type': 'file',
+          'name': "DDContextFilterLogFormatter.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CocoaLumberjack/Classes/Extensions/DDContextFilterLogFormatter.h"
+        },
+        {
+          'type': 'file',
+          'name': "DDDispatchQueueLogFormatter.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CocoaLumberjack/Classes/Extensions/DDDispatchQueueLogFormatter.h"
+        },
+        {
+          'type': 'file',
+          'name': "DDFileLogger.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CocoaLumberjack/Classes/DDFileLogger.h"
+        },
+        {
+          'type': 'file',
+          'name': "DDLegacyMacros.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CocoaLumberjack/Classes/DDLegacyMacros.h"
+        },
+        {
+          'type': 'file',
+          'name': "DDLog+LOGV.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CocoaLumberjack/Classes/DDLog+LOGV.h"
+        },
+        {
+          'type': 'file',
+          'name': "DDLog.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CocoaLumberjack/Classes/DDLog.h"
+        },
+        {
+          'type': 'file',
+          'name': "DDLogMacros.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CocoaLumberjack/Classes/DDLogMacros.h"
+        },
+        {
+          'type': 'file',
+          'name': "DDMultiFormatter.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CocoaLumberjack/Classes/Extensions/DDMultiFormatter.h"
+        },
+        {
+          'type': 'file',
+          'name': "DDTTYLogger.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CocoaLumberjack/Classes/DDTTYLogger.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/CocoaLumberjack.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphonesimulator/CocoaLumberjack.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/CorePlot.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "CPTAnimation.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTAnimation.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTAnimationOperation.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTAnimationOperation.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTAnimationPeriod.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTAnimationPeriod.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTAnnotation.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTAnnotation.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTAnnotationHostLayer.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTAnnotationHostLayer.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTAxis.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTAxis.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTAxisLabel.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTAxisLabel.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTAxisLabelGroup.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTAxisLabelGroup.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTAxisSet.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTAxisSet.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTAxisTitle.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTAxisTitle.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTBarPlot.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTBarPlot.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTBorderedLayer.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTBorderedLayer.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTCalendarFormatter.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTCalendarFormatter.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTColor.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTColor.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTColorSpace.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTColorSpace.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTConstraints.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTConstraints.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTDefinitions.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTDefinitions.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTDerivedXYGraph.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTDerivedXYGraph.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTExceptions.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTExceptions.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTFill.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTFill.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTFunctionDataSource.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTFunctionDataSource.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTGradient.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTGradient.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTGraph.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTGraph.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTGraphHostingView.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/iPhoneOnly/CPTGraphHostingView.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTGridLineGroup.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTGridLineGroup.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTGridLines.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTGridLines.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTImage.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTImage.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTLayer.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTLayer.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTLayerAnnotation.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTLayerAnnotation.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTLegend.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTLegend.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTLegendEntry.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTLegendEntry.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTLimitBand.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTLimitBand.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTLineCap.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTLineCap.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTLineStyle.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTLineStyle.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTMutableLineStyle.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTMutableLineStyle.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTMutableNumericData+TypeConversion.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTMutableNumericData+TypeConversion.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTMutableNumericData.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTMutableNumericData.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTMutablePlotRange.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTMutablePlotRange.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTMutableShadow.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTMutableShadow.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTMutableTextStyle.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTMutableTextStyle.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTNumericData+TypeConversion.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTNumericData+TypeConversion.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTNumericData.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTNumericData.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTNumericDataType.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTNumericDataType.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTPathExtensions.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTPathExtensions.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTPieChart.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTPieChart.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTPlatformSpecificCategories.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/iPhoneOnly/CPTPlatformSpecificCategories.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTPlatformSpecificDefines.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/iPhoneOnly/CPTPlatformSpecificDefines.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTPlatformSpecificFunctions.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/iPhoneOnly/CPTPlatformSpecificFunctions.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTPlot.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTPlot.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTPlotArea.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTPlotArea.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTPlotAreaFrame.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTPlotAreaFrame.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTPlotGroup.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTPlotGroup.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTPlotRange.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTPlotRange.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTPlotSpace.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTPlotSpace.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTPlotSpaceAnnotation.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTPlotSpaceAnnotation.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTPlotSymbol.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTPlotSymbol.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTRangePlot.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTRangePlot.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTResponder.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTResponder.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTScatterPlot.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTScatterPlot.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTShadow.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTShadow.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTTextLayer.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTTextLayer.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTTextStyle.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTTextStyle.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTTextStylePlatformSpecific.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/iPhoneOnly/CPTTextStylePlatformSpecific.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTTheme.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTTheme.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTTimeFormatter.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTTimeFormatter.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTTradingRangePlot.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTTradingRangePlot.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTUtilities.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTUtilities.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTXYAxis.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTXYAxis.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTXYAxisSet.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTXYAxisSet.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTXYGraph.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTXYGraph.h"
+        },
+        {
+          'type': 'file',
+          'name': "CPTXYPlotSpace.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/CPTXYPlotSpace.h"
+        },
+        {
+          'type': 'file',
+          'name': "CorePlot-CocoaTouch.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/CorePlot-CocoaTouch.h"
+        },
+        {
+          'type': 'file',
+          'name': "CorePlot-Swift.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/CorePlot.framework/Headers/CorePlot-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "CorePlot-umbrella.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/Target Support Files/CorePlot/CorePlot-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "CorePlot.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/CocoaPods/CorePlot.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSCoderExtensions.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/NSCoderExtensions.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSDecimalNumberExtensions.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/NSDecimalNumberExtensions.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSNumberExtensions.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/NSNumberExtensions.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/CorePlot.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphonesimulator/CorePlot.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/CorePlot.framework/PrivateHeaders",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "_CPTAnimationCGFloatPeriod.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/_CPTAnimationCGFloatPeriod.h"
+        },
+        {
+          'type': 'file',
+          'name': "_CPTAnimationCGPointPeriod.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/_CPTAnimationCGPointPeriod.h"
+        },
+        {
+          'type': 'file',
+          'name': "_CPTAnimationCGRectPeriod.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/_CPTAnimationCGRectPeriod.h"
+        },
+        {
+          'type': 'file',
+          'name': "_CPTAnimationCGSizePeriod.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/_CPTAnimationCGSizePeriod.h"
+        },
+        {
+          'type': 'file',
+          'name': "_CPTAnimationNSDecimalPeriod.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/_CPTAnimationNSDecimalPeriod.h"
+        },
+        {
+          'type': 'file',
+          'name': "_CPTAnimationPlotRangePeriod.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/_CPTAnimationPlotRangePeriod.h"
+        },
+        {
+          'type': 'file',
+          'name': "_CPTAnimationTimingFunctions.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/_CPTAnimationTimingFunctions.h"
+        },
+        {
+          'type': 'file',
+          'name': "_CPTBorderLayer.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/_CPTBorderLayer.h"
+        },
+        {
+          'type': 'file',
+          'name': "_CPTConstraintsFixed.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/_CPTConstraintsFixed.h"
+        },
+        {
+          'type': 'file',
+          'name': "_CPTConstraintsRelative.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/_CPTConstraintsRelative.h"
+        },
+        {
+          'type': 'file',
+          'name': "_CPTDarkGradientTheme.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/_CPTDarkGradientTheme.h"
+        },
+        {
+          'type': 'file',
+          'name': "_CPTFillColor.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/_CPTFillColor.h"
+        },
+        {
+          'type': 'file',
+          'name': "_CPTFillGradient.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/_CPTFillGradient.h"
+        },
+        {
+          'type': 'file',
+          'name': "_CPTFillImage.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/_CPTFillImage.h"
+        },
+        {
+          'type': 'file',
+          'name': "_CPTMaskLayer.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/_CPTMaskLayer.h"
+        },
+        {
+          'type': 'file',
+          'name': "_CPTPlainBlackTheme.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/_CPTPlainBlackTheme.h"
+        },
+        {
+          'type': 'file',
+          'name': "_CPTPlainWhiteTheme.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/_CPTPlainWhiteTheme.h"
+        },
+        {
+          'type': 'file',
+          'name': "_CPTSlateTheme.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/_CPTSlateTheme.h"
+        },
+        {
+          'type': 'file',
+          'name': "_CPTStocksTheme.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/_CPTStocksTheme.h"
+        },
+        {
+          'type': 'file',
+          'name': "_CPTXYTheme.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/CorePlot/framework/Source/_CPTXYTheme.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/DTCoreText.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "DTAccessibilityElement.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTAccessibilityElement.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTAccessibilityViewProxy.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTAccessibilityViewProxy.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTAnchorHTMLElement.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTAnchorHTMLElement.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTAttributedLabel.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTAttributedLabel.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTAttributedTextCell.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTAttributedTextCell.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTAttributedTextContentView.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTAttributedTextContentView.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTAttributedTextView.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTAttributedTextView.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTBreakHTMLElement.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTBreakHTMLElement.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTCSSListStyle.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTCSSListStyle.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTCSSStylesheet.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTCSSStylesheet.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTColor+Compatibility.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTColor+Compatibility.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTColorFunctions.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTColorFunctions.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTCompatibility.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTCompatibility.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTCoreText-Swift.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/DTCoreText.framework/Headers/DTCoreText-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTCoreText-umbrella.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/Target Support Files/DTCoreText/DTCoreText-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTCoreText.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTCoreText.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTCoreTextConstants.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTCoreTextConstants.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTCoreTextFontCollection.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTCoreTextFontCollection.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTCoreTextFontDescriptor.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTCoreTextFontDescriptor.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTCoreTextFunctions.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTCoreTextFunctions.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTCoreTextGlyphRun.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTCoreTextGlyphRun.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTCoreTextLayoutFrame+Cursor.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTCoreTextLayoutFrame+Cursor.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTCoreTextLayoutFrame.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTCoreTextLayoutFrame.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTCoreTextLayoutFrameAccessibilityElementGenerator.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTCoreTextLayoutFrameAccessibilityElementGenerator.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTCoreTextLayoutLine.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTCoreTextLayoutLine.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTCoreTextLayouter.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTCoreTextLayouter.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTCoreTextParagraphStyle.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTCoreTextParagraphStyle.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTDictationPlaceholderTextAttachment.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTDictationPlaceholderTextAttachment.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTDictationPlaceholderView.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTDictationPlaceholderView.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTHTMLAttributedStringBuilder.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTHTMLAttributedStringBuilder.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTHTMLElement.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTHTMLElement.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTHTMLParserNode.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTHTMLParserNode.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTHTMLParserTextNode.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTHTMLParserTextNode.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTHTMLWriter.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTHTMLWriter.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTHorizontalRuleHTMLElement.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTHorizontalRuleHTMLElement.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTIframeTextAttachment.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTIframeTextAttachment.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTImage+HTML.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTImage+HTML.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTImageTextAttachment.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTImageTextAttachment.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTLazyImageView.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTLazyImageView.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTLinkButton.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTLinkButton.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTListItemHTMLElement.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTListItemHTMLElement.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTObjectTextAttachment.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTObjectTextAttachment.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTStylesheetHTMLElement.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTStylesheetHTMLElement.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTTextAttachment.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTTextAttachment.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTTextAttachmentHTMLElement.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTTextAttachmentHTMLElement.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTTextBlock.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTTextBlock.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTTextHTMLElement.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTTextHTMLElement.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTVideoTextAttachment.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTVideoTextAttachment.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTWebVideoView.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/DTWebVideoView.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSAttributedString+DTCoreText.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/NSAttributedString+DTCoreText.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSAttributedString+DTDebug.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/NSAttributedString+DTDebug.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSAttributedString+HTML.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/NSAttributedString+HTML.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSAttributedString+SmallCaps.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/NSAttributedString+SmallCaps.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSAttributedStringRunDelegates.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/NSAttributedStringRunDelegates.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSCharacterSet+HTML.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/NSCharacterSet+HTML.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSDictionary+DTCoreText.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/NSDictionary+DTCoreText.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSMutableAttributedString+HTML.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/NSMutableAttributedString+HTML.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSMutableString+HTML.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/NSMutableString+HTML.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSScanner+HTML.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/NSScanner+HTML.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSString+CSS.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/NSString+CSS.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSString+HTML.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/NSString+HTML.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSString+Paragraphs.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/NSString+Paragraphs.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIFont+DTCoreText.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTCoreText/Core/Source/UIFont+DTCoreText.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/DTCoreText.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphonesimulator/DTCoreText.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/DTFoundation.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "DTActivityTitleView.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTFoundation/Core/Source/iOS/DTActivityTitleView.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTAsyncFileDeleter.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTFoundation/Core/Source/DTAsyncFileDeleter.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTBase64Coding.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTFoundation/Core/Source/DTBase64Coding.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTBlockFunctions.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTFoundation/Core/Source/DTBlockFunctions.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTCoreGraphicsUtils.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTFoundation/Core/Source/DTCoreGraphicsUtils.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTCustomColoredAccessory.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTFoundation/Core/Source/iOS/DTCustomColoredAccessory.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTExtendedFileAttributes.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTFoundation/Core/Source/DTExtendedFileAttributes.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTFolderMonitor.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTFoundation/Core/Source/DTFolderMonitor.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTFoundation-Swift.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/DTFoundation.framework/Headers/DTFoundation-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTFoundation-umbrella.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/Target Support Files/DTFoundation/DTFoundation-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTFoundationConstants.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTFoundation/Core/Source/DTFoundationConstants.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTHTMLParser.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTFoundation/Core/Source/DTHTMLParser/DTHTMLParser.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTLog.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTFoundation/Core/Source/DTLog.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTPieProgressIndicator.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTFoundation/Core/Source/iOS/DTPieProgressIndicator.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTSmartPagingScrollView.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTFoundation/Core/Source/iOS/DTSmartPagingScrollView.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTTiledLayerWithoutFade.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTFoundation/Core/Source/iOS/DTTiledLayerWithoutFade.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTVersion.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTFoundation/Core/Source/DTVersion.h"
+        },
+        {
+          'type': 'file',
+          'name': "DTWeakSupport.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTFoundation/Core/Source/DTWeakSupport.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSArray+DTError.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTFoundation/Core/Source/NSArray+DTError.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSData+DTCrypto.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTFoundation/Core/Source/NSData+DTCrypto.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSDictionary+DTError.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTFoundation/Core/Source/NSDictionary+DTError.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSFileWrapper+DTCopying.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTFoundation/Core/Source/NSFileWrapper+DTCopying.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSMutableArray+DTMoving.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTFoundation/Core/Source/NSMutableArray+DTMoving.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSString+DTFormatNumbers.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTFoundation/Core/Source/NSString+DTFormatNumbers.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSString+DTPaths.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTFoundation/Core/Source/NSString+DTPaths.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSString+DTURLEncoding.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTFoundation/Core/Source/NSString+DTURLEncoding.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSString+DTUtilities.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTFoundation/Core/Source/NSString+DTUtilities.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSURL+DTAppLinks.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTFoundation/Core/Source/iOS/NSURL+DTAppLinks.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSURL+DTComparing.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTFoundation/Core/Source/NSURL+DTComparing.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSURL+DTUnshorten.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTFoundation/Core/Source/NSURL+DTUnshorten.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIApplication+DTNetworkActivity.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTFoundation/Core/Source/iOS/UIApplication+DTNetworkActivity.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIImage+DTFoundation.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTFoundation/Core/Source/iOS/UIImage+DTFoundation.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIView+DTFoundation.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTFoundation/Core/Source/iOS/UIView+DTFoundation.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIWebView+DTFoundation.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DTFoundation/Core/Source/iOS/UIWebView+DTFoundation.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/DTFoundation.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphonesimulator/DTFoundation.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/DraggableCollectionView.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "DraggableCollectionView-Swift.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/DraggableCollectionView.framework/Headers/DraggableCollectionView-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "DraggableCollectionView-umbrella.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/Target Support Files/DraggableCollectionView/DraggableCollectionView-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "DraggableCollectionViewFlowLayout.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DraggableCollectionView/DraggableCollectionView/Layout/DraggableCollectionViewFlowLayout.h"
+        },
+        {
+          'type': 'file',
+          'name': "LSCollectionViewHelper.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DraggableCollectionView/DraggableCollectionView/Helpers/LSCollectionViewHelper.h"
+        },
+        {
+          'type': 'file',
+          'name': "LSCollectionViewLayoutHelper.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DraggableCollectionView/DraggableCollectionView/Helpers/LSCollectionViewLayoutHelper.h"
+        },
+        {
+          'type': 'file',
+          'name': "UICollectionView+Draggable.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DraggableCollectionView/DraggableCollectionView/UICollectionView+Draggable.h"
+        },
+        {
+          'type': 'file',
+          'name': "UICollectionViewDataSource_Draggable.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DraggableCollectionView/DraggableCollectionView/UICollectionViewDataSource_Draggable.h"
+        },
+        {
+          'type': 'file',
+          'name': "UICollectionViewLayout_Warpable.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/DraggableCollectionView/DraggableCollectionView/UICollectionViewLayout_Warpable.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/DraggableCollectionView.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphonesimulator/DraggableCollectionView.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/FMDB.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "FMDB-Swift.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/FMDB.framework/Headers/FMDB-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "FMDB-umbrella.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/Target Support Files/FMDB/FMDB-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "FMDB.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/FMDB/src/fmdb/FMDB.h"
+        },
+        {
+          'type': 'file',
+          'name': "FMDatabase.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/FMDB/src/fmdb/FMDatabase.h"
+        },
+        {
+          'type': 'file',
+          'name': "FMDatabaseAdditions.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/FMDB/src/fmdb/FMDatabaseAdditions.h"
+        },
+        {
+          'type': 'file',
+          'name': "FMDatabasePool.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/FMDB/src/fmdb/FMDatabasePool.h"
+        },
+        {
+          'type': 'file',
+          'name': "FMDatabaseQueue.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/FMDB/src/fmdb/FMDatabaseQueue.h"
+        },
+        {
+          'type': 'file',
+          'name': "FMResultSet.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/FMDB/src/fmdb/FMResultSet.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/FMDB.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphonesimulator/FMDB.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/MTLocation.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "MKAnnotationView+MTLocation.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/MTLocation/MKAnnotationView+MTLocation.h"
+        },
+        {
+          'type': 'file',
+          'name': "MKMapView+MTLocation.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/MTLocation/MKMapView+MTLocation.h"
+        },
+        {
+          'type': 'file',
+          'name': "MTLocateMeBarButtonItem.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/MTLocation/MTLocateMeBarButtonItem.h"
+        },
+        {
+          'type': 'file',
+          'name': "MTLocateMeButton.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/MTLocation/MTLocateMeButton.h"
+        },
+        {
+          'type': 'file',
+          'name': "MTLocation-Swift.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/MTLocation.framework/Headers/MTLocation-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "MTLocation-umbrella.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/Target Support Files/MTLocation/MTLocation-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "MTLocation.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/MTLocation/MTLocation.h"
+        },
+        {
+          'type': 'file',
+          'name': "MTLocationDefines.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/MTLocation/MTLocationDefines.h"
+        },
+        {
+          'type': 'file',
+          'name': "MTLocationFunctions.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/MTLocation/MTLocationFunctions.h"
+        },
+        {
+          'type': 'file',
+          'name': "MTLocationManager.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/MTLocation/MTLocationManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "MTTouchesMovedGestureRecognizer.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/MTLocation/MTTouchesMovedGestureRecognizer.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIBarButtonItem+MTLocation.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/MTLocation/UIBarButtonItem+MTLocation.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/MTLocation.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphonesimulator/MTLocation.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/OnePasswordExtension.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "1PasswordExtension-umbrella.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/Target Support Files/1PasswordExtension/1PasswordExtension-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "OnePasswordExtension-Swift.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/OnePasswordExtension.framework/Headers/OnePasswordExtension-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "OnePasswordExtension.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/1PasswordExtension/OnePasswordExtension.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/OnePasswordExtension.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphonesimulator/1PasswordExtension.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/PEGKit.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "NSArray+PEGKitAdditions.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/PEGKit/src/NSArray+PEGKitAdditions.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSString+PEGKitAdditions.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/PEGKit/src/NSString+PEGKitAdditions.h"
+        },
+        {
+          'type': 'file',
+          'name': "PEGKit-Swift.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/PEGKit.framework/Headers/PEGKit-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "PEGKit-umbrella.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/Target Support Files/PEGKit/PEGKit-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "PEGKit.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/PEGKit/include/PEGKit/PEGKit.h"
+        },
+        {
+          'type': 'file',
+          'name': "PKAST.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/PEGKit/include/PEGKit/PKAST.h"
+        },
+        {
+          'type': 'file',
+          'name': "PKAssembly.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/PEGKit/include/PEGKit/PKAssembly.h"
+        },
+        {
+          'type': 'file',
+          'name': "PKCommentState.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/PEGKit/include/PEGKit/PKCommentState.h"
+        },
+        {
+          'type': 'file',
+          'name': "PKDelimitDescriptor.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/PEGKit/src/PKDelimitDescriptor.h"
+        },
+        {
+          'type': 'file',
+          'name': "PKDelimitDescriptorCollection.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/PEGKit/src/PKDelimitDescriptorCollection.h"
+        },
+        {
+          'type': 'file',
+          'name': "PKDelimitState.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/PEGKit/include/PEGKit/PKDelimitState.h"
+        },
+        {
+          'type': 'file',
+          'name': "PKEmailState.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/PEGKit/include/PEGKit/PKEmailState.h"
+        },
+        {
+          'type': 'file',
+          'name': "PKHashtagState.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/PEGKit/include/PEGKit/PKHashtagState.h"
+        },
+        {
+          'type': 'file',
+          'name': "PKMultiLineCommentState.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/PEGKit/include/PEGKit/PKMultiLineCommentState.h"
+        },
+        {
+          'type': 'file',
+          'name': "PKNumberState.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/PEGKit/include/PEGKit/PKNumberState.h"
+        },
+        {
+          'type': 'file',
+          'name': "PKParser+Subclass.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/PEGKit/include/PEGKit/PKParser+Subclass.h"
+        },
+        {
+          'type': 'file',
+          'name': "PKParser.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/PEGKit/include/PEGKit/PKParser.h"
+        },
+        {
+          'type': 'file',
+          'name': "PKQuoteState.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/PEGKit/include/PEGKit/PKQuoteState.h"
+        },
+        {
+          'type': 'file',
+          'name': "PKReader.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/PEGKit/include/PEGKit/PKReader.h"
+        },
+        {
+          'type': 'file',
+          'name': "PKRecognitionException.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/PEGKit/include/PEGKit/PKRecognitionException.h"
+        },
+        {
+          'type': 'file',
+          'name': "PKSingleLineCommentState.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/PEGKit/include/PEGKit/PKSingleLineCommentState.h"
+        },
+        {
+          'type': 'file',
+          'name': "PKSymbolNode.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/PEGKit/src/PKSymbolNode.h"
+        },
+        {
+          'type': 'file',
+          'name': "PKSymbolRootNode.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/PEGKit/src/PKSymbolRootNode.h"
+        },
+        {
+          'type': 'file',
+          'name': "PKSymbolState.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/PEGKit/include/PEGKit/PKSymbolState.h"
+        },
+        {
+          'type': 'file',
+          'name': "PKToken.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/PEGKit/include/PEGKit/PKToken.h"
+        },
+        {
+          'type': 'file',
+          'name': "PKTokenizer.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/PEGKit/include/PEGKit/PKTokenizer.h"
+        },
+        {
+          'type': 'file',
+          'name': "PKTokenizerState.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/PEGKit/include/PEGKit/PKTokenizerState.h"
+        },
+        {
+          'type': 'file',
+          'name': "PKTwitterState.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/PEGKit/include/PEGKit/PKTwitterState.h"
+        },
+        {
+          'type': 'file',
+          'name': "PKTypes.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/PEGKit/include/PEGKit/PKTypes.h"
+        },
+        {
+          'type': 'file',
+          'name': "PKURLState.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/PEGKit/include/PEGKit/PKURLState.h"
+        },
+        {
+          'type': 'file',
+          'name': "PKWhitespaceState.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/PEGKit/include/PEGKit/PKWhitespaceState.h"
+        },
+        {
+          'type': 'file',
+          'name': "PKWordState.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/PEGKit/include/PEGKit/PKWordState.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/PEGKit.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphonesimulator/PEGKit.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/Pods_LPKTutorialOne.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-LPKTutorialOne-umbrella.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/Target Support Files/Pods-LPKTutorialOne/Pods-LPKTutorialOne-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_LPKTutorialOne-Swift.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/Pods_LPKTutorialOne.framework/Headers/Pods_LPKTutorialOne-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/Pods_LPKTutorialOne.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-LPKTutorialOne.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/RBBAnimation.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "RBBAnimation-Swift.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/RBBAnimation.framework/Headers/RBBAnimation-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "RBBAnimation-umbrella.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/Target Support Files/RBBAnimation/RBBAnimation-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "RBBAnimation.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/RBBAnimation/RBBAnimation/RBBAnimation.h"
+        },
+        {
+          'type': 'file',
+          'name': "RBBBlockBasedArray.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/RBBAnimation/RBBAnimation/RBBBlockBasedArray.h"
+        },
+        {
+          'type': 'file',
+          'name': "RBBCubicBezier.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/RBBAnimation/RBBAnimation/RBBCubicBezier.h"
+        },
+        {
+          'type': 'file',
+          'name': "RBBCustomAnimation.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/RBBAnimation/RBBAnimation/RBBCustomAnimation.h"
+        },
+        {
+          'type': 'file',
+          'name': "RBBEasingFunction.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/RBBAnimation/RBBAnimation/RBBEasingFunction.h"
+        },
+        {
+          'type': 'file',
+          'name': "RBBLinearInterpolation.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/RBBAnimation/RBBAnimation/RBBLinearInterpolation.h"
+        },
+        {
+          'type': 'file',
+          'name': "RBBSpringAnimation.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/RBBAnimation/RBBAnimation/RBBSpringAnimation.h"
+        },
+        {
+          'type': 'file',
+          'name': "RBBTweenAnimation.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/RBBAnimation/RBBAnimation/RBBTweenAnimation.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/RBBAnimation.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphonesimulator/RBBAnimation.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/Reachability.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Reachability-Swift.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/Reachability.framework/Headers/Reachability-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "Reachability-umbrella.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/Target Support Files/Reachability/Reachability-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Reachability.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/Reachability/Reachability.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/Reachability.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphonesimulator/Reachability.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/SDCAutoLayout.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "SDCAutoLayout-Swift.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/SDCAutoLayout.framework/Headers/SDCAutoLayout-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDCAutoLayout-umbrella.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/Target Support Files/SDCAutoLayout/SDCAutoLayout-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIView+SDCAutoLayout.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/SDCAutoLayout/AutoLayout/UIView+SDCAutoLayout.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/SDCAutoLayout.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphonesimulator/SDCAutoLayout.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/SSPullToRefresh.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "SSPullToRefresh-Swift.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/SSPullToRefresh.framework/Headers/SSPullToRefresh-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "SSPullToRefresh-umbrella.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/Target Support Files/SSPullToRefresh/SSPullToRefresh-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "SSPullToRefresh.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/SSPullToRefresh/SSPullToRefresh/SSPullToRefresh.h"
+        },
+        {
+          'type': 'file',
+          'name': "SSPullToRefreshDefaultContentView.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/SSPullToRefresh/SSPullToRefresh/SSPullToRefreshDefaultContentView.h"
+        },
+        {
+          'type': 'file',
+          'name': "SSPullToRefreshSimpleContentView.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/SSPullToRefresh/SSPullToRefresh/SSPullToRefreshSimpleContentView.h"
+        },
+        {
+          'type': 'file',
+          'name': "SSPullToRefreshView.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/SSPullToRefresh/SSPullToRefresh/SSPullToRefreshView.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/SSPullToRefresh.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphonesimulator/SSPullToRefresh.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/yajl.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "yajl-Swift.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/yajl.framework/Headers/yajl-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "yajl-umbrella.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/Target Support Files/yajl/yajl-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "yajl_alloc.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/yajl/src/yajl_alloc.h"
+        },
+        {
+          'type': 'file',
+          'name': "yajl_buf.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/yajl/src/yajl_buf.h"
+        },
+        {
+          'type': 'file',
+          'name': "yajl_bytestack.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/yajl/src/yajl_bytestack.h"
+        },
+        {
+          'type': 'file',
+          'name': "yajl_common.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/yajl/build/yajl-1.0.12/include/yajl/yajl_common.h"
+        },
+        {
+          'type': 'file',
+          'name': "yajl_encode.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/yajl/src/yajl_encode.h"
+        },
+        {
+          'type': 'file',
+          'name': "yajl_gen.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/yajl/build/yajl-1.0.12/include/yajl/yajl_gen.h"
+        },
+        {
+          'type': 'file',
+          'name': "yajl_lex.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/yajl/src/yajl_lex.h"
+        },
+        {
+          'type': 'file',
+          'name': "yajl_parse.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/yajl/build/yajl-1.0.12/include/yajl/yajl_parse.h"
+        },
+        {
+          'type': 'file',
+          'name': "yajl_parser.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/yajl/src/yajl_parser.h"
+        },
+        {
+          'type': 'file',
+          'name': "yajl_version.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/yajl/build/yajl-1.0.12/include/yajl/yajl_version.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/yajl.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphonesimulator/yajl.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/yajl_objc.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "GHNSBundle+Utils.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/yajl-objc/Libraries/GHKit/GHNSBundle+Utils.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMBase64.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/yajl-objc/Libraries/GTM/GTMBase64.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSBundle+YAJL.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/yajl-objc/Classes/NSBundle+YAJL.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSObject+YAJL.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/yajl-objc/Classes/NSObject+YAJL.h"
+        },
+        {
+          'type': 'file',
+          'name': "YAJL.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/yajl-objc/Classes/YAJL.h"
+        },
+        {
+          'type': 'file',
+          'name': "YAJLDocument.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/yajl-objc/Classes/YAJLDocument.h"
+        },
+        {
+          'type': 'file',
+          'name': "YAJLGen.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/yajl-objc/Classes/YAJLGen.h"
+        },
+        {
+          'type': 'file',
+          'name': "YAJLParser.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/yajl-objc/Classes/YAJLParser.h"
+        },
+        {
+          'type': 'file',
+          'name': "yajl-objc-umbrella.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Pods/Target Support Files/yajl-objc/yajl-objc-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "yajl_objc-Swift.h",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/yajl_objc.framework/Headers/yajl_objc-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/yajl_objc.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphonesimulator/yajl-objc.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}
