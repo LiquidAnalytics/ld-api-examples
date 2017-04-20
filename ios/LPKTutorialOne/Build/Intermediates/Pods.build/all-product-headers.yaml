@@ -4,7 +4,7 @@
   'roots': [
     {
       'type': 'directory',
-      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/ASIHTTPRequest.framework/Headers",
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/ASIHTTPRequest.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -74,7 +74,7 @@
         {
           'type': 'file',
           'name': "ASIHTTPRequest-Swift.h",
-          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/ASIHTTPRequest.framework/Headers/ASIHTTPRequest-Swift.h"
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/ASIHTTPRequest.framework/Headers/ASIHTTPRequest-Swift.h"
         },
         {
           'type': 'file',
@@ -155,18 +155,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/ASIHTTPRequest.framework/Modules",
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/ASIHTTPRequest.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphonesimulator/ASIHTTPRequest.build/module.modulemap"
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphoneos/ASIHTTPRequest.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/BlocksKit.framework/Headers",
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/BlocksKit.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -196,7 +196,7 @@
         {
           'type': 'file',
           'name': "BlocksKit-Swift.h",
-          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/BlocksKit.framework/Headers/BlocksKit-Swift.h"
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/BlocksKit.framework/Headers/BlocksKit-Swift.h"
         },
         {
           'type': 'file',
@@ -367,23 +367,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/BlocksKit.framework/Modules",
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/BlocksKit.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphonesimulator/BlocksKit.build/module.modulemap"
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphoneos/BlocksKit.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/CocoaLumberjack.framework/Headers",
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/CocoaLumberjack.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "CocoaLumberjack-Swift.h",
-          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/CocoaLumberjack.framework/Headers/CocoaLumberjack-Swift.h"
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/CocoaLumberjack.framework/Headers/CocoaLumberjack-Swift.h"
         },
         {
           'type': 'file',
@@ -459,18 +459,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/CocoaLumberjack.framework/Modules",
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/CocoaLumberjack.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphonesimulator/CocoaLumberjack.build/module.modulemap"
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphoneos/CocoaLumberjack.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/CorePlot.framework/Headers",
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/CorePlot.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -835,7 +835,7 @@
         {
           'type': 'file',
           'name': "CorePlot-Swift.h",
-          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/CorePlot.framework/Headers/CorePlot-Swift.h"
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/CorePlot.framework/Headers/CorePlot-Swift.h"
         },
         {
           'type': 'file',
@@ -866,18 +866,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/CorePlot.framework/Modules",
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/CorePlot.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphonesimulator/CorePlot.build/module.modulemap"
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphoneos/CorePlot.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/CorePlot.framework/PrivateHeaders",
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/CorePlot.framework/PrivateHeaders",
       'contents': [
         {
           'type': 'file',
@@ -983,7 +983,7 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/DTCoreText.framework/Headers",
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/DTCoreText.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -1053,7 +1053,7 @@
         {
           'type': 'file',
           'name': "DTCoreText-Swift.h",
-          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/DTCoreText.framework/Headers/DTCoreText-Swift.h"
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/DTCoreText.framework/Headers/DTCoreText-Swift.h"
         },
         {
           'type': 'file',
@@ -1304,18 +1304,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/DTCoreText.framework/Modules",
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/DTCoreText.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphonesimulator/DTCoreText.build/module.modulemap"
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphoneos/DTCoreText.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/DTFoundation.framework/Headers",
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/DTFoundation.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -1360,7 +1360,7 @@
         {
           'type': 'file',
           'name': "DTFoundation-Swift.h",
-          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/DTFoundation.framework/Headers/DTFoundation-Swift.h"
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/DTFoundation.framework/Headers/DTFoundation-Swift.h"
         },
         {
           'type': 'file',
@@ -1491,23 +1491,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/DTFoundation.framework/Modules",
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/DTFoundation.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphonesimulator/DTFoundation.build/module.modulemap"
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphoneos/DTFoundation.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/DraggableCollectionView.framework/Headers",
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/DraggableCollectionView.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "DraggableCollectionView-Swift.h",
-          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/DraggableCollectionView.framework/Headers/DraggableCollectionView-Swift.h"
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/DraggableCollectionView.framework/Headers/DraggableCollectionView-Swift.h"
         },
         {
           'type': 'file',
@@ -1548,23 +1548,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/DraggableCollectionView.framework/Modules",
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/DraggableCollectionView.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphonesimulator/DraggableCollectionView.build/module.modulemap"
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphoneos/DraggableCollectionView.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/FMDB.framework/Headers",
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/FMDB.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "FMDB-Swift.h",
-          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/FMDB.framework/Headers/FMDB-Swift.h"
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/FMDB.framework/Headers/FMDB-Swift.h"
         },
         {
           'type': 'file',
@@ -1605,18 +1605,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/FMDB.framework/Modules",
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/FMDB.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphonesimulator/FMDB.build/module.modulemap"
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphoneos/FMDB.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/MTLocation.framework/Headers",
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/MTLocation.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -1641,7 +1641,7 @@
         {
           'type': 'file',
           'name': "MTLocation-Swift.h",
-          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/MTLocation.framework/Headers/MTLocation-Swift.h"
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/MTLocation.framework/Headers/MTLocation-Swift.h"
         },
         {
           'type': 'file',
@@ -1682,18 +1682,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/MTLocation.framework/Modules",
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/MTLocation.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphonesimulator/MTLocation.build/module.modulemap"
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphoneos/MTLocation.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/OnePasswordExtension.framework/Headers",
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/OnePasswordExtension.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -1703,7 +1703,7 @@
         {
           'type': 'file',
           'name': "OnePasswordExtension-Swift.h",
-          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/OnePasswordExtension.framework/Headers/OnePasswordExtension-Swift.h"
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/OnePasswordExtension.framework/Headers/OnePasswordExtension-Swift.h"
         },
         {
           'type': 'file',
@@ -1714,18 +1714,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/OnePasswordExtension.framework/Modules",
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/OnePasswordExtension.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphonesimulator/1PasswordExtension.build/module.modulemap"
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphoneos/1PasswordExtension.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/PEGKit.framework/Headers",
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/PEGKit.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -1740,7 +1740,7 @@
         {
           'type': 'file',
           'name': "PEGKit-Swift.h",
-          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/PEGKit.framework/Headers/PEGKit-Swift.h"
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/PEGKit.framework/Headers/PEGKit-Swift.h"
         },
         {
           'type': 'file',
@@ -1891,18 +1891,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/PEGKit.framework/Modules",
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/PEGKit.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphonesimulator/PEGKit.build/module.modulemap"
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphoneos/PEGKit.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/Pods_LPKTutorialOne.framework/Headers",
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/Pods_LPKTutorialOne.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -1912,29 +1912,29 @@
         {
           'type': 'file',
           'name': "Pods_LPKTutorialOne-Swift.h",
-          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/Pods_LPKTutorialOne.framework/Headers/Pods_LPKTutorialOne-Swift.h"
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/Pods_LPKTutorialOne.framework/Headers/Pods_LPKTutorialOne-Swift.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/Pods_LPKTutorialOne.framework/Modules",
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/Pods_LPKTutorialOne.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-LPKTutorialOne.build/module.modulemap"
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-LPKTutorialOne.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/RBBAnimation.framework/Headers",
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/RBBAnimation.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "RBBAnimation-Swift.h",
-          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/RBBAnimation.framework/Headers/RBBAnimation-Swift.h"
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/RBBAnimation.framework/Headers/RBBAnimation-Swift.h"
         },
         {
           'type': 'file',
@@ -1985,23 +1985,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/RBBAnimation.framework/Modules",
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/RBBAnimation.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphonesimulator/RBBAnimation.build/module.modulemap"
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphoneos/RBBAnimation.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/Reachability.framework/Headers",
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/Reachability.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "Reachability-Swift.h",
-          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/Reachability.framework/Headers/Reachability-Swift.h"
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/Reachability.framework/Headers/Reachability-Swift.h"
         },
         {
           'type': 'file',
@@ -2017,23 +2017,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/Reachability.framework/Modules",
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/Reachability.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphonesimulator/Reachability.build/module.modulemap"
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphoneos/Reachability.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/SDCAutoLayout.framework/Headers",
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/SDCAutoLayout.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "SDCAutoLayout-Swift.h",
-          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/SDCAutoLayout.framework/Headers/SDCAutoLayout-Swift.h"
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/SDCAutoLayout.framework/Headers/SDCAutoLayout-Swift.h"
         },
         {
           'type': 'file',
@@ -2049,23 +2049,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/SDCAutoLayout.framework/Modules",
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/SDCAutoLayout.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphonesimulator/SDCAutoLayout.build/module.modulemap"
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphoneos/SDCAutoLayout.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/SSPullToRefresh.framework/Headers",
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/SSPullToRefresh.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "SSPullToRefresh-Swift.h",
-          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/SSPullToRefresh.framework/Headers/SSPullToRefresh-Swift.h"
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/SSPullToRefresh.framework/Headers/SSPullToRefresh-Swift.h"
         },
         {
           'type': 'file',
@@ -2096,23 +2096,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/SSPullToRefresh.framework/Modules",
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/SSPullToRefresh.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphonesimulator/SSPullToRefresh.build/module.modulemap"
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphoneos/SSPullToRefresh.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/yajl.framework/Headers",
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/yajl.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "yajl-Swift.h",
-          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/yajl.framework/Headers/yajl-Swift.h"
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/yajl.framework/Headers/yajl-Swift.h"
         },
         {
           'type': 'file',
@@ -2173,18 +2173,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/yajl.framework/Modules",
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/yajl.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphonesimulator/yajl.build/module.modulemap"
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphoneos/yajl.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/yajl_objc.framework/Headers",
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/yajl_objc.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -2234,18 +2234,18 @@
         {
           'type': 'file',
           'name': "yajl_objc-Swift.h",
-          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/yajl_objc.framework/Headers/yajl_objc-Swift.h"
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/yajl_objc.framework/Headers/yajl_objc-Swift.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphonesimulator/yajl_objc.framework/Modules",
+      'name': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Products/Debug-iphoneos/yajl_objc.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphonesimulator/yajl-objc.build/module.modulemap"
+          'external-contents': "/Users/carsonli/LiquidDev/ld-api-examples/ios/LPKTutorialOne/Build/Intermediates/Pods.build/Debug-iphoneos/yajl-objc.build/module.modulemap"
         }
       ]
     }

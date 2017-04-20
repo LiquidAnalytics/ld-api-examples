@@ -10,8 +10,9 @@
 
 @interface LDKSetField : LDMItem
 
-@property NSString *field;
-@property NSString *statement;
-@property NSNumber *isPrimary;
+@property (strong) NSString *field;
+@property (strong) NSString *statement;
+@property (strong) NSString *key;
+@property (strong)  NSNumber *isPrimary;
 
 @end

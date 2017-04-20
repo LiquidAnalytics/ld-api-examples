@@ -7,8 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <LDKPrinter.h>
-
 
 @interface LDKPrinterManagerViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, LDKPrinterStatusUpdateDelegate>
 

@@ -89,7 +89,7 @@ typedef void (^__nullable SynchronousRequestBlock)(NSError *__nullable error, id
 - (void)requestSync;
 - (void)requestSyncWithCompletionHandler:(void (^__nullable)(BOOL syncSucceeded))completionHandler;
 - (void)requestGetItemsWithCategory:(NSString *__nonnull)category andType:(NSString *__nonnull)type andFieldValues:(NSDictionary *__nullable)fieldValues andTimeRanges:(NSArray *__nullable)timeRanges adminMode:(BOOL)adminMode andCallback:(SynchronousRequestBlock)callback;
-- (void)precacheItemsWithCategory:(NSString *)category andType:(NSString *__nonnull)type andFieldValues:(NSDictionary *__nullable)fieldValues andTimeRanges:(NSArray*__nullable)timeRanges adminMode:(BOOL)adminMode andCallback:(void (^__nonnull)(BOOL success))callback;
+- (void)precacheItemsWithCategory:(NSString *__nonnull)category andType:(NSString *__nonnull)type andFieldValues:(NSDictionary *__nullable)fieldValues andTimeRanges:(NSArray*__nullable)timeRanges adminMode:(BOOL)adminMode andCallback:(void (^__nonnull)(BOOL success))callback;
 - (NSString *__nonnull)pingDescription;
 - (void) setDisasterServers: (NSArray *__nullable) routingTable;
 - (void) clearServerError;

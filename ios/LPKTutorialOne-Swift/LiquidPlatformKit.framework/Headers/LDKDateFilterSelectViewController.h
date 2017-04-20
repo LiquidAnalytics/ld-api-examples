@@ -26,6 +26,7 @@ typedef NS_ENUM(NSUInteger, DateFilterOption)
 @property (nonatomic, assign) BOOL returnOnDone;
 @property (nonatomic, assign) BOOL showClearButton;
 @property (strong) NSDate *currentDate;
+@property (strong) NSNumber *minuteInterval;
 
 -(void) loadOptions:(NSDictionary*)options;
 

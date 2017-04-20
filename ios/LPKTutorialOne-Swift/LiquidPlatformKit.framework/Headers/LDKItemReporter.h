@@ -14,18 +14,11 @@
 
 + (LDKItemReporter *)sharedInstance;
 
-/*!
- * @discussion Asynchronous call to create a reporting item. Works in conjunction with item type "ItemReporting"
- * @param items An LDMitem to be reported
- */
-- (void) reportItem:(LDMItem*) item;
-
-/*!
- * @discussion Same as reportItem, but for multiple items
- * @param items An array of LDMItems to be reported
- */
 - (void) reportItems:(NSArray*) items;
-
+- (void) reportItem:(LDMItem*) item;
+- (void) reportItems:(NSArray*) items withAction:(NSString*) action;
+- (void) reportItem:(LDMItem*) item withAction:(NSString*) action;
+- (void) reportUXMetrics:(NSArray*) metricDicts;
 
 
 @end

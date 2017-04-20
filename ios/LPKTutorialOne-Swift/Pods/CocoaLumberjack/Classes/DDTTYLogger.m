@@ -1,6 +1,6 @@
 // Software License Agreement (BSD License)
 //
-// Copyright (c) 2010-2016, Deusty, LLC
+// Copyright (c) 2010-2015, Deusty, LLC
 // All rights reserved.
 //
 // Redistribution and use of this software in source and binary forms,
@@ -716,19 +716,20 @@ static DDTTYLogger *sharedInstance;
         CGColorSpaceRelease(rgbColorSpace);
     }
 
-    #elif defined(DD_CLI) || !__has_include(<AppKit/NSColor.h>)
-
-    // OS X without AppKit
-
-    [color getRed:rPtr green:gPtr blue:bPtr alpha:NULL];
-
-    #else /* if TARGET_OS_IPHONE */
+    #elif __has_include(<AppKit/NSColor.h>)
 
     // OS X with AppKit
 
     NSColor *safeColor = [color colorUsingColorSpaceName:NSCalibratedRGBColorSpace];
 
     [safeColor getRed:rPtr green:gPtr blue:bPtr alpha:NULL];
+
+    #else /* if TARGET_OS_IPHONE */
+
+    // OS X without AppKit
+
+    [color getRed:rPtr green:gPtr blue:bPtr alpha:NULL];
+
     #endif /* if TARGET_OS_IPHONE */
 }
 

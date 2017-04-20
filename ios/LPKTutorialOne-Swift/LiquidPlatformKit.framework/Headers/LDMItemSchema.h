@@ -42,6 +42,7 @@ typedef NS_ENUM(NSUInteger, LDMSupportedOperations)
 @property (strong, nullable) NSString *schemaType;
 @property (strong, nullable) NSString *viewSql;
 @property (strong, nullable) NSString *clientViewStatement;
+@property (strong, nullable) NSString *viewStatement;
 
 @property (strong, nonnull) NSString *community;
 @property (assign) BOOL writeable;

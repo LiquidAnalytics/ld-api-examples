@@ -19,6 +19,7 @@
 @property (nonatomic, retain) NSDate* date;
 @property (nonatomic, retain) NSDate* maximumDate;
 @property (nonatomic, retain) NSDate* minimumDate;
+@property (nonatomic, retain) NSNumber* minuteInterval;
 @property (nonatomic, strong, readonly) NSDateFormatter* dateFormatter;
 //! Supported date symbols are yyyy, MMM, d, HH, h, mm, j, a. Default is 'yyyyMMMdjmm'. Order is determined by locale.
 @property (nonatomic, copy) NSString* dateFormatTemplate;
@@ -26,5 +27,6 @@
 @property (nonatomic, weak) IBOutlet id<PMEDatePickerDelegate> dateDelegate;
 
 - (void)setDate:(NSDate*)date animated:(BOOL)animated;
+- (NSDate*) retrieveDate;
 
 @end
