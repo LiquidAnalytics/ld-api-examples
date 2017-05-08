@@ -26,6 +26,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     self.infoLabel.text = @"";
     self.progressBar.progress = 0.0f;
     self.progressBar.hidden = YES;
@@ -56,6 +57,7 @@
     [[LDMDataManager sharedInstance] executeAsynch:^{
         self.authCallback(self.usernameField.text, self.passwordField.text);
     }];
+    
 }
 
 /**
@@ -108,5 +110,11 @@
         [self performSegueWithIdentifier:@"showMovieSegue" sender:nil];
     });
 }
+
+- (void) userHasLoggedOut
+{
+
+}
+
 
 @end

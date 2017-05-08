@@ -26,6 +26,7 @@
 		37A5A2661D14796E0088DE40 /* MovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A5A2651D14796E0088DE40 /* MovieViewController.m */; };
 		37E6A65A1D1463690066E095 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 37E6A6591D1463690066E095 /* Settings.bundle */; };
 		3D742D7F3DFE96E9F715212B /* Pods_LPKTutorialOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A484821874B5A6E28CFDAEE /* Pods_LPKTutorialOne.framework */; };
+		B81BFC411EBA422B00A170C2 /* UserBioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B81BFC401EBA422B00A170C2 /* UserBioViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -69,6 +70,8 @@
 		37A5A2651D14796E0088DE40 /* MovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieViewController.m; sourceTree = "<group>"; };
 		37E6A6591D1463690066E095 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = LPKTutorialOne/Settings.bundle; sourceTree = "<group>"; };
 		3A484821874B5A6E28CFDAEE /* Pods_LPKTutorialOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LPKTutorialOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B81BFC3F1EBA422B00A170C2 /* UserBioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserBioViewController.h; sourceTree = "<group>"; };
+		B81BFC401EBA422B00A170C2 /* UserBioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserBioViewController.m; sourceTree = "<group>"; };
 		F2CB91C26A73CEF991F62EB5 /* Pods-LPKTutorialOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LPKTutorialOne.release.xcconfig"; path = "Pods/Target Support Files/Pods-LPKTutorialOne/Pods-LPKTutorialOne.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,6 +137,8 @@
 				37A5A2611D1479420088DE40 /* MovieTableViewCell.h */,
 				37A5A2621D1479420088DE40 /* MovieTableViewCell.m */,
 				375A163A1D145EC200498949 /* Main.storyboard */,
+				B81BFC3F1EBA422B00A170C2 /* UserBioViewController.h */,
+				B81BFC401EBA422B00A170C2 /* UserBioViewController.m */,
 				375A163D1D145EC200498949 /* Assets.xcassets */,
 				375A163F1D145EC200498949 /* LaunchScreen.storyboard */,
 				375A16421D145EC200498949 /* Info.plist */,
@@ -291,6 +296,7 @@
 			files = (
 				373232E91D149217002D7385 /* MovieDetailViewController.m in Sources */,
 				375A16391D145EC200498949 /* ViewController.m in Sources */,
+				B81BFC411EBA422B00A170C2 /* UserBioViewController.m in Sources */,
 				37A5A2661D14796E0088DE40 /* MovieViewController.m in Sources */,
 				375A16361D145EC200498949 /* AppDelegate.m in Sources */,
 				37A5A2631D1479420088DE40 /* MovieTableViewCell.m in Sources */,

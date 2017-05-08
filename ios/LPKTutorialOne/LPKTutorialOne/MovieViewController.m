@@ -28,6 +28,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.navigationItem.hidesBackButton=true;
 }
 
 - (void)didReceiveMemoryWarning
@@ -125,8 +127,16 @@
         [newMovie setValue:[LDMItem generateId] forKey:@"movieId"];
         destinationVC.movie = newMovie;
     }
+    else if ([segue.identifier isEqualToString:@"logoutSegue"]){
+        
+        [[LSCSyncController sharedInstance] logoutWithMessage:@"Logged out"];
+    }
+    
+    
 }
 
-
+- (void) viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+}
 
 @end
