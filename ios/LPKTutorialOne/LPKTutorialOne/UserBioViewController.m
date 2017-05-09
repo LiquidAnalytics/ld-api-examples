@@ -13,6 +13,10 @@
 
 @interface UserBioViewController ()
 @property (weak) IBOutlet UILabel *UserBioLabel;
+@property (weak) IBOutlet UILabel *FacebookLabel;
+@property (weak) IBOutlet UILabel *UserIDLabel;
+@property (weak) IBOutlet UILabel *AgeLabel;
+@property (weak) IBOutlet UILabel *GenderLabel;
 @property NSMutableString *result;
 @end
 
@@ -22,20 +26,32 @@
     [super viewDidLoad];
 
     // Do any additional setup after loading the view.
+    [self.result setString:@"NO BIO INFO"];
+    self.UserBioLabel.text = [NSString stringWithFormat:@"JSON: %@", self.result];
     
     [[LDMDataManager sharedInstance] executeAsynch:^{
+        //get all items entitled to your userfrom the UserBio scheme in MC (MovieCollection community)
         NSArray *myBio = [[LDMDataManager sharedInstance] allItemsOfType:@"UserBio"];
         self.result = [NSMutableString string];
-        if([myBio count] > 0)
+        if([myBio count] > 0){
+            //loop to update info labels (ideally should only run once)
             for(LDMItem *item in myBio){
+                
+                self.FacebookLabel.text = [NSString stringWithFormat:@"Facebook: %@",[item valueForKey:@"facebook"]];
+                self.UserIDLabel.text = [NSString stringWithFormat:@"User ID: %@",[item valueForKey: @"userId"]];
+                self.AgeLabel.text = [NSString stringWithFormat:@"Gender: %@",[item valueForKey: @"gender"]];
+                self.GenderLabel.text = [NSString stringWithFormat:@"Age: %@",[item valueForKey: @"age"]];
+            }
+            //loop for populating JSON string (ideally only runs once but can used to test entitlements in MC)
+            for (LDMItem *item in myBio){
                 [self.result appendFormat:@"%@",item.dataDict];
             }
             
-        else
-            [self.result setString:@"NO BIO INFO"];
-        
-        
-            self.UserBioLabel.text = [NSString stringWithFormat:@"info: %@ end", self.result];
+        }
+        else{
+             [self.result setString:@"NO BIO INFO"];
+        }
+        self.UserBioLabel.text = [NSString stringWithFormat:@"JSON: %@", self.result];
         [self.UserBioLabel sizeToFit];
         }];
 }

@@ -130,9 +130,17 @@
     else if ([segue.identifier isEqualToString:@"logoutSegue"]){
         
         [[LSCSyncController sharedInstance] logoutWithMessage:@"Logged out"];
+        [self.navigationController popViewControllerAnimated:true];
     }
     
     
+}
+
+- (IBAction) logoutPressed{
+    //resets the app so the app prompts login on next launch
+    [[LSCSyncController sharedInstance] reset];
+    
+    exit(1);
 }
 
 - (void) viewWillDisappear:(BOOL)animated{
