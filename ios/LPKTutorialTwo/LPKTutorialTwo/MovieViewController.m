@@ -41,6 +41,7 @@
 {
     [super viewDidLoad];
     self.title = @"LPKTutorialTwo";
+    self.navigationItem.hidesBackButton=true;
 }
 
 - (void)didReceiveMemoryWarning
@@ -50,25 +51,27 @@
 
 - (void) viewWillAppear:(BOOL)animated
 {
-    //for the first tutorial we will fetch the data every time the view appears
+    //for the second tutorial we will fetch the data every time the view appears
     //for future tutorials we will utilize proper observers / notifications
     [self fetchData];
 }
 
 -(void) fetchData
 {
-    
     LDMQueryFilter *qf = [[LDMQueryFilter alloc] init];
     if (self.searchTerm.length != 0)
     {
-        //we'll search by movie name and description
+        //we'll search by movie name, description and category by adding a LDMFilter to the LDMQueryFilterClause
         LDMQueryFilterClause *clause = [[LDMQueryFilterClause alloc] init];
         [clause addFilter:[[LDMFilter alloc] initWithField:@"name" value:self.searchTerm comparison:LDMFilterComparisonLike]];
         [clause addFilter:[[LDMFilter alloc] initWithField:@"description" value:self.searchTerm comparison:LDMFilterComparisonLike]];
+        [clause addFilter:[[LDMFilter alloc] initWithField:@"movieCategory"value:self.searchTerm comparison:LDMFilterComparisonLike]];
         [qf addClause:clause];
     }
     
     __weak MovieViewController *this = self;
+    //Call function AllMovieRatings with the LDMQueryFilter (qf) just created up top
+    //for details about the function AllMovieRatings, check functions item blotter in Mission Control
     [LDMFunction allItemsfromFunctionId:@"AllMovieRatings" queryFilter:qf faultBlocks:NO context:nil completion:^(LDMSearchResults * _Nullable results) {
         this.movies = results;
         this.movies.delegate = this;
@@ -105,19 +108,17 @@
 
 -(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    //number of rows = number of movies in server
     return [self.movies numberOfRowsInSection:section];
 }
 
 -(UITableViewCell*) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     MovieTableViewCell* cell = [self.movieTableView dequeueReusableCellWithIdentifier:@"MovieTableViewCell" forIndexPath:indexPath];
-    
     LDMItem *movieRatingComposite = [self.movies objectForRowAtIndexPath:indexPath];
-   
     cell.nameLabel.text = [movieRatingComposite valueForKey:@"name"];
     cell.descriptionLabel.text = [movieRatingComposite valueForKey:@"description"];
     cell.ratingLabel.text = [movieRatingComposite valueForKey:@"value"] ? [NSString stringWithFormat:@"%@", [movieRatingComposite valueForKey:@"value"]] : @"";
-    
     return cell;
 }
 
@@ -129,13 +130,10 @@
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [[LDMDataManager sharedInstance] executeAsynch:^{
-        
         LDMItem *movieRatingComposite = [self.movies objectForRowAtIndexPath:indexPath];
         self.selectedMovie = [[LDMDataManager sharedInstance] itemOfType:@"Movie" withId:[movieRatingComposite valueForKey:@"movieId"]];
-        
         if ([[movieRatingComposite valueForKey:@"ratingId"] length] != 0)
             self.selectedRating = [[LDMDataManager sharedInstance] itemOfType:@"Rating" withId:[movieRatingComposite valueForKey:@"ratingId"]];
-        
         dispatch_async(dispatch_get_main_queue(), ^{
             [self performSegueWithIdentifier:@"showMovieDetailSegue" sender:[self.movieTableView cellForRowAtIndexPath:indexPath]];
         });
@@ -144,18 +142,14 @@
 
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText
 {
-    if (searchText.length == 0)
-    {
-        self.searchTerm = searchBar.text;
-        [self fetchData];
-    }
+    self.searchTerm = searchBar.text;
+    [self fetchData];
 }
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
 {
     self.searchTerm = searchBar.text;
     [self fetchData];
-
 }
 
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -189,5 +183,11 @@
     });
 }
 
+- (IBAction) logoutPressed{
+    //resets the app so the app prompts login on next launch
+    [[LSCSyncController sharedInstance] reset];
+    
+    exit(1);
+}
 
 @end

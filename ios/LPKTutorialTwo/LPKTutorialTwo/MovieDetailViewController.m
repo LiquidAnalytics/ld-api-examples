@@ -36,16 +36,16 @@
     self.currentCategory = [self.movie valueForKey:@"movieCategory"];
     
     //for the edit form we'll pull every movieCategory available and make buttons for each one
-    
+    //gets all enumeration of name movieCategory and stores in the callback array 'categories'
     [LDMEnumeration enumerationsNamed:@"movieCategory" withCompletionHandler:^(NSArray *categories) {
         self.allCategories = categories;
-        
+        //loop through categories and create a button for each
         for (LDMEnumeration *category in self.allCategories)
         {
             UIButton* button = [[UIButton alloc] init];
             [button setTitle:category.display forState:UIControlStateNormal];
-            [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-            [button setBackgroundColor:[UIColor blueColor]];
+            [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+            [button setBackgroundImage:[UIImage imageNamed:@"blueButton"] forState:UIControlStateNormal];
             
             __block LDMEnumeration *thisCategory = category;
             [button bk_addEventHandler:^(id sender) {
@@ -62,25 +62,22 @@
 
 -(void) refreshUI
 {
-    
     self.nameField.text = [self.movie valueForKey:@"name"];
     self.descriptionTextView.text = [self.movie valueForKey:@"description"];
-    
     self.categoryLabel.text = self.currentCategory ? [self.currentCategory display] : @"";
     
     if (self.myRating)
         self.ratingTextField.text = [NSString stringWithFormat:@"%@",[self.myRating valueForKey:@"value"]];
-    
-    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    
 }
 
 -(IBAction)saveButtonPressed:(id)sender
 {
+    //save values to server using transactCreateOrUpdateWithItem, double check in Mission Control
+    //leave the parameter (withCompletionHandler) nil as we don't need callback for now
     [self.movie setValue:self.nameField.text forKey:@"name"];
     [self.movie setValue:self.descriptionTextView.text forKey:@"description"];
     

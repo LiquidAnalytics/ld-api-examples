@@ -47,7 +47,6 @@
     [super didReceiveMemoryWarning];
 }
 
-
 -(IBAction)loginButtonPressed:(id)sender
 {
     self.loginButton.enabled = NO;
